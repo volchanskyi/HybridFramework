@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="17" passed="17">
+<testng-results skipped="0" failed="1" ignored="0" total="22" passed="21">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12316" started-at="2017-12-23T15:49:53Z" finished-at="2017-12-23T15:50:05Z">
+  <suite name="Default suite" duration-ms="19941" started-at="2017-12-26T07:31:56Z" finished-at="2017-12-26T07:32:15Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12316" started-at="2017-12-23T15:49:53Z" finished-at="2017-12-23T15:50:05Z">
-      <class name="core.testCases.HybridExecuteTest">
-        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:core.testCases.HybridExecuteTest@4abdb505]" name="uiTest" duration-ms="3082" started-at="2017-12-23T07:49:54Z" data-provider="hybridData" finished-at="2017-12-23T07:49:57Z">
+    <test name="Default test" duration-ms="19941" started-at="2017-12-26T07:31:56Z" finished-at="2017-12-26T07:32:15Z">
+      <class name="core.tests.ExecuteTest">
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:core.tests.ExecuteTest@2d64160c]" name="uiTest" duration-ms="4970" started-at="2017-12-25T23:31:58Z" data-provider="UIData" finished-at="2017-12-25T23:32:03Z">
           <params>
             <param index="0">
               <value>
@@ -38,7 +38,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- uiTest -->
-        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:core.testCases.HybridExecuteTest@4abdb505]" name="uiTest" duration-ms="472" started-at="2017-12-23T07:49:57Z" data-provider="hybridData" finished-at="2017-12-23T07:49:57Z">
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:core.tests.ExecuteTest@2d64160c]" name="uiTest" duration-ms="569" started-at="2017-12-25T23:32:03Z" data-provider="UIData" finished-at="2017-12-25T23:32:03Z">
           <params>
             <param index="0">
               <value>
@@ -62,14 +62,14 @@
             </param>
             <param index="4">
               <value>
-                <![CDATA[url]]>
+                <![CDATA[http://demo.guru99.com/V4/]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- uiTest -->
-        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:core.testCases.HybridExecuteTest@4abdb505]" name="uiTest" duration-ms="2" started-at="2017-12-23T07:49:57Z" data-provider="hybridData" finished-at="2017-12-23T07:49:57Z">
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:core.tests.ExecuteTest@2d64160c]" name="uiTest" duration-ms="8" started-at="2017-12-25T23:32:03Z" data-provider="UIData" finished-at="2017-12-25T23:32:03Z">
           <params>
             <param index="0">
               <value>
@@ -100,7 +100,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- uiTest -->
-        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:core.testCases.HybridExecuteTest@4abdb505]" name="uiTest" duration-ms="2" started-at="2017-12-23T07:49:57Z" data-provider="hybridData" finished-at="2017-12-23T07:49:57Z">
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:core.tests.ExecuteTest@2d64160c]" name="uiTest" duration-ms="159" started-at="2017-12-25T23:32:03Z" data-provider="UIData" finished-at="2017-12-25T23:32:03Z">
           <params>
             <param index="0">
               <value>
@@ -109,29 +109,29 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[]]>
+                <![CDATA[VERIFYTITLE]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[]]>
+                <![CDATA[title]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[]]>
+                <![CDATA[css]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[]]>
+                <![CDATA[Guru99 Bank Home Page]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- uiTest -->
-        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:core.testCases.HybridExecuteTest@4abdb505]" name="uiTest" duration-ms="769" started-at="2017-12-23T07:49:57Z" data-provider="hybridData" finished-at="2017-12-23T07:49:58Z">
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:core.tests.ExecuteTest@2d64160c]" name="uiTest" duration-ms="810" started-at="2017-12-25T23:32:03Z" data-provider="UIData" finished-at="2017-12-25T23:32:04Z">
           <params>
             <param index="0">
               <value>
@@ -162,7 +162,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- uiTest -->
-        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:core.testCases.HybridExecuteTest@4abdb505]" name="uiTest" duration-ms="1921" started-at="2017-12-23T07:49:58Z" data-provider="hybridData" finished-at="2017-12-23T07:50:00Z">
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:core.tests.ExecuteTest@2d64160c]" name="uiTest" duration-ms="2219" started-at="2017-12-25T23:32:04Z" data-provider="UIData" finished-at="2017-12-25T23:32:07Z">
           <params>
             <param index="0">
               <value>
@@ -193,7 +193,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- uiTest -->
-        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:core.testCases.HybridExecuteTest@4abdb505]" name="uiTest" duration-ms="464" started-at="2017-12-23T07:50:00Z" data-provider="hybridData" finished-at="2017-12-23T07:50:00Z">
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:core.tests.ExecuteTest@2d64160c]" name="uiTest" duration-ms="471" started-at="2017-12-25T23:32:07Z" data-provider="UIData" finished-at="2017-12-25T23:32:07Z">
           <params>
             <param index="0">
               <value>
@@ -217,14 +217,14 @@
             </param>
             <param index="4">
               <value>
-                <![CDATA[url]]>
+                <![CDATA[http://demo.guru99.com/V4/]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- uiTest -->
-        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:core.testCases.HybridExecuteTest@4abdb505]" name="uiTest" duration-ms="150" started-at="2017-12-23T07:50:00Z" data-provider="hybridData" finished-at="2017-12-23T07:50:01Z">
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:core.tests.ExecuteTest@2d64160c]" name="uiTest" duration-ms="145" started-at="2017-12-25T23:32:07Z" data-provider="UIData" finished-at="2017-12-25T23:32:07Z">
           <params>
             <param index="0">
               <value>
@@ -255,7 +255,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- uiTest -->
-        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:core.testCases.HybridExecuteTest@4abdb505]" name="uiTest" duration-ms="104" started-at="2017-12-23T07:50:01Z" data-provider="hybridData" finished-at="2017-12-23T07:50:01Z">
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:core.tests.ExecuteTest@2d64160c]" name="uiTest" duration-ms="127" started-at="2017-12-25T23:32:07Z" data-provider="UIData" finished-at="2017-12-25T23:32:07Z">
           <params>
             <param index="0">
               <value>
@@ -286,7 +286,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- uiTest -->
-        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:core.testCases.HybridExecuteTest@4abdb505]" name="uiTest" duration-ms="389" started-at="2017-12-23T07:50:01Z" data-provider="hybridData" finished-at="2017-12-23T07:50:01Z">
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:core.tests.ExecuteTest@2d64160c]" name="uiTest" duration-ms="383" started-at="2017-12-25T23:32:07Z" data-provider="UIData" finished-at="2017-12-25T23:32:08Z">
           <params>
             <param index="0">
               <value>
@@ -317,7 +317,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- uiTest -->
-        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:core.testCases.HybridExecuteTest@4abdb505]" name="uiTest" duration-ms="713" started-at="2017-12-23T07:50:01Z" data-provider="hybridData" finished-at="2017-12-23T07:50:02Z">
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:core.tests.ExecuteTest@2d64160c]" name="uiTest" duration-ms="736" started-at="2017-12-25T23:32:08Z" data-provider="UIData" finished-at="2017-12-25T23:32:08Z">
           <params>
             <param index="0">
               <value>
@@ -348,7 +348,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- uiTest -->
-        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:core.testCases.HybridExecuteTest@4abdb505]" name="uiTest" duration-ms="1947" started-at="2017-12-23T07:50:02Z" data-provider="hybridData" finished-at="2017-12-23T07:50:04Z">
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:core.tests.ExecuteTest@2d64160c]" name="uiTest" duration-ms="2172" started-at="2017-12-25T23:32:08Z" data-provider="UIData" finished-at="2017-12-25T23:32:11Z">
           <params>
             <param index="0">
               <value>
@@ -379,7 +379,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- uiTest -->
-        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:core.testCases.HybridExecuteTest@4abdb505]" name="uiTest" duration-ms="466" started-at="2017-12-23T07:50:04Z" data-provider="hybridData" finished-at="2017-12-23T07:50:04Z">
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:core.tests.ExecuteTest@2d64160c]" name="uiTest" duration-ms="474" started-at="2017-12-25T23:32:11Z" data-provider="UIData" finished-at="2017-12-25T23:32:11Z">
           <params>
             <param index="0">
               <value>
@@ -403,14 +403,14 @@
             </param>
             <param index="4">
               <value>
-                <![CDATA[url]]>
+                <![CDATA[http://demo.guru99.com/V4/]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- uiTest -->
-        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:core.testCases.HybridExecuteTest@4abdb505]" name="uiTest" duration-ms="151" started-at="2017-12-23T07:50:04Z" data-provider="hybridData" finished-at="2017-12-23T07:50:04Z">
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:core.tests.ExecuteTest@2d64160c]" name="uiTest" duration-ms="160" started-at="2017-12-25T23:32:11Z" data-provider="UIData" finished-at="2017-12-25T23:32:11Z">
           <params>
             <param index="0">
               <value>
@@ -441,7 +441,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- uiTest -->
-        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:core.testCases.HybridExecuteTest@4abdb505]" name="uiTest" duration-ms="136" started-at="2017-12-23T07:50:04Z" data-provider="hybridData" finished-at="2017-12-23T07:50:05Z">
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:core.tests.ExecuteTest@2d64160c]" name="uiTest" duration-ms="142" started-at="2017-12-25T23:32:11Z" data-provider="UIData" finished-at="2017-12-25T23:32:11Z">
           <params>
             <param index="0">
               <value>
@@ -465,14 +465,14 @@
             </param>
             <param index="4">
               <value>
-                <![CDATA[mgr!23]]>
+                <![CDATA[mgr!2]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- uiTest -->
-        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:core.testCases.HybridExecuteTest@4abdb505]" name="uiTest" duration-ms="112" started-at="2017-12-23T07:50:05Z" data-provider="hybridData" finished-at="2017-12-23T07:50:05Z">
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:core.tests.ExecuteTest@2d64160c]" name="uiTest" duration-ms="113" started-at="2017-12-25T23:32:11Z" data-provider="UIData" finished-at="2017-12-25T23:32:11Z">
           <params>
             <param index="0">
               <value>
@@ -503,7 +503,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- uiTest -->
-        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:core.testCases.HybridExecuteTest@4abdb505]" name="uiTest" duration-ms="709" started-at="2017-12-23T07:50:05Z" data-provider="hybridData" finished-at="2017-12-23T07:50:05Z">
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:core.tests.ExecuteTest@2d64160c]" name="uiTest" duration-ms="719" started-at="2017-12-25T23:32:11Z" data-provider="UIData" finished-at="2017-12-25T23:32:12Z">
           <params>
             <param index="0">
               <value>
@@ -534,7 +534,170 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- uiTest -->
-      </class> <!-- core.testCases.HybridExecuteTest -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:core.tests.ExecuteTest@2d64160c]" name="uiTest" duration-ms="1946" started-at="2017-12-25T23:32:12Z" data-provider="UIData" finished-at="2017-12-25T23:32:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.04 - Check Lenta]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:core.tests.ExecuteTest@2d64160c]" name="uiTest" duration-ms="459" started-at="2017-12-25T23:32:14Z" data-provider="UIData" finished-at="2017-12-25T23:32:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[GOTOURL]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[http://demo.guru99.com/V4/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="FAIL" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:core.tests.ExecuteTest@2d64160c]" name="uiTest" duration-ms="97" started-at="2017-12-25T23:32:15Z" data-provider="UIData" finished-at="2017-12-25T23:32:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[VERIFYTITLE]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[title]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[css]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Enter your email id]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Enter your email id] but found [Guru99 Bank Home Page]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Enter your email id] but found [Guru99 Bank Home Page]at org.testng.Assert.fail(Assert.java:96)at org.testng.Assert.failNotEquals(Assert.java:776)at org.testng.Assert.assertEqualsImpl(Assert.java:137)at org.testng.Assert.assertEquals(Assert.java:118)at org.testng.Assert.assertEquals(Assert.java:453)at org.testng.Assert.assertEquals(Assert.java:463)at core.tests.TestBase.ivRead(TestBase.java:59)at core.tests.ExecuteTest.uiTest(ExecuteTest.java:13)at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)at java.lang.reflect.Method.invoke(Unknown Source)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:core.tests.ExecuteTest@2d64160c]" name="uiTest" duration-ms="3" started-at="2017-12-25T23:32:15Z" data-provider="UIData" finished-at="2017-12-25T23:32:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[lenta]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[css]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:core.tests.ExecuteTest@2d64160c]" name="uiTest" duration-ms="762" started-at="2017-12-25T23:32:15Z" data-provider="UIData" finished-at="2017-12-25T23:32:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[CLOSEBROWSER]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+      </class> <!-- core.tests.ExecuteTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
