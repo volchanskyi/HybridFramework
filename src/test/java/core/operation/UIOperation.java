@@ -1,7 +1,5 @@
 package core.operation;
 
-import static org.testng.Assert.assertEquals;
-
 import java.util.Properties;
 
 import org.openqa.selenium.By;
@@ -17,7 +15,7 @@ public class UIOperation {
 
     public UIOperation(WebDriver driver) {
 	this.driver = driver;
-	wait = new WebDriverWait(driver, 10);
+	wait = new WebDriverWait(driver, 5);
 	// ---------------------------------
 
     }
@@ -32,6 +30,7 @@ public class UIOperation {
 	switch (operation.toUpperCase()) {
 	case "CLICK":
 	    // Perform click
+	    wait.until(ExpectedConditions.visibilityOfElementLocated(this.getObject(p, objectName, objectType)));
 	    clickElem(this.getObject(p, objectName, objectType));
 	    break;
 
@@ -45,18 +44,12 @@ public class UIOperation {
 	    // Get url of application
 	    // driver.get(p.getProperty(value));
 	    driver.get(value);
+	    // Handle "Page not found" and writing errors in Expected results
+	    if (driver.getTitle().contains("404") || driver.getPageSource().contains("404")
+		    || driver.getPageSource().contains("not found")) {
+		return "404 Not Found";
+	    }
 	    return driver.getCurrentUrl();
-
-	// case "GETTEXT":
-	// // Get text of an element
-	// wait.until(ExpectedConditions.visibilityOfElementLocated(this.getObject(p,
-	// objectName, objectType)));
-	// return getText(this.getObject(p, objectName, objectType));
-
-	// case "GETTITLE":
-	// // Get title text of a web page
-	// getTitle(this.getObject(p, objectName, objectType));
-	// break;
 
 	case "VERIFYTITLE":
 	    // Match initial title to the current one
@@ -64,8 +57,12 @@ public class UIOperation {
 	    System.out.println(driver.findElements(this.getObject(p, objectName, objectType)).get(0).getText());
 	    return driver.getTitle();
 
-	    //TODO add Alert window Verification case
-	    
+	case "CLOSEALERT":
+	    // Check if the Confirmation Alert is present and close it
+	    wait.until(ExpectedConditions.alertIsPresent());
+	    String alertMessage = driver.switchTo().alert().getText();
+	    return alertMessage;
+
 	case "CLOSEBROWSER":
 	    // Quit Active Driver!
 	    quit();
@@ -103,10 +100,6 @@ public class UIOperation {
     // Quit driver
     protected void quit() {
 	driver.quit();
-    }
-
-    private String getText(By param) {
-	return driver.findElements(param).get(0).getText();
     }
 
     /**
