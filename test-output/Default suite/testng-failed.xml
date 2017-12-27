@@ -5,7 +5,7 @@
     <classes>
       <class name="core.tests.ExecuteTest">
         <methods>
-          <include name="uiTest" invocation-numbers="22"/>
+          <include name="uiTest" invocation-numbers="0 2 4 5 9 11 13 14 18 19 20 23"/>
         </methods>
       </class> <!-- core.tests.ExecuteTest -->
     </classes>

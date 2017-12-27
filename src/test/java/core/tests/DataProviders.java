@@ -32,6 +32,7 @@ public class DataProviders {
 	    for (int j = 0; j < row.getLastCellNum(); j++) {
 		// Print excel data in console
 		object[i][j] = row.getCell(j).toString();
+//		System.out.println(row.getCell(j).toString());
 	    }
 
 	}

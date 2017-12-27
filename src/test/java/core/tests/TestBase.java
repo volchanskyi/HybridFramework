@@ -1,6 +1,8 @@
 package core.tests;
 
 import static org.testng.Assert.assertEquals;
+import static org.hamcrest.CoreMatchers.*;
+import static org.hamcrest.MatcherAssert.assertThat;
 
 import java.io.IOException;
 import java.util.Properties;
@@ -42,34 +44,21 @@ public class TestBase {
 	}
     }
 
-    // WebDriver driver;
-    // public UIOperation app;
-    // WebDriver driver = null;
-
     // --------------------------
     protected void ivRead(String keyword, String objectName, String objectType, String value)
 	    throws IOException, Exception {
 	ReadObject object = new ReadObject();
 	Properties allObjects = object.getUIObjectRepository();
 	UIOperation operation = new UIOperation(driver);
+
 	// Call perform function to perform operation on UI
-//	operation.perform(allObjects, keyword, objectName, objectType, value);
-	 
-	//TODO use Hamcrest insted of TestNG assertion
-	assertEquals(operation.perform(allObjects, keyword, objectName,
-	 objectType, value), value);
+	//Compare 
+	assertThat(operation.perform(allObjects, keyword, objectName, objectType, value), equalTo(value));
 
     }
 
     //// @BeforeClass
-    //// public void start() throws Exception {
-    //// app = new UIOperation(driver);
-    //// }
-    //
 
     // @AfterTest
-    // public void quit() {
-    // webdriver.quit();
-    // }
 
 }

@@ -2,8 +2,10 @@ package core.operation;
 
 import java.util.Properties;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -20,18 +22,14 @@ public class UIOperation {
 
     }
 
-    public void assertTest(String expected, String actual) {
-
-    }
-
-    public String perform(Properties p, String operation, String objectName, String objectType, String value)
+    public String perform(Properties p, String keyword, String objectName, String objectType, String value)
 	    throws IllegalArgumentException {
 	// System.out.println("");
-	switch (operation.toUpperCase()) {
+	switch (keyword.toUpperCase()) {
 	case "CLICK":
 	    // Perform click
 	    wait.until(ExpectedConditions.visibilityOfElementLocated(this.getObject(p, objectName, objectType)));
-	    clickElem(this.getObject(p, objectName, objectType));
+	    driver.findElements(this.getObject(p, objectName, objectType)).get(0).click();
 	    break;
 
 	case "SETTEXT":
@@ -60,7 +58,10 @@ public class UIOperation {
 	case "CLOSEALERT":
 	    // Check if the Confirmation Alert is present and close it
 	    wait.until(ExpectedConditions.alertIsPresent());
-	    String alertMessage = driver.switchTo().alert().getText();
+	    Alert alert = driver.switchTo().alert();
+	    String alertMessage = alert.getText();
+	    alert.accept();
+	    wait.until(ExpectedConditions.not(ExpectedConditions.alertIsPresent()));
 	    return alertMessage;
 
 	case "CLOSEBROWSER":
@@ -71,19 +72,17 @@ public class UIOperation {
 	default:
 	    break;
 	}
-	return value;
+	
+	return value; 
     }
 
     // Click on the first element in the array of web elements
     protected void clickElem(By param) throws IllegalArgumentException {
-	wait.until(ExpectedConditions.visibilityOfElementLocated(param));
-	driver.findElements(param).get(0).click();
+	
     }
 
     // Send keys in the first element in the array of web elements
     protected void sendKeys(By param, String value) throws IllegalArgumentException {
-	wait.until(ExpectedConditions.visibilityOfElementLocated(param));
-	driver.findElements(param).get(0).sendKeys(value);
 
     }
 
