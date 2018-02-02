@@ -3,11 +3,12 @@
 <suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="core.tests.ExecuteTest">
+      <class name="com.automationpractice.tests.ExecuteTest">
         <methods>
-          <include name="uiTest" invocation-numbers="0 2 4 5 9 11 13 14 18 19 20 23"/>
+          <include name="uiTest" invocation-numbers="19 20 21"/>
+          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- core.tests.ExecuteTest -->
+      </class> <!-- com.automationpractice.tests.ExecuteTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
