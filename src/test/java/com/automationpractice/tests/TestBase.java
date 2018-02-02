@@ -5,22 +5,28 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 import java.io.IOException;
 import java.lang.reflect.Method;
+import java.util.Arrays;
 import java.util.Properties;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.ITest;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 import com.automationpractice.operation.ReadObject;
 import com.automationpractice.operation.UIOperation;
 
+import ch.qos.logback.classic.LoggerContext;
+import ch.qos.logback.core.util.StatusPrinter;
+
 public class TestBase implements ITest{
     WebDriver driver;
     private String testName = "";
+    final Logger logger = LoggerFactory.getLogger(TestBase.class);
 
     public String getTestName() {
         return testName;
@@ -32,6 +38,8 @@ public class TestBase implements ITest{
     //Before test
     @BeforeMethod(alwaysRun = true)
     public void beforeMethod(Method method, Object[] parameters) {
+//	System.setProperty("logback.configurationFile", ".\\resources\\logback.xml");
+	logger.debug("Start test " + method.getName() + " with params" + Arrays.asList(parameters));
         setTestName(method.getName());
         Override a = method.getAnnotation(Override.class);
         String testCaseId = (String) parameters[a.id()];
@@ -42,12 +50,14 @@ public class TestBase implements ITest{
         }
     }
     
+    
+    
     protected void ivRun(String testcaseName) {
 	if (testcaseName != null && testcaseName.length() != 0) {
 	    // driver = new ChromeDriver();
 	    // ------------------
-	    Logger logger = Logger.getLogger("");
-	    logger.setLevel(Level.WARNING);
+//	    Logger logger = Logger.getLogger("");
+//	    logger.setLevel(Level.WARNING);
 	    ChromeOptions option = new ChromeOptions();
 	    String driverPath = "";
 	    if (System.getProperty("os.name").toUpperCase().contains("MAC")) {
@@ -80,9 +90,19 @@ public class TestBase implements ITest{
 
     }
 
+   @AfterMethod(alwaysRun = true)
+       public void logTestStop(Method method) {
+	   logger.debug("Stop test " + method.getName());
+	   
+	   
+	   LoggerContext lc = (LoggerContext) LoggerFactory.getILoggerFactory();
+	   // print logback's internal status
+	   StatusPrinter.print(lc);
+	   //TODO add close browser method
+	   }
    
 
-    //// @BeforeClass
+    // @BeforeClass
 
     // @AfterTest
 
