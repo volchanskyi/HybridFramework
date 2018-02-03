@@ -23,40 +23,35 @@ import com.automationpractice.operation.UIOperation;
 import ch.qos.logback.classic.LoggerContext;
 import ch.qos.logback.core.util.StatusPrinter;
 
-public class TestBase implements ITest{
+public class TestBase implements ITest {
     WebDriver driver;
     private String testName = "";
     final Logger logger = LoggerFactory.getLogger(TestBase.class);
 
     public String getTestName() {
-        return testName;
+	return testName;
     }
 
     private void setTestName(String param) {
-        testName = param;
+	testName = param;
     }
-    //Before test
+
+    // Before test
     @BeforeMethod(alwaysRun = true)
     public void beforeMethod(Method method, Object[] parameters) {
 	logger.debug("Start test " + method.getName() + " with params" + Arrays.asList(parameters));
-        setTestName(method.getName());
-        Override a = method.getAnnotation(Override.class);
-        String testCaseId = (String) parameters[a.id()];
-        if (testCaseId != null && testCaseId.length() != 0) {
-        setTestName(testCaseId);
-        } else {
-            setTestName((String) parameters[a.id()]);
-        }
+	setTestName(method.getName());
+	Override a = method.getAnnotation(Override.class);
+	String testCaseId = (String) parameters[a.id()];
+	if (testCaseId != null && testCaseId.length() != 0) {
+	    setTestName(testCaseId);
+	} else {
+	    setTestName((String) parameters[a.id()]);
+	}
     }
-    
-    
-    
+
     protected void ivRun(String testcaseName) {
 	if (testcaseName != null && testcaseName.length() != 0) {
-	    // driver = new ChromeDriver();
-	    // ------------------
-//	    Logger logger = Logger.getLogger("");
-//	    logger.setLevel(Level.WARNING);
 	    ChromeOptions option = new ChromeOptions();
 	    String driverPath = "";
 	    if (System.getProperty("os.name").toUpperCase().contains("MAC")) {
@@ -84,22 +79,20 @@ public class TestBase implements ITest{
 	UIOperation operation = new UIOperation(driver);
 
 	// Call perform function to perform operation on UI
-	//Verify 
+	// Verify
 	assertThat(operation.perform(allObjects, keyword, objectName, objectType, value), equalTo(value));
 
     }
 
-   @AfterMethod(alwaysRun = true)
-       public void logTestStop(Method method) {
-	   logger.debug("Stop test " + method.getName());
-	   
-	   
-	   LoggerContext lc = (LoggerContext) LoggerFactory.getILoggerFactory();
-	   // print logback's internal status
-	   StatusPrinter.print(lc);
-	   //TODO add close browser method
-	   }
-   
+    @AfterMethod(alwaysRun = true)
+    public void logTestStop(Method method) {
+	logger.debug("Stop test " + method.getName());
+
+//	LoggerContext lc = (LoggerContext) LoggerFactory.getILoggerFactory();
+//	// print logback's internal status
+//	StatusPrinter.print(lc);
+	// TODO add close browser method
+    }
 
     // @BeforeClass
 
