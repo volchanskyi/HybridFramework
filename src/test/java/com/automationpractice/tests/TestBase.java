@@ -38,7 +38,6 @@ public class TestBase implements ITest{
     //Before test
     @BeforeMethod(alwaysRun = true)
     public void beforeMethod(Method method, Object[] parameters) {
-//	System.setProperty("logback.configurationFile", ".\\resources\\logback.xml");
 	logger.debug("Start test " + method.getName() + " with params" + Arrays.asList(parameters));
         setTestName(method.getName());
         Override a = method.getAnnotation(Override.class);
@@ -61,10 +60,10 @@ public class TestBase implements ITest{
 	    ChromeOptions option = new ChromeOptions();
 	    String driverPath = "";
 	    if (System.getProperty("os.name").toUpperCase().contains("MAC")) {
-		driverPath = "./resources/webdrivers/mac/chromedriver";
+		driverPath = "./src/test/resources/webdrivers/mac/chromedriver";
 		option.addArguments("-start-fullscreen");
 	    } else if (System.getProperty("os.name").toUpperCase().contains("WINDOWS")) {
-		driverPath = "./resources/webdrivers/pc/chromedriver.exe";
+		driverPath = "./src/test/resources/webdrivers/pc/chromedriver.exe";
 		option.addArguments("--start-maximized");
 	    } else
 		throw new IllegalArgumentException("Unknown OS");
