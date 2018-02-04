@@ -7,21 +7,18 @@ import java.io.IOException;
 import java.lang.reflect.Method;
 import java.util.Arrays;
 import java.util.Properties;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.testng.ITest;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 import com.automationpractice.operation.ReadObject;
 import com.automationpractice.operation.UIOperation;
-
-import ch.qos.logback.classic.LoggerContext;
-import ch.qos.logback.core.util.StatusPrinter;
 
 public class TestBase implements ITest {
     WebDriver driver;
@@ -50,7 +47,10 @@ public class TestBase implements ITest {
 	}
     }
 
-    protected void ivRun(String testcaseName) {
+    
+//TODO add pasing browser name param(extend init method)
+    protected void init(String testcaseName) {
+	
 	if (testcaseName != null && testcaseName.length() != 0) {
 	    ChromeOptions option = new ChromeOptions();
 	    String driverPath = "";
@@ -72,7 +72,7 @@ public class TestBase implements ITest {
     }
 
     // --------------------------
-    protected void ivRead(String keyword, String objectName, String objectType, String value)
+    protected void app(String keyword, String objectName, String objectType, String value)
 	    throws IOException, Exception {
 	ReadObject object = new ReadObject();
 	Properties allObjects = object.getUIObjectRepository();
@@ -87,11 +87,6 @@ public class TestBase implements ITest {
     @AfterMethod(alwaysRun = true)
     public void logTestStop(Method method) {
 	logger.debug("Stop test " + method.getName());
-
-//	LoggerContext lc = (LoggerContext) LoggerFactory.getILoggerFactory();
-//	// print logback's internal status
-//	StatusPrinter.print(lc);
-	// TODO add close browser method
     }
 
     // @BeforeClass

@@ -10,10 +10,7 @@ import com.automationpractice.interfaceBridge.TCreader;
 
 public class DataProviders {
 
-    // public DataProviders() {
-    // super();
-    // }
-//    TODO print only NOT empty strings
+    // TODO print only NOT empty strings
     // TODO create API DataProvvider
     @DataProvider(name = "UIData")
     public Object[][] getDataFromDataprovider() throws IOException {
@@ -32,11 +29,9 @@ public class DataProviders {
 	    for (int j = 0; j < row.getLastCellNum(); j++) {
 		// Print excel data in console
 		object[i][j] = row.getCell(j).toString();
-//		System.out.println(row.getCell(j).toString());
 	    }
 
 	}
-	// System.out.println("");
 	return object;
     }
 
