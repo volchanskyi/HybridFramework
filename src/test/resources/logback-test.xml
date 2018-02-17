@@ -3,9 +3,16 @@
 
 <!-- add appender -->
 <appender name="htmlAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
-    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+
+<!-- FILTER -->
+<!-- <filter clss="ch.qos.logback.classic.ThresholdFilter">
+<level>ERROR</level>
+</filter> -->
+
         <!-- file name in the root dir -->
         <fileNamePattern>log-%d{yyyy-MM-dd-hh-mm}.html</fileNamePattern>
+        
         <!-- retention policy -->
         <maxHistory>14</maxHistory> 
         <totalSizeCap>1GB</totalSizeCap>
@@ -19,8 +26,9 @@
     </layout>
     </encoder>
 </appender>
+
 <!-- enable appender + assign log level-->
-  <root level="debug">
+  <root level="INFO">
   <appender-ref ref="htmlAppender" />
   </root>
 </configuration>
