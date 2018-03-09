@@ -2,8 +2,8 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="TestNG Suite">
 	<!-- <test name="UIData"> -->
-	<!-- CHROME -->
-	<test name="ChromeTest">
+
+	<test name="SmokeTEst">
 	<parameter name="browser" value"Chrome" />
 		<classes>
 			<class name="com.automationpractice.HybridExecuteTest" />
@@ -11,7 +11,7 @@
 	</test>
 	
 	<!-- FIREFOX -->
-	<test name="FirefoxTest">
+	<test name="Regression">
 	<parameter name="browser" value"Firefox" />
 		<classes>
 			<class name="com.automationpractice.HybridExecuteTest" />

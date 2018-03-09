@@ -27,7 +27,7 @@
     </encoder>
 </appender>
 
-<!-- enable appender + assign log level-->
+<!-- enable appender + assign log level(to see in the report)-->
   <root level="INFO">
   <appender-ref ref="htmlAppender" />
   </root>

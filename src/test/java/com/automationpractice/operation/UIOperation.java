@@ -14,6 +14,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.google.common.base.Objects;
 
+import com.automationpractice.tests.*;
+
 public class UIOperation {
 
     protected WebDriver driver;
@@ -162,6 +164,10 @@ public class UIOperation {
 
 	case "CLOSEBROWSER":
 	    // Quit Active Driver!
+	    
+	    //TODO FIX THIS Boolshit!!!
+	    TestBase.setTestName("");
+	    //-------------------------
 	    quit();
 	    break;
 
@@ -171,7 +177,7 @@ public class UIOperation {
 
 	return value;
     }
-
+   
     // Click on the first element in the array of web elements
     protected void clickElem(By param) throws IllegalArgumentException {
 
@@ -193,7 +199,7 @@ public class UIOperation {
     }
 
     // Quit driver
-    protected void quit() {
+    private void quit() {
 	driver.quit();
     }
 

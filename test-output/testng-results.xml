@@ -1,29 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="23" passed="23">
+<testng-results skipped="0" failed="0" ignored="0" total="46" passed="46">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="40061" started-at="2018-02-04T06:13:18Z" finished-at="2018-02-04T06:13:58Z">
+  <suite name="Default suite" duration-ms="70365" started-at="2018-03-09T04:35:29Z" finished-at="2018-03-09T04:36:39Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="40061" started-at="2018-02-04T06:13:18Z" finished-at="2018-02-04T06:13:58Z">
+    <test name="Default test" duration-ms="70365" started-at="2018-03-09T04:35:29Z" finished-at="2018-03-09T04:36:39Z">
       <class name="com.automationpractice.tests.ExecuteTest">
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="beforeMethod" is-config="true" duration-ms="32" started-at="2018-02-03T22:13:21Z" finished-at="2018-02-03T22:13:21Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@452115b1]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="uiTest" duration-ms="5387" started-at="2018-02-03T22:13:21Z" data-provider="UIData" finished-at="2018-02-03T22:13:26Z">
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@6c8efde4]" test-instance-name="" name="uiTest" duration-ms="9263" started-at="2018-03-09T04:35:32Z" data-provider="UIData" finished-at="2018-03-09T04:35:41Z">
           <params>
             <param index="0">
               <value>
@@ -54,38 +38,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- uiTest -->
-        <test-method status="PASS" signature="logTestStop(java.lang.reflect.Method)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="logTestStop" is-config="true" duration-ms="0" started-at="2018-02-03T22:13:26Z" finished-at="2018-02-03T22:13:26Z">
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@6c8efde4]" test-instance-name="" name="uiTest" duration-ms="6017" started-at="2018-03-09T04:35:41Z" data-provider="UIData" finished-at="2018-03-09T04:35:47Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logTestStop -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-02-03T22:13:26Z" finished-at="2018-02-03T22:13:26Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@e0957b5]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="uiTest" duration-ms="8139" started-at="2018-02-03T22:13:26Z" data-provider="UIData" finished-at="2018-02-03T22:13:34Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[]]>
+                <![CDATA[TC # 01.01]]>
               </value>
             </param>
             <param index="1">
@@ -112,38 +69,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- uiTest -->
-        <test-method status="PASS" signature="logTestStop(java.lang.reflect.Method)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="logTestStop" is-config="true" duration-ms="1" started-at="2018-02-03T22:13:34Z" finished-at="2018-02-03T22:13:34Z">
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@6c8efde4]" test-instance-name="" name="uiTest" duration-ms="159" started-at="2018-03-09T04:35:47Z" data-provider="UIData" finished-at="2018-03-09T04:35:47Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logTestStop -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-02-03T22:13:34Z" finished-at="2018-02-03T22:13:34Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@7fe3ee59]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="uiTest" duration-ms="74" started-at="2018-02-03T22:13:34Z" data-provider="UIData" finished-at="2018-02-03T22:13:34Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[]]>
+                <![CDATA[TC # 01.01]]>
               </value>
             </param>
             <param index="1">
@@ -170,38 +100,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- uiTest -->
-        <test-method status="PASS" signature="logTestStop(java.lang.reflect.Method)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="logTestStop" is-config="true" duration-ms="1" started-at="2018-02-03T22:13:34Z" finished-at="2018-02-03T22:13:34Z">
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@6c8efde4]" test-instance-name="" name="uiTest" duration-ms="2135" started-at="2018-03-09T04:35:47Z" data-provider="UIData" finished-at="2018-03-09T04:35:49Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logTestStop -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-02-03T22:13:34Z" finished-at="2018-02-03T22:13:34Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@5d65a2f1]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="uiTest" duration-ms="2181" started-at="2018-02-03T22:13:34Z" data-provider="UIData" finished-at="2018-02-03T22:13:36Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[]]>
+                <![CDATA[TC # 01.01]]>
               </value>
             </param>
             <param index="1">
@@ -228,38 +131,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- uiTest -->
-        <test-method status="PASS" signature="logTestStop(java.lang.reflect.Method)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="logTestStop" is-config="true" duration-ms="1" started-at="2018-02-03T22:13:36Z" finished-at="2018-02-03T22:13:36Z">
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@6c8efde4]" test-instance-name="" name="uiTest" duration-ms="39" started-at="2018-03-09T04:35:49Z" data-provider="UIData" finished-at="2018-03-09T04:35:49Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logTestStop -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="beforeMethod" is-config="true" duration-ms="2" started-at="2018-02-03T22:13:36Z" finished-at="2018-02-03T22:13:36Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@1024b871]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="uiTest" duration-ms="39" started-at="2018-02-03T22:13:36Z" data-provider="UIData" finished-at="2018-02-03T22:13:37Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[]]>
+                <![CDATA[TC # 01.01]]>
               </value>
             </param>
             <param index="1">
@@ -286,38 +162,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- uiTest -->
-        <test-method status="PASS" signature="logTestStop(java.lang.reflect.Method)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="logTestStop" is-config="true" duration-ms="1" started-at="2018-02-03T22:13:37Z" finished-at="2018-02-03T22:13:37Z">
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@6c8efde4]" test-instance-name="" name="uiTest" duration-ms="394" started-at="2018-03-09T04:35:49Z" data-provider="UIData" finished-at="2018-03-09T04:35:50Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logTestStop -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-02-03T22:13:37Z" finished-at="2018-02-03T22:13:37Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@5454e13f]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="uiTest" duration-ms="210" started-at="2018-02-03T22:13:37Z" data-provider="UIData" finished-at="2018-02-03T22:13:37Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[]]>
+                <![CDATA[TC # 01.01]]>
               </value>
             </param>
             <param index="1">
@@ -344,38 +193,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- uiTest -->
-        <test-method status="PASS" signature="logTestStop(java.lang.reflect.Method)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="logTestStop" is-config="true" duration-ms="1" started-at="2018-02-03T22:13:37Z" finished-at="2018-02-03T22:13:37Z">
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@6c8efde4]" test-instance-name="" name="uiTest" duration-ms="450" started-at="2018-03-09T04:35:50Z" data-provider="UIData" finished-at="2018-03-09T04:35:50Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logTestStop -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-02-03T22:13:37Z" finished-at="2018-02-03T22:13:37Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@34a55cca]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="uiTest" duration-ms="176" started-at="2018-02-03T22:13:37Z" data-provider="UIData" finished-at="2018-02-03T22:13:37Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[]]>
+                <![CDATA[TC # 01.01]]>
               </value>
             </param>
             <param index="1">
@@ -402,38 +224,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- uiTest -->
-        <test-method status="PASS" signature="logTestStop(java.lang.reflect.Method)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="logTestStop" is-config="true" duration-ms="2" started-at="2018-02-03T22:13:37Z" finished-at="2018-02-03T22:13:37Z">
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@6c8efde4]" test-instance-name="" name="uiTest" duration-ms="1296" started-at="2018-03-09T04:35:50Z" data-provider="UIData" finished-at="2018-03-09T04:35:52Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logTestStop -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-02-03T22:13:37Z" finished-at="2018-02-03T22:13:37Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@44a70285]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="uiTest" duration-ms="1139" started-at="2018-02-03T22:13:37Z" data-provider="UIData" finished-at="2018-02-03T22:13:38Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[]]>
+                <![CDATA[TC # 01.01]]>
               </value>
             </param>
             <param index="1">
@@ -460,38 +255,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- uiTest -->
-        <test-method status="PASS" signature="logTestStop(java.lang.reflect.Method)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="logTestStop" is-config="true" duration-ms="1" started-at="2018-02-03T22:13:38Z" finished-at="2018-02-03T22:13:38Z">
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@6c8efde4]" test-instance-name="" name="uiTest" duration-ms="33" started-at="2018-03-09T04:35:52Z" data-provider="UIData" finished-at="2018-03-09T04:35:52Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logTestStop -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-02-03T22:13:38Z" finished-at="2018-02-03T22:13:38Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@71f5dd50]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="uiTest" duration-ms="41" started-at="2018-02-03T22:13:38Z" data-provider="UIData" finished-at="2018-02-03T22:13:38Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[]]>
+                <![CDATA[TC # 01.01]]>
               </value>
             </param>
             <param index="1">
@@ -518,38 +286,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- uiTest -->
-        <test-method status="PASS" signature="logTestStop(java.lang.reflect.Method)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="logTestStop" is-config="true" duration-ms="1" started-at="2018-02-03T22:13:38Z" finished-at="2018-02-03T22:13:38Z">
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@6c8efde4]" test-instance-name="" name="uiTest" duration-ms="453" started-at="2018-03-09T04:35:52Z" data-provider="UIData" finished-at="2018-03-09T04:35:52Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logTestStop -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-02-03T22:13:38Z" finished-at="2018-02-03T22:13:38Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@25b8748]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="uiTest" duration-ms="234" started-at="2018-02-03T22:13:38Z" data-provider="UIData" finished-at="2018-02-03T22:13:38Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[]]>
+                <![CDATA[TC # 01.01]]>
               </value>
             </param>
             <param index="1">
@@ -576,22 +317,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- uiTest -->
-        <test-method status="PASS" signature="logTestStop(java.lang.reflect.Method)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="logTestStop" is-config="true" duration-ms="1" started-at="2018-02-03T22:13:38Z" finished-at="2018-02-03T22:13:38Z">
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@6c8efde4]" test-instance-name="" name="uiTest" duration-ms="1657" started-at="2018-03-09T04:35:52Z" data-provider="UIData" finished-at="2018-03-09T04:35:54Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logTestStop -->
-        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="uiTest" duration-ms="1853" started-at="2018-02-03T22:13:38Z" data-provider="UIData" finished-at="2018-02-03T22:13:40Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[]]>
+                <![CDATA[TC # 01.01]]>
               </value>
             </param>
             <param index="1">
@@ -618,38 +348,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- uiTest -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-02-03T22:13:38Z" finished-at="2018-02-03T22:13:38Z">
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@6c8efde4]" test-instance-name="" name="uiTest" duration-ms="1855" started-at="2018-03-09T04:35:54Z" data-provider="UIData" finished-at="2018-03-09T04:35:56Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@1c06c8c5]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="logTestStop(java.lang.reflect.Method)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="logTestStop" is-config="true" duration-ms="0" started-at="2018-02-03T22:13:40Z" finished-at="2018-02-03T22:13:40Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logTestStop -->
-        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="uiTest" duration-ms="2267" started-at="2018-02-03T22:13:40Z" data-provider="UIData" finished-at="2018-02-03T22:13:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[]]>
+                <![CDATA[TC # 01.01]]>
               </value>
             </param>
             <param index="1">
@@ -676,38 +379,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- uiTest -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-02-03T22:13:40Z" finished-at="2018-02-03T22:13:40Z">
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@6c8efde4]" test-instance-name="" name="uiTest" duration-ms="380" started-at="2018-03-09T04:35:56Z" data-provider="UIData" finished-at="2018-03-09T04:35:56Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@60c952ea]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="logTestStop(java.lang.reflect.Method)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="logTestStop" is-config="true" duration-ms="1" started-at="2018-02-03T22:13:42Z" finished-at="2018-02-03T22:13:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logTestStop -->
-        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="uiTest" duration-ms="195" started-at="2018-02-03T22:13:42Z" data-provider="UIData" finished-at="2018-02-03T22:13:43Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[]]>
+                <![CDATA[TC # 01.01]]>
               </value>
             </param>
             <param index="1">
@@ -734,38 +410,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- uiTest -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-02-03T22:13:42Z" finished-at="2018-02-03T22:13:42Z">
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@6c8efde4]" test-instance-name="" name="uiTest" duration-ms="984" started-at="2018-03-09T04:35:56Z" data-provider="UIData" finished-at="2018-03-09T04:35:57Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@3f891cfe]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="logTestStop(java.lang.reflect.Method)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="logTestStop" is-config="true" duration-ms="1" started-at="2018-02-03T22:13:43Z" finished-at="2018-02-03T22:13:43Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logTestStop -->
-        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="uiTest" duration-ms="1714" started-at="2018-02-03T22:13:43Z" data-provider="UIData" finished-at="2018-02-03T22:13:44Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[]]>
+                <![CDATA[TC # 01.01]]>
               </value>
             </param>
             <param index="1">
@@ -792,38 +441,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- uiTest -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-02-03T22:13:43Z" finished-at="2018-02-03T22:13:43Z">
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@6c8efde4]" test-instance-name="" name="uiTest" duration-ms="1802" started-at="2018-03-09T04:35:57Z" data-provider="UIData" finished-at="2018-03-09T04:35:59Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@6136bd80]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="logTestStop(java.lang.reflect.Method)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="logTestStop" is-config="true" duration-ms="0" started-at="2018-02-03T22:13:44Z" finished-at="2018-02-03T22:13:44Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logTestStop -->
-        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="uiTest" duration-ms="3920" started-at="2018-02-03T22:13:44Z" data-provider="UIData" finished-at="2018-02-03T22:13:48Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[]]>
+                <![CDATA[TC # 01.01]]>
               </value>
             </param>
             <param index="1">
@@ -850,54 +472,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- uiTest -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-02-03T22:13:44Z" finished-at="2018-02-03T22:13:44Z">
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@6c8efde4]" test-instance-name="" name="uiTest" duration-ms="3573" started-at="2018-03-09T04:35:59Z" data-provider="UIData" finished-at="2018-03-09T04:36:02Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@4b5c0183]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="logTestStop(java.lang.reflect.Method)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="logTestStop" is-config="true" duration-ms="1" started-at="2018-02-03T22:13:48Z" finished-at="2018-02-03T22:13:48Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logTestStop -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-02-03T22:13:48Z" finished-at="2018-02-03T22:13:48Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@61284400]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="uiTest" duration-ms="2776" started-at="2018-02-03T22:13:48Z" data-provider="UIData" finished-at="2018-02-03T22:13:51Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[]]>
+                <![CDATA[TC # 01.01]]>
               </value>
             </param>
             <param index="1">
@@ -924,38 +503,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- uiTest -->
-        <test-method status="PASS" signature="logTestStop(java.lang.reflect.Method)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="logTestStop" is-config="true" duration-ms="0" started-at="2018-02-03T22:13:51Z" finished-at="2018-02-03T22:13:51Z">
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@6c8efde4]" test-instance-name="" name="uiTest" duration-ms="2608" started-at="2018-03-09T04:36:02Z" data-provider="UIData" finished-at="2018-03-09T04:36:05Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logTestStop -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-02-03T22:13:51Z" finished-at="2018-02-03T22:13:51Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@1631da37]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="uiTest" duration-ms="1724" started-at="2018-02-03T22:13:51Z" data-provider="UIData" finished-at="2018-02-03T22:13:53Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[]]>
+                <![CDATA[TC # 01.01]]>
               </value>
             </param>
             <param index="1">
@@ -982,38 +534,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- uiTest -->
-        <test-method status="PASS" signature="logTestStop(java.lang.reflect.Method)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="logTestStop" is-config="true" duration-ms="1" started-at="2018-02-03T22:13:53Z" finished-at="2018-02-03T22:13:53Z">
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@6c8efde4]" test-instance-name="" name="uiTest" duration-ms="1467" started-at="2018-03-09T04:36:05Z" data-provider="UIData" finished-at="2018-03-09T04:36:06Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logTestStop -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-02-03T22:13:53Z" finished-at="2018-02-03T22:13:53Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@42bfafcc]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="uiTest" duration-ms="1204" started-at="2018-02-03T22:13:53Z" data-provider="UIData" finished-at="2018-02-03T22:13:54Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[]]>
+                <![CDATA[TC # 01.01]]>
               </value>
             </param>
             <param index="1">
@@ -1040,38 +565,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- uiTest -->
-        <test-method status="PASS" signature="logTestStop(java.lang.reflect.Method)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="logTestStop" is-config="true" duration-ms="1" started-at="2018-02-03T22:13:54Z" finished-at="2018-02-03T22:13:54Z">
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@6c8efde4]" test-instance-name="" name="uiTest" duration-ms="330" started-at="2018-03-09T04:36:06Z" data-provider="UIData" finished-at="2018-03-09T04:36:07Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logTestStop -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-02-03T22:13:54Z" finished-at="2018-02-03T22:13:54Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@69c4fe01]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="uiTest" duration-ms="162" started-at="2018-02-03T22:13:54Z" data-provider="UIData" finished-at="2018-02-03T22:13:54Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[]]>
+                <![CDATA[TC # 01.01]]>
               </value>
             </param>
             <param index="1">
@@ -1098,38 +596,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- uiTest -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-02-03T22:13:54Z" finished-at="2018-02-03T22:13:54Z">
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@6c8efde4]" test-instance-name="" name="uiTest" duration-ms="2031" started-at="2018-03-09T04:36:07Z" data-provider="UIData" finished-at="2018-03-09T04:36:09Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@4a6faf7d]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="logTestStop(java.lang.reflect.Method)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="logTestStop" is-config="true" duration-ms="0" started-at="2018-02-03T22:13:54Z" finished-at="2018-02-03T22:13:54Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logTestStop -->
-        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="uiTest" duration-ms="2844" started-at="2018-02-03T22:13:54Z" data-provider="UIData" finished-at="2018-02-03T22:13:57Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[]]>
+                <![CDATA[TC # 01.01]]>
               </value>
             </param>
             <param index="1">
@@ -1156,22 +627,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- uiTest -->
-        <test-method status="PASS" signature="logTestStop(java.lang.reflect.Method)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="logTestStop" is-config="true" duration-ms="1" started-at="2018-02-03T22:13:57Z" finished-at="2018-02-03T22:13:57Z">
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@6c8efde4]" test-instance-name="" name="uiTest" duration-ms="341" started-at="2018-03-09T04:36:09Z" data-provider="UIData" finished-at="2018-03-09T04:36:09Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logTestStop -->
-        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="uiTest" duration-ms="97" started-at="2018-02-03T22:13:57Z" data-provider="UIData" finished-at="2018-02-03T22:13:57Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[]]>
+                <![CDATA[TC # 01.01]]>
               </value>
             </param>
             <param index="1">
@@ -1198,54 +658,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- uiTest -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-02-03T22:13:57Z" finished-at="2018-02-03T22:13:57Z">
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@6c8efde4]" test-instance-name="" name="uiTest" duration-ms="73" started-at="2018-03-09T04:36:09Z" data-provider="UIData" finished-at="2018-03-09T04:36:09Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@52972465]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="logTestStop(java.lang.reflect.Method)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="logTestStop" is-config="true" duration-ms="1" started-at="2018-02-03T22:13:57Z" finished-at="2018-02-03T22:13:57Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logTestStop -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-02-03T22:13:57Z" finished-at="2018-02-03T22:13:57Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@6d692034]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="uiTest" duration-ms="49" started-at="2018-02-03T22:13:57Z" data-provider="UIData" finished-at="2018-02-03T22:13:57Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[]]>
+                <![CDATA[TC # 01.01]]>
               </value>
             </param>
             <param index="1">
@@ -1272,34 +689,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- uiTest -->
-        <test-method status="PASS" signature="logTestStop(java.lang.reflect.Method)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="logTestStop" is-config="true" duration-ms="1" started-at="2018-02-03T22:13:57Z" finished-at="2018-02-03T22:13:57Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logTestStop -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-02-03T22:13:57Z" finished-at="2018-02-03T22:13:57Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@2393ef6e]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="uiTest" duration-ms="792" started-at="2018-02-03T22:13:57Z" data-provider="UIData" finished-at="2018-02-03T22:13:58Z">
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@6c8efde4]" test-instance-name="" name="uiTest" duration-ms="770" started-at="2018-03-09T04:36:09Z" data-provider="UIData" finished-at="2018-03-09T04:36:10Z">
           <params>
             <param index="0">
               <value>
@@ -1330,17 +720,719 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- uiTest -->
-        <test-method status="PASS" signature="logTestStop(java.lang.reflect.Method)[pri:0, instance:com.automationpractice.tests.ExecuteTest@9b2dc56]" test-instance-name="" name="logTestStop" is-config="true" duration-ms="0" started-at="2018-02-03T22:13:58Z" finished-at="2018-02-03T22:13:58Z">
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@6c8efde4]" test-instance-name="" name="uiTest" duration-ms="3078" started-at="2018-03-09T04:36:10Z" data-provider="UIData" finished-at="2018-03-09T04:36:13Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+                <![CDATA[TC # 01.02 - Test]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logTestStop -->
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@6c8efde4]" test-instance-name="" name="uiTest" duration-ms="5272" started-at="2018-03-09T04:36:13Z" data-provider="UIData" finished-at="2018-03-09T04:36:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[GOTOURL]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[http://automationpractice.com/index.php]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@6c8efde4]" test-instance-name="" name="uiTest" duration-ms="47" started-at="2018-03-09T04:36:18Z" data-provider="UIData" finished-at="2018-03-09T04:36:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[VERIFYTITLE]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[title]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[css]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[My Store]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@6c8efde4]" test-instance-name="" name="uiTest" duration-ms="1941" started-at="2018-03-09T04:36:18Z" data-provider="UIData" finished-at="2018-03-09T04:36:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[CLICK]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[loginButton]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[link]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@6c8efde4]" test-instance-name="" name="uiTest" duration-ms="33" started-at="2018-03-09T04:36:20Z" data-provider="UIData" finished-at="2018-03-09T04:36:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[VERIFYTITLE]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[title]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[css]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Login - My Store]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@6c8efde4]" test-instance-name="" name="uiTest" duration-ms="530" started-at="2018-03-09T04:36:20Z" data-provider="UIData" finished-at="2018-03-09T04:36:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SETTEXT]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[username]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[css]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[volchanskij@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@6c8efde4]" test-instance-name="" name="uiTest" duration-ms="269" started-at="2018-03-09T04:36:21Z" data-provider="UIData" finished-at="2018-03-09T04:36:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SETTEXT]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[css]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[testPWD001]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@6c8efde4]" test-instance-name="" name="uiTest" duration-ms="1258" started-at="2018-03-09T04:36:21Z" data-provider="UIData" finished-at="2018-03-09T04:36:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[CLICK]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[shopLoginButton]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[css]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@6c8efde4]" test-instance-name="" name="uiTest" duration-ms="33" started-at="2018-03-09T04:36:22Z" data-provider="UIData" finished-at="2018-03-09T04:36:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[VERIFYTITLE]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[title]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[css]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[My account - My Store]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@6c8efde4]" test-instance-name="" name="uiTest" duration-ms="302" started-at="2018-03-09T04:36:22Z" data-provider="UIData" finished-at="2018-03-09T04:36:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SETTEXT]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[searchField]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[css]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Printed Summer Dress]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@6c8efde4]" test-instance-name="" name="uiTest" duration-ms="2238" started-at="2018-03-09T04:36:23Z" data-provider="UIData" finished-at="2018-03-09T04:36:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[CLICK]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[searchButton]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[css]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@6c8efde4]" test-instance-name="" name="uiTest" duration-ms="2076" started-at="2018-03-09T04:36:25Z" data-provider="UIData" finished-at="2018-03-09T04:36:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SELECTITEM]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[items]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[css]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Printed Summer Dress]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@6c8efde4]" test-instance-name="" name="uiTest" duration-ms="399" started-at="2018-03-09T04:36:27Z" data-provider="UIData" finished-at="2018-03-09T04:36:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[CLICK]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[addToCartButton]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[css]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@6c8efde4]" test-instance-name="" name="uiTest" duration-ms="1045" started-at="2018-03-09T04:36:28Z" data-provider="UIData" finished-at="2018-03-09T04:36:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[CLICK]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[closeOverlayButton]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[css]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@6c8efde4]" test-instance-name="" name="uiTest" duration-ms="1910" started-at="2018-03-09T04:36:29Z" data-provider="UIData" finished-at="2018-03-09T04:36:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[CLICK]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[homeButton]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[css]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@6c8efde4]" test-instance-name="" name="uiTest" duration-ms="2222" started-at="2018-03-09T04:36:30Z" data-provider="UIData" finished-at="2018-03-09T04:36:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[CLICK]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[shopByCategory]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[xpath]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@6c8efde4]" test-instance-name="" name="uiTest" duration-ms="1704" started-at="2018-03-09T04:36:33Z" data-provider="UIData" finished-at="2018-03-09T04:36:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[CLICK]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[subCategory]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[xpath]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@6c8efde4]" test-instance-name="" name="uiTest" duration-ms="1569" started-at="2018-03-09T04:36:34Z" data-provider="UIData" finished-at="2018-03-09T04:36:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SELECTITEM]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[items]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[css]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Printed Dress]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@6c8efde4]" test-instance-name="" name="uiTest" duration-ms="325" started-at="2018-03-09T04:36:36Z" data-provider="UIData" finished-at="2018-03-09T04:36:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[CLICK]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[addToCartButton]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[css]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@6c8efde4]" test-instance-name="" name="uiTest" duration-ms="1890" started-at="2018-03-09T04:36:36Z" data-provider="UIData" finished-at="2018-03-09T04:36:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[CLICK]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[proceedToCheckoutButton]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[css]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@6c8efde4]" test-instance-name="" name="uiTest" duration-ms="135" started-at="2018-03-09T04:36:38Z" data-provider="UIData" finished-at="2018-03-09T04:36:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[VERIFYITEMS]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[cartItems]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[css]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Printed Dress]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@6c8efde4]" test-instance-name="" name="uiTest" duration-ms="97" started-at="2018-03-09T04:36:38Z" data-provider="UIData" finished-at="2018-03-09T04:36:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[VERIFYITEMS]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[cartItems]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[css]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Printed Summer Dress]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@6c8efde4]" test-instance-name="" name="uiTest" duration-ms="631" started-at="2018-03-09T04:36:38Z" data-provider="UIData" finished-at="2018-03-09T04:36:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[CLOSEBROWSER]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
       </class> <!-- com.automationpractice.tests.ExecuteTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

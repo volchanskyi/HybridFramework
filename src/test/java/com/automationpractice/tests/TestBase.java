@@ -11,6 +11,8 @@ import java.util.Properties;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.ITest;
@@ -21,37 +23,63 @@ import com.automationpractice.operation.ReadObject;
 import com.automationpractice.operation.UIOperation;
 
 public class TestBase implements ITest {
-    WebDriver driver;
-    private String testName = "";
-    final Logger logger = LoggerFactory.getLogger(TestBase.class);
+    private WebDriver driver;
+    private static String testName = "";
+    final private Logger logger = LoggerFactory.getLogger(TestBase.class);
 
     public String getTestName() {
 	return testName;
     }
 
-    private void setTestName(String param) {
+    public static void setTestName(String param) {
 	testName = param;
     }
 
-    // Before test
+    // Runs everytime when takes new params from the XLS
     @BeforeMethod(alwaysRun = true)
-    public void beforeMethod(Method method, Object[] parameters) {
-	logger.debug("Start test " + method.getName() + " with params" + Arrays.asList(parameters));
-	setTestName(method.getName());
-	Override a = method.getAnnotation(Override.class);
-	String testCaseId = (String) parameters[a.id()];
-	if (testCaseId != null && testCaseId.length() != 0) {
-	    setTestName(testCaseId);
-	} else {
-	    setTestName((String) parameters[a.id()]);
-	}
+    private void beforeMethod(Method method, Object[] parameters) {
+	logger.debug("Start test " + method.getName() + " with params " + Arrays.asList(parameters));
+
     }
 
-    
-//TODO add pasing browser name param(extend init method)
+    // @BeforeTest
+
     protected void init(String testcaseName) {
-	
-	if (testcaseName != null && testcaseName.length() != 0) {
+
+	if (!(testName.regionMatches(true, 0, testcaseName, 0, 10))) {
+	    if (testcaseName != null && testcaseName.length() != 0) {
+		// this.testName = testcaseName;
+		launchBrowser();
+		setTestName(testcaseName);
+	    }
+	} else
+	    return;
+    }
+
+    private void launchBrowser() {
+
+	if (System.getProperty("browser").toUpperCase().contains("HEADLESS")) {
+	    ChromeOptions option = new ChromeOptions();
+	    String driverPath = "";
+	    if (System.getProperty("os.name").toUpperCase().contains("MAC")) {
+		driverPath = "./src/test/resources/webdrivers/mac/chromedriver";
+		option.addArguments("-headless");
+		option.addArguments("-disable-gpu");
+		option.addArguments("-window-size=1200x600");
+	    } else if (System.getProperty("os.name").toUpperCase().contains("WINDOWS")) {
+		driverPath = "./src/test/resources/webdrivers/pc/chromedriver.exe";
+		option.addArguments("--headless");
+		option.addArguments("--disable-gpu");
+		option.addArguments("--window-size=1200x600");
+	    } else
+		throw new IllegalArgumentException("Unknown OS");
+	    System.setProperty("webdriver.chrome.driver", driverPath);
+	    System.setProperty("webdriver.chrome.silentOutput", "true");
+	    option.addArguments("headless");
+	    option.addArguments("--disable-notifications");
+	    driver = new ChromeDriver(option);
+	    
+	} else if (System.getProperty("browser").toUpperCase().contains("CHROME")) {
 	    ChromeOptions option = new ChromeOptions();
 	    String driverPath = "";
 	    if (System.getProperty("os.name").toUpperCase().contains("MAC")) {
@@ -68,6 +96,23 @@ public class TestBase implements ITest {
 	    option.addArguments("--disable-notifications");
 	    driver = new ChromeDriver(option);
 
+	} else if (System.getProperty("browser").toUpperCase().contains("FIREFOX")) {
+	    // TODO fix Firefox options
+	    FirefoxOptions option = new FirefoxOptions();
+	    String driverPath = "";
+	    if (System.getProperty("os.name").toUpperCase().contains("MAC")) {
+		driverPath = "./src/test/resources/webdrivers/mac/geckodriver.sh";
+		option.addArguments("-start-fullscreen");
+	    } else if (System.getProperty("os.name").toUpperCase().contains("WINDOWS")) {
+		driverPath = "./src/test/resources/webdrivers/pc/geckodriver.exe";
+		option.addArguments("--start-maximized");
+	    } else
+		throw new IllegalArgumentException("Unknown OS");
+	    System.setProperty("webdriver.gecko.driver", driverPath);
+	    driver = new FirefoxDriver(option);
+
+	} else {
+	    // -------------------
 	}
     }
 
@@ -85,11 +130,12 @@ public class TestBase implements ITest {
     }
 
     @AfterMethod(alwaysRun = true)
-    public void logTestStop(Method method) {
+    private void logTestStop(Method method, Object[] parameters) {
 	logger.debug("Stop test " + method.getName());
+
     }
 
-    // @BeforeClass
+    // @BeforeSuite
 
     // @AfterTest
 

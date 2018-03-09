@@ -11,7 +11,7 @@ import com.automationpractice.interfaceBridge.TCreader;
 public class DataProviders {
 
     // TODO print only NOT empty strings
-    // TODO create API DataProvvider
+    // TODO create API DataProvider
     @DataProvider(name = "UIData")
     public Object[][] getDataFromDataprovider() throws IOException {
 	Object[][] object = null;
