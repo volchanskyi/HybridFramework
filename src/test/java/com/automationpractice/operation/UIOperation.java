@@ -20,6 +20,7 @@ public class UIOperation {
     private WebDriver driver;
     private WebDriverWait wait;
     protected String title;
+    private JavascriptExecutor js = (JavascriptExecutor) driver;
 
     public UIOperation(WebDriver driver) {
 	this.driver = driver;
@@ -35,8 +36,9 @@ public class UIOperation {
 	    throws IllegalArgumentException {
 	switch (keyword.toUpperCase()) {
 	case "CLICK":
-	    // Perform click
-	    JavascriptExecutor js = (JavascriptExecutor) driver;
+	    // Perform click on element
+	    // Create instance of Javascript executor
+	    js = (JavascriptExecutor) driver;
 	    WebElement elem = wait
 		    .until(ExpectedConditions.visibilityOfElementLocated(this.getObject(p, objectName, objectType)));
 	    // Style element with a red border
@@ -49,7 +51,13 @@ public class UIOperation {
 
 	case "SELECTITEM":
 	    // Perform select of item
-	    wait.until(ExpectedConditions.visibilityOfElementLocated(this.getObject(p, objectName, objectType)));
+	    WebElement item = wait
+		    .until(ExpectedConditions.visibilityOfElementLocated(this.getObject(p, objectName, objectType)));
+	    // Create instance of Javascript executor
+	    js = (JavascriptExecutor) driver;
+	    // Style element with a red border
+	    js.executeScript("arguments[0].setAttribute(arguments[1], arguments[2])", item, "style",
+		    "border: 2px solid red; border-style: dashed;");
 	    List<WebElement> allElements = driver.findElements(this.getObject(p, objectName, objectType));
 	    for (WebElement element : allElements) {
 		String it = element.getText();
@@ -68,9 +76,9 @@ public class UIOperation {
 	    // Wait for the modal to appear
 	    wait.until(ExpectedConditions.presenceOfElementLocated(this.getObject(p, objectName, objectType)));
 	    // Click on the element
-	    // Use JS to perform click on ng-elems
-	    JavascriptExecutor executor = (JavascriptExecutor) driver;
-	    executor.executeScript("arguments[0].click();",
+	    // // Create instance of Javascript executor
+	    js = (JavascriptExecutor) driver;
+	    js.executeScript("arguments[0].click();",
 		    driver.findElements(this.getObject(p, objectName, objectType)).get(0));
 	    Actions builderNgClick = new Actions(driver);
 	    builderNgClick.moveToElement(driver.findElements(this.getObject(p, objectName, objectType)).get(0))
@@ -82,11 +90,11 @@ public class UIOperation {
 	    // Wait for the modal to appear
 	    wait.until(ExpectedConditions.presenceOfElementLocated(this.getObject(p, objectName, objectType)));
 	    // Create instance of Javascript executor
-	    JavascriptExecutor siv = (JavascriptExecutor) driver;
+	    js = (JavascriptExecutor) driver;
 	    // now execute query which actually will scroll until that element
 	    // is
 	    // not appeared on page.
-	    siv.executeScript("arguments[0].scrollIntoView(true);",
+	    js.executeScript("arguments[0].scrollIntoView(true);",
 		    driver.findElements(this.getObject(p, objectName, objectType)).get(0));
 	    Actions builderView = new Actions(driver);
 	    builderView.moveToElement(driver.findElements(this.getObject(p, objectName, objectType)).get(0)).build()
@@ -94,8 +102,17 @@ public class UIOperation {
 	    break;
 
 	case "SETTEXT":
-	    // Set text on control
-	    wait.until(ExpectedConditions.visibilityOfElementLocated(this.getObject(p, objectName, objectType)));
+	    // Put text into textfield
+	    js = (JavascriptExecutor) driver;
+	    WebElement field = wait
+		    .until(ExpectedConditions.visibilityOfElementLocated(this.getObject(p, objectName, objectType)));// Style
+														     // element
+														     // with
+														     // a
+														     // red
+														     // border
+	    js.executeScript("arguments[0].setAttribute(arguments[1], arguments[2])", field, "style",
+		    "border: 2px solid red; border-style: dashed;");
 	    driver.findElements(this.getObject(p, objectName, objectType)).get(0).sendKeys(value);
 	    return driver.findElements(this.getObject(p, objectName, objectType)).get(0).getAttribute("value");
 
@@ -156,8 +173,8 @@ public class UIOperation {
 	    // Wait for the modal to appear
 	    wait.until(ExpectedConditions.presenceOfElementLocated(this.getObject(p, objectName, objectType)));
 	    // Close modal
-	    JavascriptExecutor closeModal = (JavascriptExecutor) driver;
-	    closeModal.executeScript("arguments[0].click();",
+	    js = (JavascriptExecutor) driver;
+	    js.executeScript("arguments[0].click();",
 		    driver.findElements(this.getObject(p, objectName, objectType)).get(0));
 	    Actions builderModal = new Actions(driver);
 	    builderModal.moveToElement(driver.findElements(this.getObject(p, objectName, objectType)).get(0)).click()
