@@ -12,36 +12,39 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.automationpractice.tests.TestBase;
 import com.google.common.base.Objects;
-
-import com.automationpractice.tests.*;
 
 public class UIOperation {
 
-    protected WebDriver driver;
-    protected WebDriverWait wait;
+    private WebDriver driver;
+    private WebDriverWait wait;
     protected String title;
 
     public UIOperation(WebDriver driver) {
 	this.driver = driver;
 	wait = new WebDriverWait(driver, 10);
-	
+
 	// ---------------------------------
 
     }
+
+    // Enable debugging features(see DebugHelper.class for details)
 
     public String perform(Properties p, String keyword, String objectName, String objectType, String value)
 	    throws IllegalArgumentException {
 	switch (keyword.toUpperCase()) {
 	case "CLICK":
 	    // Perform click
-	    wait.until(ExpectedConditions.visibilityOfElementLocated(this.getObject(p, objectName, objectType)));
+	    JavascriptExecutor js = (JavascriptExecutor) driver;
+	    WebElement elem = wait
+		    .until(ExpectedConditions.visibilityOfElementLocated(this.getObject(p, objectName, objectType)));
+	    // Style element with a red border
+	    js.executeScript("arguments[0].setAttribute(arguments[1], arguments[2])", elem, "style",
+		    "border: 2px solid red; border-style: dashed;");
 	    Actions builderClick = new Actions(driver);
-	    
-//	    builderClick.moveToElement(driver.findElements(this.getObject(p, objectName, objectType)).get(0)).build().perform();
 	    builderClick.moveToElement(driver.findElements(this.getObject(p, objectName, objectType)).get(0))
 		    .click(driver.findElements(this.getObject(p, objectName, objectType)).get(0)).build().perform();
-
 	    break;
 
 	case "SELECTITEM":
@@ -52,8 +55,8 @@ public class UIOperation {
 		String it = element.getText();
 		if (Objects.equal(it, value)) {
 		    Actions builder = new Actions(driver);
-//		    builder.moveToElement(element).build()
-//			    .perform();
+		    // builder.moveToElement(element).build()
+		    // .perform();
 		    builder.moveToElement(element).click(element).build().perform();
 		    return it;
 		}
@@ -159,15 +162,14 @@ public class UIOperation {
 	    Actions builderModal = new Actions(driver);
 	    builderModal.moveToElement(driver.findElements(this.getObject(p, objectName, objectType)).get(0)).click()
 		    .build().perform();
-
 	    break;
 
 	case "CLOSEBROWSER":
 	    // Quit Active Driver!
-	    
-	    //TODO FIX THIS Boolshit!!!
+
+	    // TODO FIX THIS Boolshit!!!
 	    TestBase.setTestName("");
-	    //-------------------------
+	    // -------------------------
 	    quit();
 	    break;
 
@@ -177,7 +179,7 @@ public class UIOperation {
 
 	return value;
     }
-   
+
     // Click on the first element in the array of web elements
     protected void clickElem(By param) throws IllegalArgumentException {
 

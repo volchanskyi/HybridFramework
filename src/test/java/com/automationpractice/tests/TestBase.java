@@ -37,7 +37,7 @@ public class TestBase implements ITest {
 
     // Runs everytime when takes new params from the XLS
     @BeforeMethod(alwaysRun = true)
-    private void beforeMethod(Method method, Object[] parameters) {
+    private void setUp(Method method, Object[] parameters) {
 	logger.debug("Start test " + method.getName() + " with params " + Arrays.asList(parameters));
 
     }
@@ -64,12 +64,12 @@ public class TestBase implements ITest {
 	    if (System.getProperty("os.name").toUpperCase().contains("MAC")) {
 		driverPath = "./src/test/resources/webdrivers/mac/chromedriver";
 		option.addArguments("-headless");
-		option.addArguments("-disable-gpu");
+		// option.addArguments("-disable-gpu");
 		option.addArguments("-window-size=1200x600");
 	    } else if (System.getProperty("os.name").toUpperCase().contains("WINDOWS")) {
 		driverPath = "./src/test/resources/webdrivers/pc/chromedriver.exe";
 		option.addArguments("--headless");
-		option.addArguments("--disable-gpu");
+		// option.addArguments("--disable-gpu");
 		option.addArguments("--window-size=1200x600");
 	    } else
 		throw new IllegalArgumentException("Unknown OS");
@@ -78,7 +78,7 @@ public class TestBase implements ITest {
 	    option.addArguments("headless");
 	    option.addArguments("--disable-notifications");
 	    driver = new ChromeDriver(option);
-	    
+
 	} else if (System.getProperty("browser").toUpperCase().contains("CHROME")) {
 	    ChromeOptions option = new ChromeOptions();
 	    String driverPath = "";
@@ -117,7 +117,7 @@ public class TestBase implements ITest {
     }
 
     // --------------------------
-    protected void app(String keyword, String objectName, String objectType, String value)
+    protected void verify(String keyword, String objectName, String objectType, String value)
 	    throws IOException, Exception {
 	ReadObject object = new ReadObject();
 	Properties allObjects = object.getUIObjectRepository();
@@ -130,7 +130,7 @@ public class TestBase implements ITest {
     }
 
     @AfterMethod(alwaysRun = true)
-    private void logTestStop(Method method, Object[] parameters) {
+    private void tearDown(Method method, Object[] parameters) {
 	logger.debug("Stop test " + method.getName());
 
     }
