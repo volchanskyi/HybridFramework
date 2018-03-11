@@ -12,7 +12,6 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.automationpractice.tests.TestBase;
 import com.google.common.base.Objects;
 
 public class UIOperation {
@@ -21,8 +20,9 @@ public class UIOperation {
     private WebDriverWait wait;
     protected String title;
     private JavascriptExecutor js = (JavascriptExecutor) driver;
+    final ApplicationManager APP = new ApplicationManager(driver);
 
-    public UIOperation(WebDriver driver) {
+    UIOperation(WebDriver driver) {
 	this.driver = driver;
 	wait = new WebDriverWait(driver, 10);
 
@@ -30,9 +30,7 @@ public class UIOperation {
 
     }
 
-    // Enable debugging features(see DebugHelper.class for details)
-
-    public String perform(Properties p, String keyword, String objectName, String objectType, String value)
+    String perform(Properties p, String keyword, String objectName, String objectType, String value)
 	    throws IllegalArgumentException {
 	switch (keyword.toUpperCase()) {
 	case "CLICK":
@@ -106,11 +104,7 @@ public class UIOperation {
 	    js = (JavascriptExecutor) driver;
 	    WebElement field = wait
 		    .until(ExpectedConditions.visibilityOfElementLocated(this.getObject(p, objectName, objectType)));// Style
-														     // element
-														     // with
-														     // a
-														     // red
-														     // border
+	    // border
 	    js.executeScript("arguments[0].setAttribute(arguments[1], arguments[2])", field, "style",
 		    "border: 2px solid red; border-style: dashed;");
 	    driver.findElements(this.getObject(p, objectName, objectType)).get(0).sendKeys(value);
@@ -183,9 +177,8 @@ public class UIOperation {
 
 	case "CLOSEBROWSER":
 	    // Quit Active Driver!
-
-	    // TODO FIX THIS Boolshit!!!
-	    TestBase.setTestName("");
+	    // TODO Fix TC name assignment
+	    APP.setTestName("");
 	    // -------------------------
 	    quit();
 	    break;
@@ -276,4 +269,5 @@ public class UIOperation {
 	    throw new IllegalArgumentException("Wrong object type");
 	}
     }
+
 }
