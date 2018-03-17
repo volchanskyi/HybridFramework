@@ -19,7 +19,7 @@ public class UIOperation {
     private WebDriver driver;
     private WebDriverWait wait;
     protected String title;
-    private JavascriptExecutor js = (JavascriptExecutor) driver;
+    private JavascriptExecutor js;
     final ApplicationManager APP = new ApplicationManager(driver);
 
     UIOperation(WebDriver driver) {
@@ -30,11 +30,12 @@ public class UIOperation {
 
     }
 
+    //UI interaction logic implemantation
     String perform(Properties p, String keyword, String objectName, String objectType, String value)
 	    throws IllegalArgumentException {
 	switch (keyword.toUpperCase()) {
-	case "CLICK":
 	    // Perform click on element
+	case "CLICK":
 	    // Create instance of Javascript executor
 	    js = (JavascriptExecutor) driver;
 	    WebElement elem = wait
@@ -47,8 +48,8 @@ public class UIOperation {
 		    .click(driver.findElements(this.getObject(p, objectName, objectType)).get(0)).build().perform();
 	    break;
 
-	case "SELECTITEM":
 	    // Perform select of item
+	case "SELECTITEM":
 	    WebElement item = wait
 		    .until(ExpectedConditions.visibilityOfElementLocated(this.getObject(p, objectName, objectType)));
 	    // Create instance of Javascript executor
@@ -56,13 +57,12 @@ public class UIOperation {
 	    // Style element with a red border
 	    js.executeScript("arguments[0].setAttribute(arguments[1], arguments[2])", item, "style",
 		    "border: 2px solid red; border-style: dashed;");
+	    //Load items, find the one we`re looking for and apply click on it
 	    List<WebElement> allElements = driver.findElements(this.getObject(p, objectName, objectType));
 	    for (WebElement element : allElements) {
 		String it = element.getText();
 		if (Objects.equal(it, value)) {
 		    Actions builder = new Actions(driver);
-		    // builder.moveToElement(element).build()
-		    // .perform();
 		    builder.moveToElement(element).click(element).build().perform();
 		    return it;
 		}
@@ -70,28 +70,15 @@ public class UIOperation {
 	    }
 	    return "No such item";
 
-	case "NGCLICK":
-	    // Wait for the modal to appear
-	    wait.until(ExpectedConditions.presenceOfElementLocated(this.getObject(p, objectName, objectType)));
-	    // Click on the element
-	    // // Create instance of Javascript executor
-	    js = (JavascriptExecutor) driver;
-	    js.executeScript("arguments[0].click();",
-		    driver.findElements(this.getObject(p, objectName, objectType)).get(0));
-	    Actions builderNgClick = new Actions(driver);
-	    builderNgClick.moveToElement(driver.findElements(this.getObject(p, objectName, objectType)).get(0))
-		    .click(driver.findElements(this.getObject(p, objectName, objectType)).get(0)).build().perform();
-
-	    break;
 
 	case "SCROLLINTOVIEW":
 	    // Wait for the modal to appear
 	    wait.until(ExpectedConditions.presenceOfElementLocated(this.getObject(p, objectName, objectType)));
 	    // Create instance of Javascript executor
 	    js = (JavascriptExecutor) driver;
-	    // now execute query which actually will scroll until that element
-	    // is
-	    // not appeared on page.
+	    //** now execute query which actually will scroll until that element
+	    //* is
+	    //* not appeared on page.
 	    js.executeScript("arguments[0].scrollIntoView(true);",
 		    driver.findElements(this.getObject(p, objectName, objectType)).get(0));
 	    Actions builderView = new Actions(driver);
@@ -103,11 +90,12 @@ public class UIOperation {
 	    // Put text into textfield
 	    js = (JavascriptExecutor) driver;
 	    WebElement field = wait
-		    .until(ExpectedConditions.visibilityOfElementLocated(this.getObject(p, objectName, objectType)));// Style
-	    // border
+		    .until(ExpectedConditions.visibilityOfElementLocated(this.getObject(p, objectName, objectType)));
+	    // Style border
 	    js.executeScript("arguments[0].setAttribute(arguments[1], arguments[2])", field, "style",
 		    "border: 2px solid red; border-style: dashed;");
 	    driver.findElements(this.getObject(p, objectName, objectType)).get(0).sendKeys(value);
+	    //Return the text that was inserted for verification
 	    return driver.findElements(this.getObject(p, objectName, objectType)).get(0).getAttribute("value");
 
 	case "GOTOURL":
@@ -119,18 +107,19 @@ public class UIOperation {
 		    || driver.getPageSource().contains("not found")) {
 		return "404 Not Found";
 	    }
+	    //Return actual URI for TestNG to assert
 	    return driver.getCurrentUrl();
 
-	case "VERIFYTITLE":
 	    // Match initial title to the current one
+	case "VERIFYTITLE":
 	    wait.until(ExpectedConditions.presenceOfElementLocated(this.getObject(p, objectName, objectType)));
-
+	    //Return actual title for TestNG to assert
 	    return driver.getTitle();
 
+	    // Compare application item with the item from TC
 	case "VERIFYITEMS":
-	    // Match items
+	    //Wait for the webElement to appear
 	    wait.until(ExpectedConditions.presenceOfElementLocated(this.getObject(p, objectName, objectType)));
-	    // String item = null;
 	    List<WebElement> allItemElements = driver.findElements(this.getObject(p, objectName, objectType));
 	    for (WebElement element : allItemElements) {
 		String it = element.getText();
@@ -141,28 +130,20 @@ public class UIOperation {
 	    }
 	    return "No such item";
 
-	case "FINDITEMS":
-	    // Match items
-	    wait.until(ExpectedConditions.visibilityOfElementLocated(this.getObject(p, objectName, objectType)));
-	    List<WebElement> allElems = driver.findElements(this.getObject(p, objectName, objectType));
-	    for (WebElement element : allElems) {
-		String it = element.getText();
-		if (Objects.equal(it, value)) {
-		    return it;
-		}
-
-	    }
-	    return "No such item";
-
+	 // Check if the Confirmation Alert is present and close it
 	case "CLOSEALERT":
-	    // Check if the Confirmation Alert is present and close it
+	    //Wait for the webElement to appear
 	    wait.until(ExpectedConditions.alertIsPresent());
 	    Alert alert = driver.switchTo().alert();
 	    String alertMessage = alert.getText();
+	    //Accept alert message
 	    alert.accept();
+	    //Check if the alert window is gone
 	    wait.until(ExpectedConditions.not(ExpectedConditions.alertIsPresent()));
+	    //return alert message for assertion
 	    return alertMessage;
 
+	    //Close modal windows
 	case "CLOSEMODAL":
 	    // Wait for the modal to appear
 	    wait.until(ExpectedConditions.presenceOfElementLocated(this.getObject(p, objectName, objectType)));
@@ -175,8 +156,8 @@ public class UIOperation {
 		    .build().perform();
 	    break;
 
-	case "CLOSEBROWSER":
 	    // Quit Active Driver!
+	case "CLOSEBROWSER":
 	    // TODO Fix TC name assignment
 	    APP.setTestName("");
 	    // -------------------------

@@ -11,14 +11,38 @@ import com.automationpractice.interfaceBridge.TCreader;
 public class DataProviders {
 
     // TODO print only NOT empty strings
-    // TODO create API DataProvider
+    // GUI tests Data Provider
     @DataProvider(name = "UIData")
-    public Object[][] getDataFromDataprovider() throws IOException {
+    public Object[][] getDataFromUiDataProvider() throws IOException {
 	Object[][] object = null;
 	TCreader file = new TCreader();
 
 	// Read keyword sheet
 	Sheet ivSheet = file.readExcel(System.getProperty("user.dir") + "\\", "TestCase.xlsx", "UItests");
+	// Find number of rows in excel file
+	int rowCount = ivSheet.getLastRowNum() - ivSheet.getFirstRowNum();
+	object = new Object[rowCount][5];
+	for (int i = 0; i < rowCount; i++) {
+	    // Loop over all the rows
+	    Row row = ivSheet.getRow(i + 1);
+	    // Create a loop to print cell values in a row
+	    for (int j = 0; j < row.getLastCellNum(); j++) {
+		// Print excel data in console
+		object[i][j] = row.getCell(j).toString();
+	    }
+
+	}
+	return object;
+    }
+
+    // API tests Data Provider
+    @DataProvider(name = "APIData")
+    public Object[][] getDataFromApiDataProvider() throws IOException {
+	Object[][] object = null;
+	TCreader file = new TCreader();
+
+	// Read keyword sheet
+	Sheet ivSheet = file.readExcel(System.getProperty("user.dir") + "\\", "TestCase.xlsx", "APItests");
 	// Find number of rows in excel file
 	int rowCount = ivSheet.getLastRowNum() - ivSheet.getFirstRowNum();
 	object = new Object[rowCount][5];
