@@ -104,7 +104,8 @@
 						</property>
 					</properties>
 					<systemPropertyVariables>
-                        <browser>headless</browser>
+<!-- Headless Chrome by default --> <browser>headless</browser>
+    <!-- OFF by default -->         <debug>off</debug>
                     </systemPropertyVariables>
 				</configuration>
 				

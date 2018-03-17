@@ -30,34 +30,30 @@ public class UIOperation {
 
     }
 
-    //UI interaction logic implemantation
+    // UI interaction logic implemantation
     String perform(Properties p, String keyword, String objectName, String objectType, String value)
 	    throws IllegalArgumentException {
 	switch (keyword.toUpperCase()) {
-	    // Perform click on element
+	// Perform click on element
 	case "CLICK":
-	    // Create instance of Javascript executor
-	    js = (JavascriptExecutor) driver;
 	    WebElement elem = wait
 		    .until(ExpectedConditions.visibilityOfElementLocated(this.getObject(p, objectName, objectType)));
-	    // Style element with a red border
-	    js.executeScript("arguments[0].setAttribute(arguments[1], arguments[2])", elem, "style",
-		    "border: 2px solid red; border-style: dashed;");
+	    // Enable/Disable visual debug options(Highlighting web elements, visual verbose
+	    // mode, etc.)
+	    visualDebug(elem);
 	    Actions builderClick = new Actions(driver);
 	    builderClick.moveToElement(driver.findElements(this.getObject(p, objectName, objectType)).get(0))
 		    .click(driver.findElements(this.getObject(p, objectName, objectType)).get(0)).build().perform();
 	    break;
 
-	    // Perform select of item
+	// Perform select of item
 	case "SELECTITEM":
 	    WebElement item = wait
 		    .until(ExpectedConditions.visibilityOfElementLocated(this.getObject(p, objectName, objectType)));
-	    // Create instance of Javascript executor
-	    js = (JavascriptExecutor) driver;
-	    // Style element with a red border
-	    js.executeScript("arguments[0].setAttribute(arguments[1], arguments[2])", item, "style",
-		    "border: 2px solid red; border-style: dashed;");
-	    //Load items, find the one we`re looking for and apply click on it
+	    // Enable/Disable visual debug options(Highlighting web elements, visual verbose
+	    // mode, etc.)
+	    visualDebug(item);
+	    // Load items, find the one we`re looking for and apply click on it
 	    List<WebElement> allElements = driver.findElements(this.getObject(p, objectName, objectType));
 	    for (WebElement element : allElements) {
 		String it = element.getText();
@@ -70,15 +66,14 @@ public class UIOperation {
 	    }
 	    return "No such item";
 
-
 	case "SCROLLINTOVIEW":
 	    // Wait for the modal to appear
 	    wait.until(ExpectedConditions.presenceOfElementLocated(this.getObject(p, objectName, objectType)));
 	    // Create instance of Javascript executor
 	    js = (JavascriptExecutor) driver;
-	    //** now execute query which actually will scroll until that element
-	    //* is
-	    //* not appeared on page.
+	    // ** now execute query which actually will scroll until that element
+	    // * is
+	    // * not appeared on page.
 	    js.executeScript("arguments[0].scrollIntoView(true);",
 		    driver.findElements(this.getObject(p, objectName, objectType)).get(0));
 	    Actions builderView = new Actions(driver);
@@ -88,14 +83,13 @@ public class UIOperation {
 
 	case "SETTEXT":
 	    // Put text into textfield
-	    js = (JavascriptExecutor) driver;
 	    WebElement field = wait
 		    .until(ExpectedConditions.visibilityOfElementLocated(this.getObject(p, objectName, objectType)));
-	    // Style border
-	    js.executeScript("arguments[0].setAttribute(arguments[1], arguments[2])", field, "style",
-		    "border: 2px solid red; border-style: dashed;");
+	    // Enable/Disable visual debug options(Highlighting web elements, visual verbose
+	    // mode, etc.)
+	    visualDebug(field);
 	    driver.findElements(this.getObject(p, objectName, objectType)).get(0).sendKeys(value);
-	    //Return the text that was inserted for verification
+	    // Return the text that was inserted for verification
 	    return driver.findElements(this.getObject(p, objectName, objectType)).get(0).getAttribute("value");
 
 	case "GOTOURL":
@@ -107,18 +101,18 @@ public class UIOperation {
 		    || driver.getPageSource().contains("not found")) {
 		return "404 Not Found";
 	    }
-	    //Return actual URI for TestNG to assert
+	    // Return actual URI for TestNG to assert
 	    return driver.getCurrentUrl();
 
-	    // Match initial title to the current one
+	// Match initial title to the current one
 	case "VERIFYTITLE":
 	    wait.until(ExpectedConditions.presenceOfElementLocated(this.getObject(p, objectName, objectType)));
-	    //Return actual title for TestNG to assert
+	    // Return actual title for TestNG to assert
 	    return driver.getTitle();
 
-	    // Compare application item with the item from TC
+	// Compare application item with the item from TC
 	case "VERIFYITEMS":
-	    //Wait for the webElement to appear
+	    // Wait for the webElement to appear
 	    wait.until(ExpectedConditions.presenceOfElementLocated(this.getObject(p, objectName, objectType)));
 	    List<WebElement> allItemElements = driver.findElements(this.getObject(p, objectName, objectType));
 	    for (WebElement element : allItemElements) {
@@ -130,20 +124,22 @@ public class UIOperation {
 	    }
 	    return "No such item";
 
-	 // Check if the Confirmation Alert is present and close it
+	// Check if the Confirmation Alert is present and close it
 	case "CLOSEALERT":
-	    //Wait for the webElement to appear
+	    // Wait for the webElement to appear
 	    wait.until(ExpectedConditions.alertIsPresent());
+	    // Navigate to alert
 	    Alert alert = driver.switchTo().alert();
+	    // Get alert message
 	    String alertMessage = alert.getText();
-	    //Accept alert message
+	    // Accept alert message
 	    alert.accept();
-	    //Check if the alert window is gone
+	    // Check if the alert window is gone
 	    wait.until(ExpectedConditions.not(ExpectedConditions.alertIsPresent()));
-	    //return alert message for assertion
+	    // return alert message for assertion
 	    return alertMessage;
 
-	    //Close modal windows
+	// Close modal windows
 	case "CLOSEMODAL":
 	    // Wait for the modal to appear
 	    wait.until(ExpectedConditions.presenceOfElementLocated(this.getObject(p, objectName, objectType)));
@@ -156,7 +152,7 @@ public class UIOperation {
 		    .build().perform();
 	    break;
 
-	    // Quit Active Driver!
+	// Quit Active Driver!
 	case "CLOSEBROWSER":
 	    // TODO Fix TC name assignment
 	    APP.setTestName("");
@@ -169,6 +165,17 @@ public class UIOperation {
 	}
 
 	return value;
+    }
+
+    private void visualDebug(WebElement element) {
+	//Read system variable property from the POM
+	if (System.getProperty("debug").toUpperCase().contains("ON")) {
+	    // Create instance of Javascript executor
+	    this.js = (JavascriptExecutor) driver;
+	    // Style element with a red border
+	    this.js.executeScript("arguments[0].setAttribute(arguments[1], arguments[2])", element, "style",
+		    "border: 2px solid red; border-style: dashed;");
+	}
     }
 
     // Click on the first element in the array of web elements
