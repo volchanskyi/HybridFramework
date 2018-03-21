@@ -3,5 +3,24 @@
 
 *.html
 test-output
-*.classpath
-*.project
+# eclipse project file
+.settings/
+.classpath
+.project
+# OS
+.DS_Store
+# Maven 
+target/
+# Binaries
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.war
+*.ear
+*.sar
+*.class
