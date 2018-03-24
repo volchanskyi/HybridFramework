@@ -3,9 +3,13 @@ package com.automationpractice.operation;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -124,5 +128,41 @@ public class ApplicationManager {
 	assertThat(operation.perform(allObjects, keyword, objectName, objectType, value), equalTo(value));
 
     }
+    
+    
+    /**
+
+     * This function will allow us to take screenshots
+
+     * @param webdriver
+
+     * @param fileWithPath
+
+     * @throws Exception
+
+     */
+
+    public static void takeSnapShot(WebDriver webdriver,String fileWithPath) throws Exception{
+
+        //Convert web driver object to TakeScreenshot
+
+        TakesScreenshot scrShot =((TakesScreenshot)webdriver);
+
+        //Call getScreenshotAs method to create image file
+
+                File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
+
+            //Move image file to new destination
+
+                File DestFile=new File(fileWithPath);
+
+                //Copy file at destination
+
+                FileUtils.copyFile(SrcFile, DestFile);
+
+            
+
+    }
+    
 
 }

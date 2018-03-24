@@ -76,25 +76,27 @@ public class UIOperation {
 	    return choose.getFirstSelectedOption().getText();
 
 	case "CLICKRADIOBUTTON":
-	    WebElement radioBtn = waitForPresenceOfElement(p, objectName, objectType);
-	    // Enable/Disable visual debug options(Highlighting web elements, visual verbose
-	    // mode, etc.)
-	    visualDebug(radioBtn);
+	    waitForVisabilityOfElement(p, objectName, objectType);
 	    List<WebElement> oRadioButton = findWebElements(p, objectName, objectType);
 	    // Create a boolean variable which will hold the value (True/False)
 	    // This statement will return True, if first Radio button is selected
 	    this.booleanValue = oRadioButton.get(0).isSelected();
 	    // This will check that if the bValue is True means if the first radio button is
 	    // selected
-	    if (this.booleanValue = true) {
+	    if (this.booleanValue = false) {
 		// This will select second radio button, if the first radio button is selected
 		// by default
 		oRadioButton.get(1).click();
+		// Enable/Disable visual debug options(Highlighting web elements, visual verbose
+		// mode, etc.)
+		visualDebug(oRadioButton.get(1));
 	    } else {
 		// If the first radio button is not selected by default, it will be
 		// selected
 		oRadioButton.get(0).click();
-
+		// Enable/Disable visual debug options(Highlighting web elements, visual verbose
+		// mode, etc.)
+		visualDebug(oRadioButton.get(0));
 	    }
 	    break;
 
@@ -163,8 +165,7 @@ public class UIOperation {
 	    }
 	    return "No such item";
 
-	// Check if the image is not empty
-	// Verify Slider goes over all images (by checking URI)
+	// Check if the image size is > 0
 	// Verify if slider navigation works (waits for every image in the list to
 	// appear UNTIL wait time is out)
 	case "VERIFYSLIDER":
@@ -175,17 +176,19 @@ public class UIOperation {
 	    this.index = 0;
 	    // iterate over array of WebElements
 	    for (WebElement nextElem : listOfElems) {
+		// wait until the image appears (error otherwise)
 		wait.until(ExpectedConditions.visibilityOf(nextElem));
+		visualDebug(nextElem);
 		// update counter
 		this.index++;
 		// close loop when the last image is shown
 		if (index == listOfElems.size()) {
+		    // stub
 		    return "";
 		}
 	    }
-	    return "There`s a missing or broken image";
 
-	// Check if the Confirmation Alert is present and close it
+	    // Check if the Confirmation Alert is present and close it
 	case "CLOSEALERT":
 	    // Wait for the webElement to appear
 	    wait.until(ExpectedConditions.alertIsPresent());

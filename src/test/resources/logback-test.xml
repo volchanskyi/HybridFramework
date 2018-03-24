@@ -14,7 +14,7 @@
         <fileNamePattern>log-%d{yyyy-MM-dd-hh-mm}.html</fileNamePattern>
         
         <!-- retention policy -->
-        <maxHistory>14</maxHistory> 
+        <maxHistory>7</maxHistory> 
         <totalSizeCap>1GB</totalSizeCap>
     </rollingPolicy>
     <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
