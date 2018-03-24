@@ -10,6 +10,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.google.common.base.Objects;
@@ -20,14 +21,14 @@ public class UIOperation {
     private WebDriverWait wait;
     protected String title;
     private JavascriptExecutor js;
+    protected boolean booleanValue;
+    protected int index;
+    private long currentTime = System.currentTimeMillis();
     final ApplicationManager APP = new ApplicationManager(driver);
 
     UIOperation(WebDriver driver) {
 	this.driver = driver;
 	wait = new WebDriverWait(driver, 10);
-
-	// ---------------------------------
-
     }
 
     // UI interaction logic implemantation
@@ -36,25 +37,23 @@ public class UIOperation {
 	switch (keyword.toUpperCase()) {
 	// Perform click on element
 	case "CLICK":
-	    WebElement elem = wait
-		    .until(ExpectedConditions.visibilityOfElementLocated(this.getObject(p, objectName, objectType)));
+	    WebElement elem = waitForVisabilityOfElement(p, objectName, objectType);
 	    // Enable/Disable visual debug options(Highlighting web elements, visual verbose
 	    // mode, etc.)
 	    visualDebug(elem);
 	    Actions builderClick = new Actions(driver);
-	    builderClick.moveToElement(driver.findElements(this.getObject(p, objectName, objectType)).get(0))
-		    .click(driver.findElements(this.getObject(p, objectName, objectType)).get(0)).build().perform();
+	    builderClick.moveToElement(findTheFirstWebElement(p, objectName, objectType))
+		    .click(findTheFirstWebElement(p, objectName, objectType)).build().perform();
 	    break;
 
-	// Perform select of item
-	case "SELECTITEM":
-	    WebElement item = wait
-		    .until(ExpectedConditions.visibilityOfElementLocated(this.getObject(p, objectName, objectType)));
+	// Perform select of an item on the web page
+	case "SELECPAGETITEMFROM":
+	    WebElement item = waitForVisabilityOfElement(p, objectName, objectType);
 	    // Enable/Disable visual debug options(Highlighting web elements, visual verbose
 	    // mode, etc.)
 	    visualDebug(item);
-	    // Load items, find the one we`re looking for and apply click on it
-	    List<WebElement> allElements = driver.findElements(this.getObject(p, objectName, objectType));
+	    // Load page items, find the one we`re looking for and apply click on it
+	    List<WebElement> allElements = findWebElements(p, objectName, objectType);
 	    for (WebElement element : allElements) {
 		String it = element.getText();
 		if (Objects.equal(it, value)) {
@@ -66,31 +65,71 @@ public class UIOperation {
 	    }
 	    return "No such item";
 
+	case "CHOOSEFROM":
+	    WebElement ddMenu = waitForPresenceOfElement(p, objectName, objectType);
+	    // Enable/Disable visual debug options(Highlighting web elements, visual verbose
+	    // mode, etc.)
+	    visualDebug(ddMenu);
+	    Select choose = new Select(findTheFirstWebElement(p, objectName, objectType));
+	    choose.selectByVisibleText(value);
+	    // Return the text that was inserted for verification
+	    return choose.getFirstSelectedOption().getText();
+
+	case "CLICKRADIOBUTTON":
+	    WebElement radioBtn = waitForPresenceOfElement(p, objectName, objectType);
+	    // Enable/Disable visual debug options(Highlighting web elements, visual verbose
+	    // mode, etc.)
+	    visualDebug(radioBtn);
+	    List<WebElement> oRadioButton = findWebElements(p, objectName, objectType);
+	    // Create a boolean variable which will hold the value (True/False)
+	    // This statement will return True, if first Radio button is selected
+	    this.booleanValue = oRadioButton.get(0).isSelected();
+	    // This will check that if the bValue is True means if the first radio button is
+	    // selected
+	    if (this.booleanValue = true) {
+		// This will select second radio button, if the first radio button is selected
+		// by default
+		oRadioButton.get(1).click();
+	    } else {
+		// If the first radio button is not selected by default, it will be
+		// selected
+		oRadioButton.get(0).click();
+
+	    }
+	    break;
+
 	case "SCROLLINTOVIEW":
 	    // Wait for the modal to appear
-	    wait.until(ExpectedConditions.presenceOfElementLocated(this.getObject(p, objectName, objectType)));
+	    waitForPresenceOfElement(p, objectName, objectType);
 	    // Create instance of Javascript executor
 	    js = (JavascriptExecutor) driver;
 	    // ** now execute query which actually will scroll until that element
 	    // * is
 	    // * not appeared on page.
-	    js.executeScript("arguments[0].scrollIntoView(true);",
-		    driver.findElements(this.getObject(p, objectName, objectType)).get(0));
+	    js.executeScript("arguments[0].scrollIntoView(true);", findTheFirstWebElement(p, objectName, objectType));
 	    Actions builderView = new Actions(driver);
-	    builderView.moveToElement(driver.findElements(this.getObject(p, objectName, objectType)).get(0)).build()
-		    .perform();
+	    builderView.moveToElement(findTheFirstWebElement(p, objectName, objectType)).build().perform();
 	    break;
 
-	case "SETTEXT":
+	case "SETTEXTIN":
 	    // Put text into textfield
-	    WebElement field = wait
-		    .until(ExpectedConditions.visibilityOfElementLocated(this.getObject(p, objectName, objectType)));
+	    WebElement field = waitForVisabilityOfElement(p, objectName, objectType);
 	    // Enable/Disable visual debug options(Highlighting web elements, visual verbose
 	    // mode, etc.)
 	    visualDebug(field);
-	    driver.findElements(this.getObject(p, objectName, objectType)).get(0).sendKeys(value);
+	    sendKeys(p, objectName, objectType, value);
 	    // Return the text that was inserted for verification
-	    return driver.findElements(this.getObject(p, objectName, objectType)).get(0).getAttribute("value");
+	    return getJavaScriptObjectValue(p, objectName, objectType);
+
+	case "SETUNIQUETEXTIN":
+	    // Put text into textfield
+	    WebElement uniqueField = waitForVisabilityOfElement(p, objectName, objectType);
+	    // Enable/Disable visual debug options(Highlighting web elements, visual verbose
+	    // mode, etc.)
+	    visualDebug(uniqueField);
+	    sendUniqueKeys(p, objectName, objectType, value);
+	    // Return the text that was inserted for verification
+	    break;
 
 	case "GOTOURL":
 	    // Get url of application
@@ -105,16 +144,16 @@ public class UIOperation {
 	    return driver.getCurrentUrl();
 
 	// Match initial title to the current one
-	case "VERIFYTITLE":
-	    wait.until(ExpectedConditions.presenceOfElementLocated(this.getObject(p, objectName, objectType)));
+	case "VERIFYPAGETITLE":
+	    waitForPresenceOfElement(p, objectName, objectType);
 	    // Return actual title for TestNG to assert
 	    return driver.getTitle();
 
 	// Compare application item with the item from TC
 	case "VERIFYITEMS":
 	    // Wait for the webElement to appear
-	    wait.until(ExpectedConditions.presenceOfElementLocated(this.getObject(p, objectName, objectType)));
-	    List<WebElement> allItemElements = driver.findElements(this.getObject(p, objectName, objectType));
+	    waitForPresenceOfElement(p, objectName, objectType);
+	    List<WebElement> allItemElements = findWebElements(p, objectName, objectType);
 	    for (WebElement element : allItemElements) {
 		String it = element.getText();
 		if (Objects.equal(it, value)) {
@@ -123,6 +162,28 @@ public class UIOperation {
 
 	    }
 	    return "No such item";
+
+	// Check if the image is not empty
+	// Verify Slider goes over all images (by checking URI)
+	// Verify if slider navigation works (waits for every image in the list to
+	// appear UNTIL wait time is out)
+	case "VERIFYSLIDER":
+	    // Wait for the webElement to appear
+	    waitForVisabilityOfElement(p, objectName, objectType);
+	    List<WebElement> listOfElems = findWebElements(p, objectName, objectType);
+	    // initialize counter
+	    this.index = 0;
+	    // iterate over array of WebElements
+	    for (WebElement nextElem : listOfElems) {
+		wait.until(ExpectedConditions.visibilityOf(nextElem));
+		// update counter
+		this.index++;
+		// close loop when the last image is shown
+		if (index == listOfElems.size()) {
+		    return "";
+		}
+	    }
+	    return "There`s a missing or broken image";
 
 	// Check if the Confirmation Alert is present and close it
 	case "CLOSEALERT":
@@ -142,14 +203,12 @@ public class UIOperation {
 	// Close modal windows
 	case "CLOSEMODAL":
 	    // Wait for the modal to appear
-	    wait.until(ExpectedConditions.presenceOfElementLocated(this.getObject(p, objectName, objectType)));
+	    waitForPresenceOfElement(p, objectName, objectType);
 	    // Close modal
 	    js = (JavascriptExecutor) driver;
-	    js.executeScript("arguments[0].click();",
-		    driver.findElements(this.getObject(p, objectName, objectType)).get(0));
+	    js.executeScript("arguments[0].click();", findTheFirstWebElement(p, objectName, objectType));
 	    Actions builderModal = new Actions(driver);
-	    builderModal.moveToElement(driver.findElements(this.getObject(p, objectName, objectType)).get(0)).click()
-		    .build().perform();
+	    builderModal.moveToElement(findTheFirstWebElement(p, objectName, objectType)).click().build().perform();
 	    break;
 
 	// Quit Active Driver!
@@ -167,34 +226,42 @@ public class UIOperation {
 	return value;
     }
 
+    private List<WebElement> findWebElements(Properties p, String objectName, String objectType) {
+	return driver.findElements(this.getObject(p, objectName, objectType));
+    }
+
+    private WebElement findTheFirstWebElement(Properties p, String objectName, String objectType) {
+	return findWebElements(p, objectName, objectType).get(0);
+    }
+
+    private void sendUniqueKeys(Properties p, String objectName, String objectType, String value) {
+	findTheFirstWebElement(p, objectName, objectType).sendKeys(this.currentTime + value);
+    }
+
+    private WebElement waitForPresenceOfElement(Properties p, String objectName, String objectType) {
+	return wait.until(ExpectedConditions.presenceOfElementLocated(this.getObject(p, objectName, objectType)));
+    }
+
+    private WebElement waitForVisabilityOfElement(Properties p, String objectName, String objectType) {
+	return wait.until(ExpectedConditions.visibilityOfElementLocated(this.getObject(p, objectName, objectType)));
+    }
+
+    private void sendKeys(Properties p, String objectName, String objectType, String value) {
+	findTheFirstWebElement(p, objectName, objectType).sendKeys(value);
+    }
+
+    private String getJavaScriptObjectValue(Properties p, String objectName, String objectType) {
+	return findTheFirstWebElement(p, objectName, objectType).getAttribute("value");
+    }
+
     private void visualDebug(WebElement element) {
-	//Read system variable property from the POM
+	// Read system variable property from the POM
 	if (System.getProperty("debug").toUpperCase().contains("ON")) {
 	    // Create instance of Javascript executor
 	    this.js = (JavascriptExecutor) driver;
 	    // Style element with a red border
 	    this.js.executeScript("arguments[0].setAttribute(arguments[1], arguments[2])", element, "style",
 		    "border: 2px solid red; border-style: dashed;");
-	}
-    }
-
-    // Click on the first element in the array of web elements
-    protected void clickElem(By param) throws IllegalArgumentException {
-
-    }
-
-    // Send keys in the first element in the array of web elements
-    protected void sendKeys(By param, String value) throws IllegalArgumentException {
-
-    }
-
-    // Check if the element is present on the page
-    protected boolean isPresent(By param) throws IllegalArgumentException {
-	if (driver.findElements(param).size() > 0) {
-	    return true;
-	} else {
-	    // System.out.println("elem is not present");
-	    return false;
 	}
     }
 

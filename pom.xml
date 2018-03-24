@@ -4,7 +4,7 @@
 
   <groupId>com.automationpractice</groupId>
   <artifactId>HybridFramework</artifactId>
-  <version>0.3.1</version>
+  <version>0.3.2</version>
   <packaging>jar</packaging>
 
   <name>HybridFramework</name>
@@ -105,7 +105,7 @@
 					</properties>
 					<systemPropertyVariables>
 <!-- Headless Chrome by default --> <browser>headless</browser>
-    <!-- OFF by default -->         <debug>off</debug>
+    <!-- Visual debug is OFF by default -->         <debug>off</debug>
                     </systemPropertyVariables>
 				</configuration>
 				
