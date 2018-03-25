@@ -109,8 +109,8 @@
 						<!-- Visual debug is OFF by default -->         
 						<debug>off</debug>
 						<!-- Capture screenshot of the webpage when an Exceptions occours 
-						ENABLED by default -->         
-						<screenshot>enabled</screenshot>
+						DISABLED by default -->         
+						<screenshot>disabled</screenshot>
 					</systemPropertyVariables>
 				</configuration>
 
