@@ -5,6 +5,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
@@ -15,6 +16,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.testng.ITestResult;
 
 public class ApplicationManager {
 
@@ -50,7 +52,6 @@ public class ApplicationManager {
 	    return;
     }
 
-
     private void launchBrowser() {
 	// Check for browser property and assign browser options
 	if (isBrowser("HEADLESS")) {
@@ -59,12 +60,12 @@ public class ApplicationManager {
 		this.driverPath = "./src/test/resources/webdrivers/mac/chromedriver";
 		option.addArguments("-headless");
 		// option.addArguments("-disable-gpu");
-		option.addArguments("-window-size=1200x600");
+		option.addArguments("-window-size=1920x1080");
 	    } else if (isPlatform("WINDOWS")) {
 		this.driverPath = "./src/test/resources/webdrivers/pc/chromedriver.exe";
 		option.addArguments("--headless");
 		// option.addArguments("--disable-gpu");
-		option.addArguments("--window-size=1200x600");
+		option.addArguments("--window-size=1920x1080");
 	    } else
 		throw new IllegalArgumentException("Unknown OS");
 	    System.setProperty("webdriver.chrome.driver", this.driverPath);
@@ -128,41 +129,16 @@ public class ApplicationManager {
 	assertThat(operation.perform(allObjects, keyword, objectName, objectType, value), equalTo(value));
 
     }
-    
-    
-    /**
 
-     * This function will allow us to take screenshots
-
-     * @param webdriver
-
-     * @param fileWithPath
-
-     * @throws Exception
-
-     */
-
-    public static void takeSnapShot(WebDriver webdriver,String fileWithPath) throws Exception{
-
-        //Convert web driver object to TakeScreenshot
-
-        TakesScreenshot scrShot =((TakesScreenshot)webdriver);
-
-        //Call getScreenshotAs method to create image file
-
-                File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
-
-            //Move image file to new destination
-
-                File DestFile=new File(fileWithPath);
-
-                //Copy file at destination
-
-                FileUtils.copyFile(SrcFile, DestFile);
-
-            
+    public void onException(ITestResult result) throws IOException {
+	if (System.getProperty("screenshot").toUpperCase().contains("ENABLED")
+		&& ITestResult.FAILURE == result.getStatus()) {
+	    System.out.println(result.getStatus());
+	    File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+	    FileUtils.copyFile(scrFile,
+		    new File(result.getName() + "--" + Arrays.toString(result.getParameters()) + ".jpg"));
+	}
 
     }
-    
 
 }
