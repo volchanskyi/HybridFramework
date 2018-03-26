@@ -7,7 +7,7 @@
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="uiTest" invocation-numbers="45"/>
+          <include name="uiTest" invocation-numbers="30"/>
         </methods>
       </class> <!-- com.automationpractice.tests.ExecuteTest -->
     </classes>

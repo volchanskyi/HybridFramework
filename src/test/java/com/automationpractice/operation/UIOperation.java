@@ -87,18 +87,22 @@ public class UIOperation {
 		// This will select second radio button, if the first radio button is selected
 		// by default
 		oRadioButton.get(1).click();
-		// Enable/Disable visual debug options(Highlighting web elements, visual verbose
-		// mode, etc.)
-		visualDebug(oRadioButton.get(1));
-	    } else {
+		//Check if the button was clicked
+		if (oRadioButton.get(1).isSelected()) {
+		    break;
+		}
+		return "The radio button hasn`t been clicked";
+	    } else if (this.booleanValue = true) {
 		// If the first radio button is not selected by default, it will be
 		// selected
 		oRadioButton.get(0).click();
-		// Enable/Disable visual debug options(Highlighting web elements, visual verbose
-		// mode, etc.)
-		visualDebug(oRadioButton.get(0));
-	    }
-	    break;
+		//Check if the button was clicked
+		if (oRadioButton.get(0).isSelected()) {
+		    break;
+		}
+		return "The radio button hasn`t been clicked";
+	    } else
+		return "Couldn`t read radiobutton`s value";
 
 	case "SCROLLINTOVIEW":
 	    // Wait for the modal to appear
@@ -129,9 +133,12 @@ public class UIOperation {
 	    // Enable/Disable visual debug options(Highlighting web elements, visual verbose
 	    // mode, etc.)
 	    visualDebug(uniqueField);
-	    sendUniqueKeys(p, objectName, objectType, value);
+	    String uniqueValue = sendUniqueKeys(p, objectName, objectType, value);
 	    // Return the text that was inserted for verification
-	    break;
+	    if (!uniqueValue.equals(getJavaScriptObjectValue(p, objectName, objectType))) {
+		return "The text hasn`t been entered";
+	    } else
+		break;
 
 	case "GOTOURL":
 	    // Get url of application
@@ -237,8 +244,9 @@ public class UIOperation {
 	return findWebElements(p, objectName, objectType).get(0);
     }
 
-    private void sendUniqueKeys(Properties p, String objectName, String objectType, String value) {
+    private String sendUniqueKeys(Properties p, String objectName, String objectType, String value) {
 	findTheFirstWebElement(p, objectName, objectType).sendKeys(this.currentTime + value);
+	return this.currentTime + value;
     }
 
     private WebElement waitForPresenceOfElement(Properties p, String objectName, String objectType) {
