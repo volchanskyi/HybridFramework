@@ -1,0 +1,319 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>48/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Apr 05 16:39:13 PDT 2018</td>
+</tr>
+<tr><td>Total time:</td><td>57 seconds (57147 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.automationpractice.tests.ExecuteTest.uiTest()'><b>uiTest</b><br>Test class: com.automationpractice.tests.ExecuteTest (TC # 01.03 - Hero Image Verification)<br>Parameters: TC # 01.01 - Shop by search and category, , , , </td>
+<td></td>
+<td>4</td>
+<td>com.automationpractice.tests.ExecuteTest@5edc3e29</td></tr>
+<tr>
+<td title='com.automationpractice.tests.ExecuteTest.uiTest()'><b>uiTest</b><br>Test class: com.automationpractice.tests.ExecuteTest (TC # 01.03 - Hero Image Verification)<br>Parameters: TC # 01.01, GOTOURL, , , http://automationpractice.com/index.php</td>
+<td></td>
+<td>4</td>
+<td>com.automationpractice.tests.ExecuteTest@5edc3e29</td></tr>
+<tr>
+<td title='com.automationpractice.tests.ExecuteTest.uiTest()'><b>uiTest</b><br>Test class: com.automationpractice.tests.ExecuteTest (TC # 01.03 - Hero Image Verification)<br>Parameters: TC # 01.01, VERIFYPAGETITLE, actualTitle, css, My Store</td>
+<td></td>
+<td>0</td>
+<td>com.automationpractice.tests.ExecuteTest@5edc3e29</td></tr>
+<tr>
+<td title='com.automationpractice.tests.ExecuteTest.uiTest()'><b>uiTest</b><br>Test class: com.automationpractice.tests.ExecuteTest (TC # 01.03 - Hero Image Verification)<br>Parameters: TC # 01.01, CLICK, loginButton, link, </td>
+<td></td>
+<td>2</td>
+<td>com.automationpractice.tests.ExecuteTest@5edc3e29</td></tr>
+<tr>
+<td title='com.automationpractice.tests.ExecuteTest.uiTest()'><b>uiTest</b><br>Test class: com.automationpractice.tests.ExecuteTest (TC # 01.03 - Hero Image Verification)<br>Parameters: TC # 01.01, VERIFYPAGETITLE, actualTitle, css, Login - My Store</td>
+<td></td>
+<td>0</td>
+<td>com.automationpractice.tests.ExecuteTest@5edc3e29</td></tr>
+<tr>
+<td title='com.automationpractice.tests.ExecuteTest.uiTest()'><b>uiTest</b><br>Test class: com.automationpractice.tests.ExecuteTest (TC # 01.03 - Hero Image Verification)<br>Parameters: TC # 01.01, SETTEXTIN, usernameField, css, volchanskij@gmail.com</td>
+<td></td>
+<td>0</td>
+<td>com.automationpractice.tests.ExecuteTest@5edc3e29</td></tr>
+<tr>
+<td title='com.automationpractice.tests.ExecuteTest.uiTest()'><b>uiTest</b><br>Test class: com.automationpractice.tests.ExecuteTest (TC # 01.03 - Hero Image Verification)<br>Parameters: TC # 01.01, SETTEXTIN, passwordField, css, testPWD001</td>
+<td></td>
+<td>0</td>
+<td>com.automationpractice.tests.ExecuteTest@5edc3e29</td></tr>
+<tr>
+<td title='com.automationpractice.tests.ExecuteTest.uiTest()'><b>uiTest</b><br>Test class: com.automationpractice.tests.ExecuteTest (TC # 01.03 - Hero Image Verification)<br>Parameters: TC # 01.01, CLICK, shopLoginButton, css, </td>
+<td></td>
+<td>2</td>
+<td>com.automationpractice.tests.ExecuteTest@5edc3e29</td></tr>
+<tr>
+<td title='com.automationpractice.tests.ExecuteTest.uiTest()'><b>uiTest</b><br>Test class: com.automationpractice.tests.ExecuteTest (TC # 01.03 - Hero Image Verification)<br>Parameters: TC # 01.01, VERIFYPAGETITLE, actualTitle, css, My account - My Store</td>
+<td></td>
+<td>0</td>
+<td>com.automationpractice.tests.ExecuteTest@5edc3e29</td></tr>
+<tr>
+<td title='com.automationpractice.tests.ExecuteTest.uiTest()'><b>uiTest</b><br>Test class: com.automationpractice.tests.ExecuteTest (TC # 01.03 - Hero Image Verification)<br>Parameters: TC # 01.01, SETTEXTIN, searchField, css, Printed Summer Dress</td>
+<td></td>
+<td>0</td>
+<td>com.automationpractice.tests.ExecuteTest@5edc3e29</td></tr>
+<tr>
+<td title='com.automationpractice.tests.ExecuteTest.uiTest()'><b>uiTest</b><br>Test class: com.automationpractice.tests.ExecuteTest (TC # 01.03 - Hero Image Verification)<br>Parameters: TC # 01.01, CLICK, searchButton, css, </td>
+<td></td>
+<td>1</td>
+<td>com.automationpractice.tests.ExecuteTest@5edc3e29</td></tr>
+<tr>
+<td title='com.automationpractice.tests.ExecuteTest.uiTest()'><b>uiTest</b><br>Test class: com.automationpractice.tests.ExecuteTest (TC # 01.03 - Hero Image Verification)<br>Parameters: TC # 01.01, SELECPAGETITEMFROM, items, css, Printed Summer Dress</td>
+<td></td>
+<td>1</td>
+<td>com.automationpractice.tests.ExecuteTest@5edc3e29</td></tr>
+<tr>
+<td title='com.automationpractice.tests.ExecuteTest.uiTest()'><b>uiTest</b><br>Test class: com.automationpractice.tests.ExecuteTest (TC # 01.03 - Hero Image Verification)<br>Parameters: TC # 01.01, CLICK, addToCartButton, css, </td>
+<td></td>
+<td>0</td>
+<td>com.automationpractice.tests.ExecuteTest@5edc3e29</td></tr>
+<tr>
+<td title='com.automationpractice.tests.ExecuteTest.uiTest()'><b>uiTest</b><br>Test class: com.automationpractice.tests.ExecuteTest (TC # 01.03 - Hero Image Verification)<br>Parameters: TC # 01.01, CLICK, closeOverlayButton, css, </td>
+<td></td>
+<td>0</td>
+<td>com.automationpractice.tests.ExecuteTest@5edc3e29</td></tr>
+<tr>
+<td title='com.automationpractice.tests.ExecuteTest.uiTest()'><b>uiTest</b><br>Test class: com.automationpractice.tests.ExecuteTest (TC # 01.03 - Hero Image Verification)<br>Parameters: TC # 01.01, CLICK, homeButton, css, </td>
+<td></td>
+<td>1</td>
+<td>com.automationpractice.tests.ExecuteTest@5edc3e29</td></tr>
+<tr>
+<td title='com.automationpractice.tests.ExecuteTest.uiTest()'><b>uiTest</b><br>Test class: com.automationpractice.tests.ExecuteTest (TC # 01.03 - Hero Image Verification)<br>Parameters: TC # 01.01, CLICK, shopByCategory, xpath, </td>
+<td></td>
+<td>1</td>
+<td>com.automationpractice.tests.ExecuteTest@5edc3e29</td></tr>
+<tr>
+<td title='com.automationpractice.tests.ExecuteTest.uiTest()'><b>uiTest</b><br>Test class: com.automationpractice.tests.ExecuteTest (TC # 01.03 - Hero Image Verification)<br>Parameters: TC # 01.01, CLICK, subCategory, xpath, </td>
+<td></td>
+<td>1</td>
+<td>com.automationpractice.tests.ExecuteTest@5edc3e29</td></tr>
+<tr>
+<td title='com.automationpractice.tests.ExecuteTest.uiTest()'><b>uiTest</b><br>Test class: com.automationpractice.tests.ExecuteTest (TC # 01.03 - Hero Image Verification)<br>Parameters: TC # 01.01, SELECPAGETITEMFROM, items, css, Printed Dress</td>
+<td></td>
+<td>1</td>
+<td>com.automationpractice.tests.ExecuteTest@5edc3e29</td></tr>
+<tr>
+<td title='com.automationpractice.tests.ExecuteTest.uiTest()'><b>uiTest</b><br>Test class: com.automationpractice.tests.ExecuteTest (TC # 01.03 - Hero Image Verification)<br>Parameters: TC # 01.01, CLICK, addToCartButton, css, </td>
+<td></td>
+<td>0</td>
+<td>com.automationpractice.tests.ExecuteTest@5edc3e29</td></tr>
+<tr>
+<td title='com.automationpractice.tests.ExecuteTest.uiTest()'><b>uiTest</b><br>Test class: com.automationpractice.tests.ExecuteTest (TC # 01.03 - Hero Image Verification)<br>Parameters: TC # 01.01, CLICK, proceedToCheckoutButton, css, </td>
+<td></td>
+<td>1</td>
+<td>com.automationpractice.tests.ExecuteTest@5edc3e29</td></tr>
+<tr>
+<td title='com.automationpractice.tests.ExecuteTest.uiTest()'><b>uiTest</b><br>Test class: com.automationpractice.tests.ExecuteTest (TC # 01.03 - Hero Image Verification)<br>Parameters: TC # 01.01, VERIFYITEMS, cartItems, css, Printed Dress</td>
+<td></td>
+<td>0</td>
+<td>com.automationpractice.tests.ExecuteTest@5edc3e29</td></tr>
+<tr>
+<td title='com.automationpractice.tests.ExecuteTest.uiTest()'><b>uiTest</b><br>Test class: com.automationpractice.tests.ExecuteTest (TC # 01.03 - Hero Image Verification)<br>Parameters: TC # 01.01, VERIFYITEMS, cartItems, css, Printed Summer Dress</td>
+<td></td>
+<td>0</td>
+<td>com.automationpractice.tests.ExecuteTest@5edc3e29</td></tr>
+<tr>
+<td title='com.automationpractice.tests.ExecuteTest.uiTest()'><b>uiTest</b><br>Test class: com.automationpractice.tests.ExecuteTest (TC # 01.03 - Hero Image Verification)<br>Parameters: , CLOSEBROWSER, , , </td>
+<td></td>
+<td>0</td>
+<td>com.automationpractice.tests.ExecuteTest@5edc3e29</td></tr>
+<tr>
+<td title='com.automationpractice.tests.ExecuteTest.uiTest()'><b>uiTest</b><br>Test class: com.automationpractice.tests.ExecuteTest (TC # 01.03 - Hero Image Verification)<br>Parameters: TC # 01.02 - Sign Up, , , , </td>
+<td></td>
+<td>1</td>
+<td>com.automationpractice.tests.ExecuteTest@5edc3e29</td></tr>
+<tr>
+<td title='com.automationpractice.tests.ExecuteTest.uiTest()'><b>uiTest</b><br>Test class: com.automationpractice.tests.ExecuteTest (TC # 01.03 - Hero Image Verification)<br>Parameters: TC # 01.02, GOTOURL, , , http://automationpractice.com/index.php</td>
+<td></td>
+<td>4</td>
+<td>com.automationpractice.tests.ExecuteTest@5edc3e29</td></tr>
+<tr>
+<td title='com.automationpractice.tests.ExecuteTest.uiTest()'><b>uiTest</b><br>Test class: com.automationpractice.tests.ExecuteTest (TC # 01.03 - Hero Image Verification)<br>Parameters: TC # 01.02, VERIFYPAGETITLE, actualTitle, css, My Store</td>
+<td></td>
+<td>0</td>
+<td>com.automationpractice.tests.ExecuteTest@5edc3e29</td></tr>
+<tr>
+<td title='com.automationpractice.tests.ExecuteTest.uiTest()'><b>uiTest</b><br>Test class: com.automationpractice.tests.ExecuteTest (TC # 01.03 - Hero Image Verification)<br>Parameters: TC # 01.02, CLICK, loginButton, link, </td>
+<td></td>
+<td>1</td>
+<td>com.automationpractice.tests.ExecuteTest@5edc3e29</td></tr>
+<tr>
+<td title='com.automationpractice.tests.ExecuteTest.uiTest()'><b>uiTest</b><br>Test class: com.automationpractice.tests.ExecuteTest (TC # 01.03 - Hero Image Verification)<br>Parameters: TC # 01.02, VERIFYPAGETITLE, actualTitle, css, Login - My Store</td>
+<td></td>
+<td>0</td>
+<td>com.automationpractice.tests.ExecuteTest@5edc3e29</td></tr>
+<tr>
+<td title='com.automationpractice.tests.ExecuteTest.uiTest()'><b>uiTest</b><br>Test class: com.automationpractice.tests.ExecuteTest (TC # 01.03 - Hero Image Verification)<br>Parameters: TC # 01.02, SETUNIQUETEXTIN, newUserNameField, css, volchanskij@gmail.com</td>
+<td></td>
+<td>0</td>
+<td>com.automationpractice.tests.ExecuteTest@5edc3e29</td></tr>
+<tr>
+<td title='com.automationpractice.tests.ExecuteTest.uiTest()'><b>uiTest</b><br>Test class: com.automationpractice.tests.ExecuteTest (TC # 01.03 - Hero Image Verification)<br>Parameters: TC # 01.02, CLICK, createAccountButton, css, </td>
+<td></td>
+<td>0</td>
+<td>com.automationpractice.tests.ExecuteTest@5edc3e29</td></tr>
+<tr>
+<td title='com.automationpractice.tests.ExecuteTest.uiTest()'><b>uiTest</b><br>Test class: com.automationpractice.tests.ExecuteTest (TC # 01.03 - Hero Image Verification)<br>Parameters: TC # 01.02, CLICKRADIOBUTTON, genderRadioButton, css, </td>
+<td></td>
+<td>1</td>
+<td>com.automationpractice.tests.ExecuteTest@5edc3e29</td></tr>
+<tr>
+<td title='com.automationpractice.tests.ExecuteTest.uiTest()'><b>uiTest</b><br>Test class: com.automationpractice.tests.ExecuteTest (TC # 01.03 - Hero Image Verification)<br>Parameters: TC # 01.02, SETTEXTIN, firstNameTextField, css, Ivan</td>
+<td></td>
+<td>0</td>
+<td>com.automationpractice.tests.ExecuteTest@5edc3e29</td></tr>
+<tr>
+<td title='com.automationpractice.tests.ExecuteTest.uiTest()'><b>uiTest</b><br>Test class: com.automationpractice.tests.ExecuteTest (TC # 01.03 - Hero Image Verification)<br>Parameters: TC # 01.02, SETTEXTIN, lastNameTextField, css, bruno</td>
+<td></td>
+<td>0</td>
+<td>com.automationpractice.tests.ExecuteTest@5edc3e29</td></tr>
+<tr>
+<td title='com.automationpractice.tests.ExecuteTest.uiTest()'><b>uiTest</b><br>Test class: com.automationpractice.tests.ExecuteTest (TC # 01.03 - Hero Image Verification)<br>Parameters: TC # 01.02, SETTEXTIN, newPasswordTextField, css, testPWD001</td>
+<td></td>
+<td>0</td>
+<td>com.automationpractice.tests.ExecuteTest@5edc3e29</td></tr>
+<tr>
+<td title='com.automationpractice.tests.ExecuteTest.uiTest()'><b>uiTest</b><br>Test class: com.automationpractice.tests.ExecuteTest (TC # 01.03 - Hero Image Verification)<br>Parameters: TC # 01.02, SETTEXTIN, newAddressTextField, css, 178 somwhere I belong</td>
+<td></td>
+<td>0</td>
+<td>com.automationpractice.tests.ExecuteTest@5edc3e29</td></tr>
+<tr>
+<td title='com.automationpractice.tests.ExecuteTest.uiTest()'><b>uiTest</b><br>Test class: com.automationpractice.tests.ExecuteTest (TC # 01.03 - Hero Image Verification)<br>Parameters: TC # 01.02, SETTEXTIN, newCityTextField, css, San Francisco</td>
+<td></td>
+<td>0</td>
+<td>com.automationpractice.tests.ExecuteTest@5edc3e29</td></tr>
+<tr>
+<td title='com.automationpractice.tests.ExecuteTest.uiTest()'><b>uiTest</b><br>Test class: com.automationpractice.tests.ExecuteTest (TC # 01.03 - Hero Image Verification)<br>Parameters: TC # 01.02, CHOOSEFROM, stateDropDownMenu, css, California</td>
+<td></td>
+<td>0</td>
+<td>com.automationpractice.tests.ExecuteTest@5edc3e29</td></tr>
+<tr>
+<td title='com.automationpractice.tests.ExecuteTest.uiTest()'><b>uiTest</b><br>Test class: com.automationpractice.tests.ExecuteTest (TC # 01.03 - Hero Image Verification)<br>Parameters: TC # 01.02, SETTEXTIN, newPostCodeTextField, css, 94108</td>
+<td></td>
+<td>0</td>
+<td>com.automationpractice.tests.ExecuteTest@5edc3e29</td></tr>
+<tr>
+<td title='com.automationpractice.tests.ExecuteTest.uiTest()'><b>uiTest</b><br>Test class: com.automationpractice.tests.ExecuteTest (TC # 01.03 - Hero Image Verification)<br>Parameters: TC # 01.02, SETTEXTIN, newMobilePhoneTextField, css, 4158695625</td>
+<td></td>
+<td>0</td>
+<td>com.automationpractice.tests.ExecuteTest@5edc3e29</td></tr>
+<tr>
+<td title='com.automationpractice.tests.ExecuteTest.uiTest()'><b>uiTest</b><br>Test class: com.automationpractice.tests.ExecuteTest (TC # 01.03 - Hero Image Verification)<br>Parameters: TC # 01.02, CLICK, registerAccountButton, css, </td>
+<td></td>
+<td>1</td>
+<td>com.automationpractice.tests.ExecuteTest@5edc3e29</td></tr>
+<tr>
+<td title='com.automationpractice.tests.ExecuteTest.uiTest()'><b>uiTest</b><br>Test class: com.automationpractice.tests.ExecuteTest (TC # 01.03 - Hero Image Verification)<br>Parameters: TC # 01.02, VERIFYPAGETITLE, actualTitle, css, My account - My Store</td>
+<td></td>
+<td>0</td>
+<td>com.automationpractice.tests.ExecuteTest@5edc3e29</td></tr>
+<tr>
+<td title='com.automationpractice.tests.ExecuteTest.uiTest()'><b>uiTest</b><br>Test class: com.automationpractice.tests.ExecuteTest (TC # 01.03 - Hero Image Verification)<br>Parameters: , CLOSEBROWSER, , , </td>
+<td></td>
+<td>0</td>
+<td>com.automationpractice.tests.ExecuteTest@5edc3e29</td></tr>
+<tr>
+<td title='com.automationpractice.tests.ExecuteTest.uiTest()'><b>uiTest</b><br>Test class: com.automationpractice.tests.ExecuteTest (TC # 01.03 - Hero Image Verification)<br>Parameters: TC # 01.03 - Hero Image Verification, , , , </td>
+<td></td>
+<td>1</td>
+<td>com.automationpractice.tests.ExecuteTest@5edc3e29</td></tr>
+<tr>
+<td title='com.automationpractice.tests.ExecuteTest.uiTest()'><b>uiTest</b><br>Test class: com.automationpractice.tests.ExecuteTest (TC # 01.03 - Hero Image Verification)<br>Parameters: TC # 01.03, GOTOURL, , , http://automationpractice.com/index.php</td>
+<td></td>
+<td>4</td>
+<td>com.automationpractice.tests.ExecuteTest@5edc3e29</td></tr>
+<tr>
+<td title='com.automationpractice.tests.ExecuteTest.uiTest()'><b>uiTest</b><br>Test class: com.automationpractice.tests.ExecuteTest (TC # 01.03 - Hero Image Verification)<br>Parameters: TC # 01.03, VERIFYPAGETITLE, actualTitle, css, My Store</td>
+<td></td>
+<td>0</td>
+<td>com.automationpractice.tests.ExecuteTest@5edc3e29</td></tr>
+<tr>
+<td title='com.automationpractice.tests.ExecuteTest.uiTest()'><b>uiTest</b><br>Test class: com.automationpractice.tests.ExecuteTest (TC # 01.03 - Hero Image Verification)<br>Parameters: TC # 01.03, VERIFYSLIDER, homeSlider, css, </td>
+<td></td>
+<td>8</td>
+<td>com.automationpractice.tests.ExecuteTest@5edc3e29</td></tr>
+<tr>
+<td title='com.automationpractice.tests.ExecuteTest.uiTest()'><b>uiTest</b><br>Test class: com.automationpractice.tests.ExecuteTest (TC # 01.03 - Hero Image Verification)<br>Parameters: TC # 01.03, VERIFYPAGETITLE, actualTitle, css, My Store</td>
+<td></td>
+<td>0</td>
+<td>com.automationpractice.tests.ExecuteTest@5edc3e29</td></tr>
+<tr>
+<td title='com.automationpractice.tests.ExecuteTest.uiTest()'><b>uiTest</b><br>Test class: com.automationpractice.tests.ExecuteTest (TC # 01.03 - Hero Image Verification)<br>Parameters: , CLOSEBROWSER, , , </td>
+<td></td>
+<td>0</td>
+<td>com.automationpractice.tests.ExecuteTest@5edc3e29</td></tr>
+</table><p>
+</body>
+</html>

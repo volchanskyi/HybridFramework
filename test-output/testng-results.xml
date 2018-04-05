@@ -1,0 +1,3277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="48" passed="48">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="57147" started-at="2018-04-05T23:39:13Z" finished-at="2018-04-05T23:40:10Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="57147" started-at="2018-04-05T23:39:13Z" finished-at="2018-04-05T23:40:10Z">
+      <class name="com.automationpractice.tests.ExecuteTest">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="setUp" is-config="true" duration-ms="19" started-at="2018-04-05T23:39:15Z" finished-at="2018-04-05T23:39:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@404d1a6f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="uiTest" duration-ms="4956" started-at="2018-04-05T23:39:15Z" data-provider="UIData" finished-at="2018-04-05T23:39:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.01 - Shop by search and category]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="tearDown(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestResult)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-05T23:39:20Z" finished-at="2018-04-05T23:39:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@404d1a6f]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name="" status=SUCCESS method=ExecuteTest.uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="setUp" is-config="true" duration-ms="1" started-at="2018-04-05T23:39:20Z" finished-at="2018-04-05T23:39:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@77aa566a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="uiTest" duration-ms="4180" started-at="2018-04-05T23:39:20Z" data-provider="UIData" finished-at="2018-04-05T23:39:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.01]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[GOTOURL]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[http://automationpractice.com/index.php]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="uiTest" duration-ms="125" started-at="2018-04-05T23:39:24Z" data-provider="UIData" finished-at="2018-04-05T23:39:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.01]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[VERIFYPAGETITLE]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[actualTitle]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[css]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[My Store]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="tearDown(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestResult)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-05T23:39:24Z" finished-at="2018-04-05T23:39:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@77aa566a]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name=TC # 01.01 - Shop by search and category status=SUCCESS method=ExecuteTest.uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-05T23:39:24Z" finished-at="2018-04-05T23:39:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@1ec2caf2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tearDown(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestResult)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="tearDown" is-config="true" duration-ms="1" started-at="2018-04-05T23:39:24Z" finished-at="2018-04-05T23:39:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@1ec2caf2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name=TC # 01.01 - Shop by search and category status=SUCCESS method=ExecuteTest.uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="setUp" is-config="true" duration-ms="1" started-at="2018-04-05T23:39:24Z" finished-at="2018-04-05T23:39:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@2d30d676]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="uiTest" duration-ms="2700" started-at="2018-04-05T23:39:24Z" data-provider="UIData" finished-at="2018-04-05T23:39:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.01]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[CLICK]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[loginButton]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[link]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="tearDown(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestResult)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="tearDown" is-config="true" duration-ms="2" started-at="2018-04-05T23:39:27Z" finished-at="2018-04-05T23:39:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@2d30d676]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name=TC # 01.01 - Shop by search and category status=SUCCESS method=ExecuteTest.uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="setUp" is-config="true" duration-ms="1" started-at="2018-04-05T23:39:27Z" finished-at="2018-04-05T23:39:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@5063fdd]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="uiTest" duration-ms="46" started-at="2018-04-05T23:39:27Z" data-provider="UIData" finished-at="2018-04-05T23:39:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.01]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[VERIFYPAGETITLE]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[actualTitle]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[css]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Login - My Store]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="tearDown(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestResult)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="tearDown" is-config="true" duration-ms="1" started-at="2018-04-05T23:39:27Z" finished-at="2018-04-05T23:39:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@5063fdd]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name=TC # 01.01 - Shop by search and category status=SUCCESS method=ExecuteTest.uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-05T23:39:27Z" finished-at="2018-04-05T23:39:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@20ba2011]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="uiTest" duration-ms="219" started-at="2018-04-05T23:39:27Z" data-provider="UIData" finished-at="2018-04-05T23:39:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.01]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SETTEXTIN]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[usernameField]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[css]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[volchanskij@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="tearDown(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestResult)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-05T23:39:27Z" finished-at="2018-04-05T23:39:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@20ba2011]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name=TC # 01.01 - Shop by search and category status=SUCCESS method=ExecuteTest.uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="uiTest" duration-ms="168" started-at="2018-04-05T23:39:27Z" data-provider="UIData" finished-at="2018-04-05T23:39:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.01]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SETTEXTIN]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[passwordField]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[css]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[testPWD001]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-05T23:39:27Z" finished-at="2018-04-05T23:39:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@2827fbae]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tearDown(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestResult)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-05T23:39:27Z" finished-at="2018-04-05T23:39:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@2827fbae]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name=TC # 01.01 - Shop by search and category status=SUCCESS method=ExecuteTest.uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="setUp" is-config="true" duration-ms="1" started-at="2018-04-05T23:39:27Z" finished-at="2018-04-05T23:39:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@38f0bba]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="uiTest" duration-ms="2556" started-at="2018-04-05T23:39:27Z" data-provider="UIData" finished-at="2018-04-05T23:39:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.01]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[CLICK]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[shopLoginButton]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[css]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="tearDown(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestResult)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-05T23:39:30Z" finished-at="2018-04-05T23:39:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@38f0bba]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name=TC # 01.01 - Shop by search and category status=SUCCESS method=ExecuteTest.uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="uiTest" duration-ms="28" started-at="2018-04-05T23:39:30Z" data-provider="UIData" finished-at="2018-04-05T23:39:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.01]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[VERIFYPAGETITLE]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[actualTitle]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[css]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[My account - My Store]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-05T23:39:30Z" finished-at="2018-04-05T23:39:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@374334c1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="setUp" is-config="true" duration-ms="1" started-at="2018-04-05T23:39:30Z" finished-at="2018-04-05T23:39:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@46883090]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tearDown(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestResult)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-05T23:39:30Z" finished-at="2018-04-05T23:39:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@374334c1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name=TC # 01.01 - Shop by search and category status=SUCCESS method=ExecuteTest.uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="uiTest" duration-ms="212" started-at="2018-04-05T23:39:30Z" data-provider="UIData" finished-at="2018-04-05T23:39:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.01]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SETTEXTIN]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[searchField]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[css]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Printed Summer Dress]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="tearDown(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestResult)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-05T23:39:30Z" finished-at="2018-04-05T23:39:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@46883090]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name=TC # 01.01 - Shop by search and category status=SUCCESS method=ExecuteTest.uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-05T23:39:30Z" finished-at="2018-04-05T23:39:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@51e55964]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="uiTest" duration-ms="1140" started-at="2018-04-05T23:39:30Z" data-provider="UIData" finished-at="2018-04-05T23:39:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.01]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[CLICK]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[searchButton]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[css]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="tearDown(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestResult)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-05T23:39:31Z" finished-at="2018-04-05T23:39:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@51e55964]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name=TC # 01.01 - Shop by search and category status=SUCCESS method=ExecuteTest.uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="setUp" is-config="true" duration-ms="1" started-at="2018-04-05T23:39:31Z" finished-at="2018-04-05T23:39:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@2acc5a39]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="uiTest" duration-ms="1331" started-at="2018-04-05T23:39:31Z" data-provider="UIData" finished-at="2018-04-05T23:39:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.01]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SELECPAGETITEMFROM]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[items]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[css]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Printed Summer Dress]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="tearDown(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestResult)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-05T23:39:33Z" finished-at="2018-04-05T23:39:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@2acc5a39]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name=TC # 01.01 - Shop by search and category status=SUCCESS method=ExecuteTest.uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-05T23:39:33Z" finished-at="2018-04-05T23:39:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@487969d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="uiTest" duration-ms="347" started-at="2018-04-05T23:39:33Z" data-provider="UIData" finished-at="2018-04-05T23:39:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.01]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[CLICK]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[addToCartButton]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[css]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="tearDown(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestResult)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="tearDown" is-config="true" duration-ms="1" started-at="2018-04-05T23:39:33Z" finished-at="2018-04-05T23:39:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@487969d]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name=TC # 01.01 - Shop by search and category status=SUCCESS method=ExecuteTest.uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="uiTest" duration-ms="815" started-at="2018-04-05T23:39:33Z" data-provider="UIData" finished-at="2018-04-05T23:39:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.01]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[CLICK]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[closeOverlayButton]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[css]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-05T23:39:33Z" finished-at="2018-04-05T23:39:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@30c2a2d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tearDown(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestResult)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-05T23:39:34Z" finished-at="2018-04-05T23:39:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@30c2a2d]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name=TC # 01.01 - Shop by search and category status=SUCCESS method=ExecuteTest.uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-05T23:39:34Z" finished-at="2018-04-05T23:39:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@78596d51]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="uiTest" duration-ms="1467" started-at="2018-04-05T23:39:34Z" data-provider="UIData" finished-at="2018-04-05T23:39:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.01]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[CLICK]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[homeButton]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[css]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="tearDown(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestResult)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="tearDown" is-config="true" duration-ms="1" started-at="2018-04-05T23:39:35Z" finished-at="2018-04-05T23:39:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@78596d51]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name=TC # 01.01 - Shop by search and category status=SUCCESS method=ExecuteTest.uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-05T23:39:35Z" finished-at="2018-04-05T23:39:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@308cfdf1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="uiTest" duration-ms="1322" started-at="2018-04-05T23:39:35Z" data-provider="UIData" finished-at="2018-04-05T23:39:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.01]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[CLICK]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[shopByCategory]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[xpath]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="tearDown(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestResult)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="tearDown" is-config="true" duration-ms="1" started-at="2018-04-05T23:39:37Z" finished-at="2018-04-05T23:39:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@308cfdf1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name=TC # 01.01 - Shop by search and category status=SUCCESS method=ExecuteTest.uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="uiTest" duration-ms="1140" started-at="2018-04-05T23:39:37Z" data-provider="UIData" finished-at="2018-04-05T23:39:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.01]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[CLICK]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[subCategory]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[xpath]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-05T23:39:37Z" finished-at="2018-04-05T23:39:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@887b603]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tearDown(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestResult)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-05T23:39:38Z" finished-at="2018-04-05T23:39:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@887b603]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name=TC # 01.01 - Shop by search and category status=SUCCESS method=ExecuteTest.uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-05T23:39:38Z" finished-at="2018-04-05T23:39:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@6a38a87c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="uiTest" duration-ms="1001" started-at="2018-04-05T23:39:38Z" data-provider="UIData" finished-at="2018-04-05T23:39:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.01]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SELECPAGETITEMFROM]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[items]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[css]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Printed Dress]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-05T23:39:39Z" finished-at="2018-04-05T23:39:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@5938638f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="uiTest" duration-ms="146" started-at="2018-04-05T23:39:39Z" data-provider="UIData" finished-at="2018-04-05T23:39:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.01]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[CLICK]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[addToCartButton]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[css]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="tearDown(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestResult)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-05T23:39:39Z" finished-at="2018-04-05T23:39:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@6a38a87c]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name=TC # 01.01 - Shop by search and category status=SUCCESS method=ExecuteTest.uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDown(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestResult)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-05T23:39:39Z" finished-at="2018-04-05T23:39:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@5938638f]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name=TC # 01.01 - Shop by search and category status=SUCCESS method=ExecuteTest.uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-05T23:39:39Z" finished-at="2018-04-05T23:39:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@e0c6e2c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="uiTest" duration-ms="1578" started-at="2018-04-05T23:39:39Z" data-provider="UIData" finished-at="2018-04-05T23:39:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.01]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[CLICK]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[proceedToCheckoutButton]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[css]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="tearDown(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestResult)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-05T23:39:40Z" finished-at="2018-04-05T23:39:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@e0c6e2c]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name=TC # 01.01 - Shop by search and category status=SUCCESS method=ExecuteTest.uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-05T23:39:40Z" finished-at="2018-04-05T23:39:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@3b0ee640]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="uiTest" duration-ms="94" started-at="2018-04-05T23:39:40Z" data-provider="UIData" finished-at="2018-04-05T23:39:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.01]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[VERIFYITEMS]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[cartItems]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[css]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Printed Dress]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="tearDown(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestResult)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="tearDown" is-config="true" duration-ms="1" started-at="2018-04-05T23:39:40Z" finished-at="2018-04-05T23:39:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@3b0ee640]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name=TC # 01.01 - Shop by search and category status=SUCCESS method=ExecuteTest.uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-05T23:39:40Z" finished-at="2018-04-05T23:39:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@145ac215]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="uiTest" duration-ms="45" started-at="2018-04-05T23:39:40Z" data-provider="UIData" finished-at="2018-04-05T23:39:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.01]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[VERIFYITEMS]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[cartItems]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[css]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Printed Summer Dress]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-05T23:39:41Z" finished-at="2018-04-05T23:39:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@e64ef0a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="uiTest" duration-ms="648" started-at="2018-04-05T23:39:41Z" data-provider="UIData" finished-at="2018-04-05T23:39:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[CLOSEBROWSER]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="tearDown(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestResult)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-05T23:39:41Z" finished-at="2018-04-05T23:39:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@145ac215]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name=TC # 01.01 - Shop by search and category status=SUCCESS method=ExecuteTest.uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDown(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestResult)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="tearDown" is-config="true" duration-ms="1" started-at="2018-04-05T23:39:41Z" finished-at="2018-04-05T23:39:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@e64ef0a]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name=TC # 01.01 - Shop by search and category status=SUCCESS method=ExecuteTest.uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="uiTest" duration-ms="1954" started-at="2018-04-05T23:39:41Z" data-provider="UIData" finished-at="2018-04-05T23:39:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.02 - Sign Up]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-05T23:39:41Z" finished-at="2018-04-05T23:39:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@63f48de4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tearDown(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestResult)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="tearDown" is-config="true" duration-ms="2" started-at="2018-04-05T23:39:43Z" finished-at="2018-04-05T23:39:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@63f48de4]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name=TC # 01.01 - Shop by search and category status=SUCCESS method=ExecuteTest.uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-05T23:39:43Z" finished-at="2018-04-05T23:39:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@2f045b3c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="uiTest" duration-ms="4037" started-at="2018-04-05T23:39:43Z" data-provider="UIData" finished-at="2018-04-05T23:39:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[GOTOURL]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[http://automationpractice.com/index.php]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="tearDown(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestResult)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="tearDown" is-config="true" duration-ms="1" started-at="2018-04-05T23:39:47Z" finished-at="2018-04-05T23:39:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@2f045b3c]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name=TC # 01.02 - Sign Up status=SUCCESS method=ExecuteTest.uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-05T23:39:47Z" finished-at="2018-04-05T23:39:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@6d0c6ea3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="uiTest" duration-ms="26" started-at="2018-04-05T23:39:47Z" data-provider="UIData" finished-at="2018-04-05T23:39:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[VERIFYPAGETITLE]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[actualTitle]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[css]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[My Store]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="tearDown(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestResult)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-05T23:39:47Z" finished-at="2018-04-05T23:39:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@6d0c6ea3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name=TC # 01.02 - Sign Up status=SUCCESS method=ExecuteTest.uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="setUp" is-config="true" duration-ms="1" started-at="2018-04-05T23:39:47Z" finished-at="2018-04-05T23:39:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@44b9d0b7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="uiTest" duration-ms="1566" started-at="2018-04-05T23:39:47Z" data-provider="UIData" finished-at="2018-04-05T23:39:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[CLICK]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[loginButton]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[link]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="tearDown(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestResult)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-05T23:39:49Z" finished-at="2018-04-05T23:39:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@44b9d0b7]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name=TC # 01.02 - Sign Up status=SUCCESS method=ExecuteTest.uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="uiTest" duration-ms="20" started-at="2018-04-05T23:39:49Z" data-provider="UIData" finished-at="2018-04-05T23:39:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[VERIFYPAGETITLE]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[actualTitle]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[css]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Login - My Store]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-05T23:39:49Z" finished-at="2018-04-05T23:39:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@3e5ee69]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="setUp" is-config="true" duration-ms="1" started-at="2018-04-05T23:39:49Z" finished-at="2018-04-05T23:39:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@eb59892]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tearDown(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestResult)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-05T23:39:49Z" finished-at="2018-04-05T23:39:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@3e5ee69]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name=TC # 01.02 - Sign Up status=SUCCESS method=ExecuteTest.uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="uiTest" duration-ms="205" started-at="2018-04-05T23:39:49Z" data-provider="UIData" finished-at="2018-04-05T23:39:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SETUNIQUETEXTIN]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[newUserNameField]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[css]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[volchanskij@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="tearDown(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestResult)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-05T23:39:49Z" finished-at="2018-04-05T23:39:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@eb59892]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name=TC # 01.02 - Sign Up status=SUCCESS method=ExecuteTest.uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="setUp" is-config="true" duration-ms="1" started-at="2018-04-05T23:39:49Z" finished-at="2018-04-05T23:39:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@429691]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="uiTest" duration-ms="158" started-at="2018-04-05T23:39:49Z" data-provider="UIData" finished-at="2018-04-05T23:39:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[CLICK]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[createAccountButton]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[css]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="tearDown(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestResult)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="tearDown" is-config="true" duration-ms="1" started-at="2018-04-05T23:39:49Z" finished-at="2018-04-05T23:39:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@429691]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name=TC # 01.02 - Sign Up status=SUCCESS method=ExecuteTest.uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="uiTest" duration-ms="1786" started-at="2018-04-05T23:39:49Z" data-provider="UIData" finished-at="2018-04-05T23:39:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[CLICKRADIOBUTTON]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[genderRadioButton]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[css]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-05T23:39:49Z" finished-at="2018-04-05T23:39:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@af4d246]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tearDown(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestResult)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="tearDown" is-config="true" duration-ms="1" started-at="2018-04-05T23:39:51Z" finished-at="2018-04-05T23:39:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@af4d246]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name=TC # 01.02 - Sign Up status=SUCCESS method=ExecuteTest.uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-05T23:39:51Z" finished-at="2018-04-05T23:39:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@26cee3d7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="uiTest" duration-ms="120" started-at="2018-04-05T23:39:51Z" data-provider="UIData" finished-at="2018-04-05T23:39:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SETTEXTIN]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[firstNameTextField]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[css]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Ivan]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="setUp" is-config="true" duration-ms="1" started-at="2018-04-05T23:39:51Z" finished-at="2018-04-05T23:39:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@41d8e94]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tearDown(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestResult)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-05T23:39:51Z" finished-at="2018-04-05T23:39:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@26cee3d7]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name=TC # 01.02 - Sign Up status=SUCCESS method=ExecuteTest.uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="uiTest" duration-ms="134" started-at="2018-04-05T23:39:51Z" data-provider="UIData" finished-at="2018-04-05T23:39:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SETTEXTIN]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[lastNameTextField]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[css]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[bruno]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="tearDown(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestResult)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-05T23:39:51Z" finished-at="2018-04-05T23:39:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@41d8e94]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name=TC # 01.02 - Sign Up status=SUCCESS method=ExecuteTest.uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-05T23:39:51Z" finished-at="2018-04-05T23:39:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@107f6698]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="uiTest" duration-ms="153" started-at="2018-04-05T23:39:51Z" data-provider="UIData" finished-at="2018-04-05T23:39:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SETTEXTIN]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[newPasswordTextField]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[css]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[testPWD001]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-05T23:39:51Z" finished-at="2018-04-05T23:39:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@3cb5f033]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tearDown(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestResult)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-05T23:39:51Z" finished-at="2018-04-05T23:39:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@107f6698]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name=TC # 01.02 - Sign Up status=SUCCESS method=ExecuteTest.uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="uiTest" duration-ms="190" started-at="2018-04-05T23:39:51Z" data-provider="UIData" finished-at="2018-04-05T23:39:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SETTEXTIN]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[newAddressTextField]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[css]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[178 somwhere I belong]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="uiTest" duration-ms="160" started-at="2018-04-05T23:39:52Z" data-provider="UIData" finished-at="2018-04-05T23:39:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SETTEXTIN]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[newCityTextField]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[css]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[San Francisco]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="tearDown(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestResult)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-05T23:39:52Z" finished-at="2018-04-05T23:39:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@3cb5f033]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name=TC # 01.02 - Sign Up status=SUCCESS method=ExecuteTest.uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-05T23:39:52Z" finished-at="2018-04-05T23:39:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@6db47c29]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tearDown(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestResult)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-05T23:39:52Z" finished-at="2018-04-05T23:39:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@6db47c29]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name=TC # 01.02 - Sign Up status=SUCCESS method=ExecuteTest.uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="uiTest" duration-ms="265" started-at="2018-04-05T23:39:52Z" data-provider="UIData" finished-at="2018-04-05T23:39:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[CHOOSEFROM]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[stateDropDownMenu]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[css]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[California]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-05T23:39:52Z" finished-at="2018-04-05T23:39:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@5352625]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="uiTest" duration-ms="123" started-at="2018-04-05T23:39:52Z" data-provider="UIData" finished-at="2018-04-05T23:39:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SETTEXTIN]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[newPostCodeTextField]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[css]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[94108]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-05T23:39:52Z" finished-at="2018-04-05T23:39:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@6e15cbbd]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tearDown(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestResult)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-05T23:39:52Z" finished-at="2018-04-05T23:39:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@5352625]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name=TC # 01.02 - Sign Up status=SUCCESS method=ExecuteTest.uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDown(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestResult)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="tearDown" is-config="true" duration-ms="1" started-at="2018-04-05T23:39:52Z" finished-at="2018-04-05T23:39:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@6e15cbbd]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name=TC # 01.02 - Sign Up status=SUCCESS method=ExecuteTest.uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="uiTest" duration-ms="143" started-at="2018-04-05T23:39:52Z" data-provider="UIData" finished-at="2018-04-05T23:39:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SETTEXTIN]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[newMobilePhoneTextField]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[css]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[4158695625]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-05T23:39:52Z" finished-at="2018-04-05T23:39:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@7db29a24]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-05T23:39:52Z" finished-at="2018-04-05T23:39:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@33a9e48f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="uiTest" duration-ms="1168" started-at="2018-04-05T23:39:52Z" data-provider="UIData" finished-at="2018-04-05T23:39:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[CLICK]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[registerAccountButton]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[css]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="tearDown(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestResult)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-05T23:39:52Z" finished-at="2018-04-05T23:39:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@7db29a24]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name=TC # 01.02 - Sign Up status=SUCCESS method=ExecuteTest.uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDown(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestResult)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-05T23:39:53Z" finished-at="2018-04-05T23:39:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@33a9e48f]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name=TC # 01.02 - Sign Up status=SUCCESS method=ExecuteTest.uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="setUp" is-config="true" duration-ms="2" started-at="2018-04-05T23:39:53Z" finished-at="2018-04-05T23:39:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@1f01f8d1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="uiTest" duration-ms="33" started-at="2018-04-05T23:39:53Z" data-provider="UIData" finished-at="2018-04-05T23:39:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[VERIFYPAGETITLE]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[actualTitle]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[css]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[My account - My Store]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="uiTest" duration-ms="664" started-at="2018-04-05T23:39:53Z" data-provider="UIData" finished-at="2018-04-05T23:39:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[CLOSEBROWSER]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-05T23:39:53Z" finished-at="2018-04-05T23:39:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@5f8990af]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tearDown(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestResult)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-05T23:39:53Z" finished-at="2018-04-05T23:39:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@1f01f8d1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name=TC # 01.02 - Sign Up status=SUCCESS method=ExecuteTest.uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDown(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestResult)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-05T23:39:54Z" finished-at="2018-04-05T23:39:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@5f8990af]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name=TC # 01.02 - Sign Up status=SUCCESS method=ExecuteTest.uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-05T23:39:54Z" finished-at="2018-04-05T23:39:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@368352c0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="uiTest" duration-ms="1941" started-at="2018-04-05T23:39:54Z" data-provider="UIData" finished-at="2018-04-05T23:39:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.03 - Hero Image Verification]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="tearDown(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestResult)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="tearDown" is-config="true" duration-ms="1" started-at="2018-04-05T23:39:56Z" finished-at="2018-04-05T23:39:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@368352c0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name=TC # 01.02 - Sign Up status=SUCCESS method=ExecuteTest.uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-05T23:39:56Z" finished-at="2018-04-05T23:39:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@4af25503]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="uiTest" duration-ms="4675" started-at="2018-04-05T23:39:56Z" data-provider="UIData" finished-at="2018-04-05T23:40:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.03]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[GOTOURL]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[http://automationpractice.com/index.php]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="tearDown(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestResult)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-05T23:40:01Z" finished-at="2018-04-05T23:40:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@4af25503]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name=TC # 01.03 - Hero Image Verification status=SUCCESS method=ExecuteTest.uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="uiTest" duration-ms="33" started-at="2018-04-05T23:40:01Z" data-provider="UIData" finished-at="2018-04-05T23:40:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.03]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[VERIFYPAGETITLE]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[actualTitle]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[css]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[My Store]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-05T23:40:01Z" finished-at="2018-04-05T23:40:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@5a25ebfc]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tearDown(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestResult)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="tearDown" is-config="true" duration-ms="1" started-at="2018-04-05T23:40:01Z" finished-at="2018-04-05T23:40:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@5a25ebfc]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name=TC # 01.03 - Hero Image Verification status=SUCCESS method=ExecuteTest.uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-05T23:40:01Z" finished-at="2018-04-05T23:40:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@49ba04ff]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="uiTest" duration-ms="8480" started-at="2018-04-05T23:40:01Z" data-provider="UIData" finished-at="2018-04-05T23:40:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.03]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[VERIFYSLIDER]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[homeSlider]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[css]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="tearDown(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestResult)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-05T23:40:09Z" finished-at="2018-04-05T23:40:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@49ba04ff]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name=TC # 01.03 - Hero Image Verification status=SUCCESS method=ExecuteTest.uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="uiTest" duration-ms="21" started-at="2018-04-05T23:40:09Z" data-provider="UIData" finished-at="2018-04-05T23:40:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC # 01.03]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[VERIFYPAGETITLE]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[actualTitle]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[css]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[My Store]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-05T23:40:09Z" finished-at="2018-04-05T23:40:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@65035a5a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tearDown(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestResult)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="tearDown" is-config="true" duration-ms="1" started-at="2018-04-05T23:40:09Z" finished-at="2018-04-05T23:40:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@65035a5a]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name=TC # 01.03 - Hero Image Verification status=SUCCESS method=ExecuteTest.uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="uiTest" duration-ms="626" started-at="2018-04-05T23:40:09Z" data-provider="UIData" finished-at="2018-04-05T23:40:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[CLOSEBROWSER]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiTest -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-05T23:40:09Z" finished-at="2018-04-05T23:40:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@3d8141b4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tearDown(java.lang.reflect.Method, [Ljava.lang.Object;, org.testng.ITestResult)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29]" test-instance-name="TC # 01.03 - Hero Image Verification" name="tearDown" is-config="true" duration-ms="0" started-at="2018-04-05T23:40:10Z" finished-at="2018-04-05T23:40:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.automationpractice.tests.ExecuteTest.uiTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@3d8141b4]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[[TestResult name=TC # 01.03 - Hero Image Verification status=SUCCESS method=ExecuteTest.uiTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.tests.ExecuteTest@5edc3e29] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.automationpractice.tests.ExecuteTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
