@@ -8,7 +8,7 @@
 			<fileNamePattern>log-%d{yyyy-MM-dd-hh-mm}.html</fileNamePattern>
 
 			<!-- retention policy -->
-			<maxHistory>7</maxHistory> 
+			<maxHistory>1</maxHistory> <!-- in days -->
 			<totalSizeCap>1GB</totalSizeCap>
 		</rollingPolicy>
 		<triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">

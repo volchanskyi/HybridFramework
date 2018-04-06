@@ -1,9 +1,9 @@
 <?xml version = "1.0" encoding = "UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="TestNG Suite">
+<!-- <suite name="TestNG Suite">
 	<!-- <test name="UIData"> -->
 
-	<test name="SmokeTEst">
+	<test name="SmokeTEst" thread-count="3" parallel="methods" >
 	<parameter name="browser" value"Chrome" />
 		<classes>
 			<class name="com.automationpractice.HybridExecuteTest" />
@@ -17,4 +17,4 @@
 			<class name="com.automationpractice.HybridExecuteTest" />
 		</classes>
 	</test>
-</suite>
+</suite> -->

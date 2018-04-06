@@ -125,16 +125,19 @@ public class ApplicationManager {
 	UIOperation operation = new UIOperation(driver);
 
 	// Call perform function to perform operation on interface
-	// Verify using Hamcrest
+	// Verify Expected result against Actual using Hamcrest assertion method
 	assertThat(operation.perform(allObjects, keyword, objectName, objectType, value), equalTo(value));
 
     }
 
     public void onException(ITestResult result) throws IOException {
+	//check if the taking screenshot functionality was enabled
 	if (System.getProperty("screenshot").toUpperCase().contains("ENABLED")
+		//and check if and exception has occurred
 		&& ITestResult.FAILURE == result.getStatus()) {
-	    System.out.println(result.getStatus());
+	    //generate a file with a screenshot
 	    File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+	    //format the file and save it in the project dir
 	    FileUtils.copyFile(scrFile,
 		    new File(result.getName() + "--" + Arrays.toString(result.getParameters()) + ".jpg"));
 	}

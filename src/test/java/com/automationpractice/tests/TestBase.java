@@ -42,6 +42,7 @@ public class TestBase implements ITest {
     protected void tearDown(Method method, Object[] parameters, ITestResult result) throws IOException {
 	// Marks when a step is finished
 	logger.debug("Stop test " + method.getName());
+	//take a screenshot when an exception occurs
 	APP.onException(result);
     }
 

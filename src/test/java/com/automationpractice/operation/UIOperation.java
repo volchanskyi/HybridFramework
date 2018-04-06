@@ -2,6 +2,7 @@ package com.automationpractice.operation;
 
 import java.util.List;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -29,6 +30,7 @@ public class UIOperation {
     UIOperation(WebDriver driver) {
 	this.driver = driver;
 	wait = new WebDriverWait(driver, 10);
+	driver.manage().timeouts().setScriptTimeout(20, TimeUnit.SECONDS);
     }
 
     // UI interaction logic implemantation
@@ -75,8 +77,20 @@ public class UIOperation {
 	    // Return the text that was inserted for verification
 	    return choose.getFirstSelectedOption().getText();
 
+	case "SORTBY":
+	    // wait for presense of the element in the DOM(passing option from the list)
+	    waitForPresenceOfElement(p, objectName, objectType);
+	    // Create instance of Javascript executor
+	    js = (JavascriptExecutor) driver;
+	    // Use
+	    js.executeAsyncScript(
+		    "var select = arguments[0]; for(var i = 0; i < select.options.length; i++){ if(select.options[i].text == arguments[1]){ select.options[i].selected = true; } }",
+		    findTheFirstWebElement(p, objectName, objectType), value);
+	    System.out.println(js);
+	    break;
+
 	case "CLICKRADIOBUTTON":
-	    waitForVisabilityOfElement(p, objectName, objectType);
+	    waitForPresenceOfElement(p, objectName, objectType);
 	    List<WebElement> oRadioButton = findWebElements(p, objectName, objectType);
 	    // Create a boolean variable which will hold the value (True/False)
 	    // This statement will return True, if first Radio button is selected
@@ -87,7 +101,7 @@ public class UIOperation {
 		// This will select second radio button, if the first radio button is selected
 		// by default
 		oRadioButton.get(1).click();
-		//Check if the button was clicked
+		// Check if the button was clicked
 		if (oRadioButton.get(1).isSelected()) {
 		    break;
 		}
@@ -96,7 +110,7 @@ public class UIOperation {
 		// If the first radio button is not selected by default, it will be
 		// selected
 		oRadioButton.get(0).click();
-		//Check if the button was clicked
+		// Check if the button was clicked
 		if (oRadioButton.get(0).isSelected()) {
 		    break;
 		}
