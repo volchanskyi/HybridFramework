@@ -17,10 +17,11 @@
 	</properties>
 
 	<dependencies>
+	<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
-			<version>3.7.1</version>
+			<version>3.11.0</version>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
@@ -105,7 +106,7 @@
 					</properties>
 					<systemPropertyVariables>
 						<!-- Headless Chrome by default --> 
-						<browser>headless</browser>
+						<browser>chrome</browser>
 						<!-- Visual debug is OFF by default -->         
 						<debug>off</debug>
 						<!-- Capture screenshot of the webpage when an Exceptions occours 

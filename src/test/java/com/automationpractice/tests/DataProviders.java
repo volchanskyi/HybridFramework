@@ -18,7 +18,7 @@ public class DataProviders {
 	TCreader file = new TCreader();
 
 	// Read keyword sheet
-	Sheet ivSheet = file.readExcel(System.getProperty("user.dir") + "\\", "TestCase.xlsx", "UItests");
+	Sheet ivSheet = file.readExcel(System.getProperty("user.dir") + "\\", "test.xlsx", "UItests");
 	// Find number of rows in excel file
 	int rowCount = ivSheet.getLastRowNum() - ivSheet.getFirstRowNum();
 	object = new Object[rowCount][5];

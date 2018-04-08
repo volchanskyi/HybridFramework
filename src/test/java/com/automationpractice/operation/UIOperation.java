@@ -1,8 +1,11 @@
 package com.automationpractice.operation;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.JavascriptExecutor;
@@ -15,7 +18,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.google.common.base.Objects;
 
-public class UIOperation extends LocatorReader{
+public class UIOperation extends LocatorReader {
 
     private WebDriver driver;
     private WebDriverWait wait;
@@ -25,6 +28,11 @@ public class UIOperation extends LocatorReader{
     protected int index;
     private long currentTime = System.currentTimeMillis();
     final ApplicationManager APP = new ApplicationManager(driver);
+    private String regex = "";
+    private String regexString = "";
+    private final Pattern pattern = Pattern.compile(regex);    
+    private final Matcher matcher = pattern.matcher(regexString);
+    private final List<String> regexList = new ArrayList<>();
 
     UIOperation(WebDriver driver) {
 	this.driver = driver;
@@ -76,6 +84,42 @@ public class UIOperation extends LocatorReader{
 	    // Return the text that was inserted for verification
 	    return choose.getFirstSelectedOption().getText();
 
+	case "VERIFYLOWESTPRICEFIRST":
+	    WebElement pageItem = waitForVisabilityOfElement(p, objectName, objectType);
+	    // Enable/Disable visual debug options(Highlighting web elements, visual verbose
+	    // mode, etc.)
+	    visualDebug(pageItem);
+	    // Load page items, find the one we`re looking for and apply click on it
+	    List<WebElement> allElems = findWebElements(p, objectName, objectType);
+	    //Iterate over items on the page
+	    for (WebElement element : allElems) {
+		//Generate regex to catch the string
+		this.regex = "^"
+		//Group 1
+		+ "(\\\\$"
+		//Group 2
+		+ "((\\\\d{1,}\\\\.\\\\d{1,2})|(\\\\d{1,}))"
+		//Group 1
+		+ ".+)"
+			+ "$";
+		//Init string to parse with rexex
+		this.regexString = element.getAttribute("innerText");
+		//add result to the List of strings
+		this.matcher.find();
+		this.regexList.add(this.matcher.group(0));
+	    }
+	    //Get the first string and parse it to int
+	    int first = Integer.parseInt(regexList.get(0));
+	  //Get the last string and parse it to int
+	    int last = Integer.parseInt(regexList.get(regexList.size() - 1));
+	    //Verify if the first item has the best price in the List
+	    if (first > last) {
+		break;
+	    } else if (first == last) {
+		break;
+	    } else return "Sorting failure. First item doesn`t have the best price on the page";
+
+	// TEMPORARY NOT WORKING 4.7.2018
 	case "SORTBY":
 	    // wait for presense of the element in the DOM(passing option from the list)
 	    waitForPresenceOfElement(p, objectName, objectType);
@@ -83,9 +127,8 @@ public class UIOperation extends LocatorReader{
 	    js = (JavascriptExecutor) driver;
 	    // Use
 	    js.executeAsyncScript(
-		    "var select = arguments[0]; for(var i = 0; i < select.options.length; i++){ if(select.options[i].text == arguments[1]){ select.options[i].selected = true; } }",
+		    "var select = arguments[0]; for(var i = 0; i < select.options.length; i++) { if(select.options[i].text == arguments[1]) { select.options[i].selected = true; } }",
 		    findTheFirstWebElement(p, objectName, objectType), value);
-	    System.out.println(js);
 	    break;
 
 	case "CLICKRADIOBUTTON":
@@ -118,8 +161,8 @@ public class UIOperation extends LocatorReader{
 		return "Couldn`t read radiobutton`s value";
 
 	case "SCROLLINTOVIEW":
-	    // Wait for the modal to appear
-	    waitForPresenceOfElement(p, objectName, objectType);
+	    // Wait for the element to appear
+	    waitForVisabilityOfElement(p, objectName, objectType);
 	    // Create instance of Javascript executor
 	    js = (JavascriptExecutor) driver;
 	    // ** now execute query which actually will scroll until that element
