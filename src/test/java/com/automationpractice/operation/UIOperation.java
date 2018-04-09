@@ -28,15 +28,12 @@ public class UIOperation extends LocatorReader {
     protected int index;
     private long currentTime = System.currentTimeMillis();
     final ApplicationManager APP = new ApplicationManager(driver);
-    private String regex = "";
-    private String regexString = "";
-    private final Pattern pattern = Pattern.compile(regex);    
-    private final Matcher matcher = pattern.matcher(regexString);
     private final List<String> regexList = new ArrayList<>();
 
     UIOperation(WebDriver driver) {
 	this.driver = driver;
 	wait = new WebDriverWait(driver, 10);
+	//Set timeout for Async Java Script
 	driver.manage().timeouts().setScriptTimeout(20, TimeUnit.SECONDS);
     }
 
@@ -94,28 +91,23 @@ public class UIOperation extends LocatorReader {
 	    //Iterate over items on the page
 	    for (WebElement element : allElems) {
 		//Generate regex to catch the string
-		this.regex = "^"
-		//Group 1
-		+ "(\\\\$"
-		//Group 2
-		+ "((\\\\d{1,}\\\\.\\\\d{1,2})|(\\\\d{1,}))"
-		//Group 1
-		+ ".+)"
-			+ "$";
-		//Init string to parse with rexex
-		this.regexString = element.getAttribute("innerText");
+		String regex = "^(\\$((\\d{1,}\\.\\d{1,2})|(\\d{1,})).+)$";
+		//Init string to parse with regex
+		String regexString = element.getAttribute("innerText");
+		final Pattern pattern = Pattern.compile(regex, Pattern.MULTILINE);    
+	    final Matcher matcher = pattern.matcher(regexString);
 		//add result to the List of strings
-		this.matcher.find();
-		this.regexList.add(this.matcher.group(0));
+		matcher.find();
+		this.regexList.add(matcher.group(2));
 	    }
+	    System.out.println(this.regexList.get(0));
 	    //Get the first string and parse it to int
-	    int first = Integer.parseInt(regexList.get(0));
+	    double first = Double.parseDouble(this.regexList.get(0));
+	    double second  = Double.parseDouble(this.regexList.get(1));
 	  //Get the last string and parse it to int
-	    int last = Integer.parseInt(regexList.get(regexList.size() - 1));
+	    double last = Double.parseDouble(this.regexList.get(this.regexList.size() - 1));
 	    //Verify if the first item has the best price in the List
-	    if (first > last) {
-		break;
-	    } else if (first == last) {
+	    if (first <= second && first <= last) {
 		break;
 	    } else return "Sorting failure. First item doesn`t have the best price on the page";
 
