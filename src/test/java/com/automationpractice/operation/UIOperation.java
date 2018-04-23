@@ -1,5 +1,6 @@
 package com.automationpractice.operation;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
@@ -93,32 +94,34 @@ public class UIOperation extends LocatorReader {
 	    // Enable/Disable visual debug options(Highlighting web elements, visual verbose
 	    // mode, etc.)
 	    visualDebug(pageItem);
-	    // Load page items, find the one we`re looking for and apply click on it
-	    List<WebElement> allElems = findWebElements(p, objectName, objectType);
-	    //Iterate over items on the page
-	    for (WebElement element : allElems) {
+
+	  //get the number of items that are required
+	    int itemSize = findWebElements(p, objectName, objectType).size();
+	    //DOM refreshes here
+	    //Work with each WebElement individually, rather than with a list (Handling StaleElementException)
+	    for(int i = 0; i <= itemSize -1; i++) {
+	        WebElement element = findWebElements(p, objectName, objectType).get(i);
+	      //Init string to parse with regex
+			String regexString = element.getAttribute("innerText");
 		//Generate regex to catch the string
 		String regex = "^(\\$)(\\d{1,}\\.\\d{1,2})(.+)?$";
-		//Init string to parse with regex
-		String regexString = element.getAttribute("innerText");
 		Pattern pattern = Pattern.compile(regex, Pattern.MULTILINE);    
 		Matcher matcher = pattern.matcher(regexString);
 		//add result to the List of strings
 		matcher.find();
 		this.regexList.add(matcher.group(2));
 	    }
-	    //Get the string values
-	    String firstValue = this.regexList.get(0);
-	    String secondValue = this.regexList.get(1);
-	    //Get the first string and parse it to double
-	    double first = Double.valueOf(firstValue);
-	    double second  = Double.valueOf(secondValue);
-	    System.out.println(first);
-	    System.out.println(second);
-	  //Get the last string and parse it to int
-	    double last = Double.valueOf(this.regexList.get(this.regexList.size() - 1));
+
+
+	    BigDecimal firstValue = new BigDecimal(this.regexList.get(0));
+	    BigDecimal secondValue = new BigDecimal(this.regexList.get(1));
+	    BigDecimal lastValue = new BigDecimal(this.regexList.get(this.regexList.size() - 1));
+
+	    System.out.println(firstValue);
+	    System.out.println(secondValue);
+
 	    //Verify if the first item has the best price in the List
-	    if (first <= second && first <= last) {
+	    if (firstValue.compareTo(secondValue) <= 0 && firstValue.compareTo(lastValue) <= 0) {
 		break;
 	    } else return "Sorting failure. First item doesn`t have the best price on the page";
 
