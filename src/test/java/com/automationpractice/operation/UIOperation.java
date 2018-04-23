@@ -7,6 +7,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import org.aspectj.weaver.ast.Instanceof;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -77,9 +78,15 @@ public class UIOperation extends LocatorReader {
 	    // mode, etc.)
 	    visualDebug(ddMenu);
 	    Select choose = new Select(findTheFirstWebElement(p, objectName, objectType));
+	    //Selecting value
 	    choose.selectByVisibleText(value);
-	    // Return the text that was inserted for verification
-	    return choose.getFirstSelectedOption().getText();
+	    String chosen = choose.getFirstSelectedOption().getText();
+	    if (chosen.equals(value)) {
+		// Return the text that was inserted for verification
+		    return chosen;
+	    } else return "The value hasn`t been selected been selected";
+	    
+	    
 
 	case "VERIFYLOWESTPRICEFIRST":
 	    WebElement pageItem = waitForVisabilityOfElement(p, objectName, objectType);
@@ -91,21 +98,25 @@ public class UIOperation extends LocatorReader {
 	    //Iterate over items on the page
 	    for (WebElement element : allElems) {
 		//Generate regex to catch the string
-		String regex = "^(\\$((\\d{1,}\\.\\d{1,2})|(\\d{1,})).+)$";
+		String regex = "^(\\$)(\\d{1,}\\.\\d{1,2})(.+)?$";
 		//Init string to parse with regex
 		String regexString = element.getAttribute("innerText");
-		final Pattern pattern = Pattern.compile(regex, Pattern.MULTILINE);    
-	    final Matcher matcher = pattern.matcher(regexString);
+		Pattern pattern = Pattern.compile(regex, Pattern.MULTILINE);    
+		Matcher matcher = pattern.matcher(regexString);
 		//add result to the List of strings
 		matcher.find();
 		this.regexList.add(matcher.group(2));
 	    }
-	    System.out.println(this.regexList.get(0));
-	    //Get the first string and parse it to int
-	    double first = Double.parseDouble(this.regexList.get(0));
-	    double second  = Double.parseDouble(this.regexList.get(1));
+	    //Get the string values
+	    String firstValue = this.regexList.get(0);
+	    String secondValue = this.regexList.get(1);
+	    //Get the first string and parse it to double
+	    double first = Double.valueOf(firstValue);
+	    double second  = Double.valueOf(secondValue);
+	    System.out.println(first);
+	    System.out.println(second);
 	  //Get the last string and parse it to int
-	    double last = Double.parseDouble(this.regexList.get(this.regexList.size() - 1));
+	    double last = Double.valueOf(this.regexList.get(this.regexList.size() - 1));
 	    //Verify if the first item has the best price in the List
 	    if (first <= second && first <= last) {
 		break;
