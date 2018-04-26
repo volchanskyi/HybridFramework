@@ -119,13 +119,10 @@ public class UIOperation extends LocatorReader {
 				matcher.find();
 				this.regexList.add(matcher.group(2));
 			}
-
+			//Use BigDecimal for better precision
 			BigDecimal firstValue = new BigDecimal(this.regexList.get(0));
 			BigDecimal secondValue = new BigDecimal(this.regexList.get(1));
 			BigDecimal lastValue = new BigDecimal(this.regexList.get(this.regexList.size() - 1));
-
-			System.out.println(firstValue);
-			System.out.println(secondValue);
 
 			// Verify if the first item has the best price in the List
 			if (firstValue.compareTo(secondValue) <= 0 && firstValue.compareTo(lastValue) <= 0) {
@@ -269,14 +266,15 @@ public class UIOperation extends LocatorReader {
 		case "VERIFYBROKENLINKS":
 			// Wait for URI links in the DOM
 			waitForPresenceOfElement(p, objectName, objectType);
-
-			HttpURLConnection huc = null;
+			HttpURLConnection httpURLConnection = null;
 			int respCode = 200;
 			String url = driver.getCurrentUrl();
+			// Harvest web links on the page
 			List<WebElement> links = findWebElements(p, objectName, objectType);
+			// initialize iterator
 			Iterator<WebElement> it = links.iterator();
 
-			// Start requesting web links on the page
+			// check if URL belongs to Third party domain or whether URL is empty/null.
 			while (it.hasNext()) {
 				// init URI
 				url = it.next().getAttribute("href");
@@ -286,20 +284,21 @@ public class UIOperation extends LocatorReader {
 					continue;
 				}
 
-				// Another domain
+				// Skip links to another domain
 				if (!url.startsWith(url)) {
 					// URL belongs to another domain, skipping it.
 					continue;
 				}
 
 				try {
-					huc = (HttpURLConnection) (new URL(url).openConnection());
-					// request HTTP HEADER
-					huc.setRequestMethod("HEAD");
+					httpURLConnection = (HttpURLConnection) (new URL(url).openConnection());
+					// request HTTP HEADER (only headers are returned and not document body)
+					httpURLConnection.setRequestMethod("HEAD");
 					// init connection
-					huc.connect();
+					httpURLConnection.connect();
+					// Validating Links
 					// retreive response code (200, 300, 404, 500, etc.)
-					respCode = huc.getResponseCode();
+					respCode = httpURLConnection.getResponseCode();
 
 					if (respCode >= 400) {
 						return url + " is a broken link";
