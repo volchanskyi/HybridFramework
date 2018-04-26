@@ -41,7 +41,7 @@ public class UIOperation extends LocatorReader {
 
     // UI interaction logic implemantation
     String perform(Properties p, String keyword, String objectName, String objectType, String value)
-	    throws IllegalArgumentException {
+	    throws IllegalArgumentException, InterruptedException {
 	switch (keyword.toUpperCase()) {
 	// Perform click on element
 	case "CLICK":
@@ -81,6 +81,9 @@ public class UIOperation extends LocatorReader {
 	    Select choose = new Select(findTheFirstWebElement(p, objectName, objectType));
 	    //Selecting value
 	    choose.selectByVisibleText(value);
+	    //Necessary SLEEP to give time for sorting script to finish
+	    //if we don`t wait here DOM refreshes
+	  		Thread.sleep(1000);
 	    String chosen = choose.getFirstSelectedOption().getText();
 	    if (chosen.equals(value)) {
 		// Return the text that was inserted for verification
