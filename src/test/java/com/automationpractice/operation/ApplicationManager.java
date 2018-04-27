@@ -92,6 +92,7 @@ public class ApplicationManager {
 
 	} else if (isBrowser("FIREFOX")) {
 	    FirefoxOptions option = new FirefoxOptions();
+	    option.setLegacy(true);
 	    if (isPlatform("MAC")) {
 		this.driverPath = "./src/test/resources/webdrivers/mac/geckodriver.sh";
 	    } else if (isPlatform("WINDOWS")) {
