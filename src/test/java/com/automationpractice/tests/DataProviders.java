@@ -18,7 +18,20 @@ public class DataProviders {
 	TCreader file = new TCreader();
 
 	// Read keyword sheet
-	Sheet ivSheet = file.readExcel(System.getProperty("user.dir") + "\\", "test.xlsx", "UItests");
+	// Sheet ivSheet = file.readExcel(System.getProperty("user.dir") + "\\",
+	// "test.xlsx", "UItests");
+	if (isTestCase("TESTCASE.XLSX")) {
+	    Sheet ivSheet = file.readExcel(System.getProperty("user.dir") + "\\", "TestCase.xlsx", "UItests");
+	    object = readExcel(ivSheet);
+	} else {
+	    Sheet ivSheet = file.readExcel(System.getProperty("user.dir") + "\\", "test.xlsx", "UItests");
+	    object = readExcel(ivSheet);
+	}
+	return object;
+    }
+
+    private Object[][] readExcel(Sheet ivSheet) {
+	Object[][] object;
 	// Find number of rows in excel file
 	int rowCount = ivSheet.getLastRowNum() - ivSheet.getFirstRowNum();
 	object = new Object[rowCount][5];
@@ -30,9 +43,12 @@ public class DataProviders {
 		// Print excel data in console
 		object[i][j] = row.getCell(j).toString();
 	    }
-
 	}
 	return object;
+    }
+
+    private boolean isTestCase(String testCase) {
+	return System.getProperty("testcase").toUpperCase().contains(testCase);
     }
 
 }
