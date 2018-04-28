@@ -44,6 +44,7 @@ public class ApplicationManager {
 	if (!(testName.regionMatches(true, 0, testcaseName, 0, 10))) {
 	    if (testcaseName != null && testcaseName.length() != 0) {
 		// Pass browser property and TC name to the method
+		// NEW TC NAME WILL LAUNCH NEW BROWSER INSTANCE
 		launchBrowser();
 		// Rewrite TC name
 		setTestName(testcaseName);
@@ -132,13 +133,13 @@ public class ApplicationManager {
     }
 
     public void onException(ITestResult result) throws IOException {
-	//check if the taking screenshot functionality was enabled
+	// check if the taking screenshot functionality was enabled
 	if (System.getProperty("screenshot").toUpperCase().contains("ENABLED")
-		//and check if and exception has occurred
+		// and check if and exception has occurred
 		&& ITestResult.FAILURE == result.getStatus()) {
-	    //generate a file with a screenshot
+	    // generate a file with a screenshot
 	    File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-	    //format the file and save it in the project dir
+	    // format the file and save it in the project dir
 	    FileUtils.copyFile(scrFile,
 		    new File(result.getName() + "--" + Arrays.toString(result.getParameters()) + ".jpg"));
 	}

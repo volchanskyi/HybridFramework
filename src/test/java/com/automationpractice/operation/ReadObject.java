@@ -12,15 +12,15 @@ public class ReadObject {
 
     public Properties getUIObjectRepository() throws IOException {
 	// Read object repository file
-	InputStream stream = new FileInputStream(
-		new File(System.getProperty("user.dir") + "\\src\\test\\java\\com\\automationpractice\\objects\\or.properties"));
+	InputStream stream = new FileInputStream(new File(
+		System.getProperty("user.dir") + "\\src\\test\\java\\com\\automationpractice\\objects\\or.properties"));
 	// load all objects
 	p.load(stream);
 	return p;
     }
 
     public String getUIObjectProperty(String value) {
-	
+
 	return p.getProperty(value);
     }
 

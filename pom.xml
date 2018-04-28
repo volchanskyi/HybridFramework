@@ -106,7 +106,7 @@
 					</properties>
 					<systemPropertyVariables>
 						<!-- Headless Chrome by default --> 
-						<browser>headless</browser>
+						<browser>chrome</browser>
 						<!-- Visual debug is OFF by default -->         
 						<debug>off</debug>
 						<!-- Capture screenshot of the webpage when an Exceptions occurs 
@@ -114,7 +114,7 @@
 						<screenshot>disabled</screenshot>
 						<!-- Choosing Test Case source (from .XLS/XLSX file)  
 							test.xlsx is by default -->
-							<testcase>test.xlsx</testcase>
+						<testcase>test.xlsx</testcase>
 					</systemPropertyVariables>
 				</configuration>
 			</plugin>
