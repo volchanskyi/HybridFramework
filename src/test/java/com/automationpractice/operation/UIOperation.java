@@ -14,7 +14,6 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.openqa.selenium.Alert;
-import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -263,7 +262,7 @@ public class UIOperation extends LocatorReader {
 	    }
 	    break;
 
-	    // Find broken links on the page
+	// Find broken links on the page
 	case "VERIFYBROKENLINKS":
 	    // Wait for URI links in the DOM
 	    waitForPresenceOfElement(p, objectName, objectType);
@@ -315,34 +314,37 @@ public class UIOperation extends LocatorReader {
 	    }
 	    break;
 
-	    // Find broken images on the page
+	// Find broken images on the page
 	case "VERIFYBROKENIMAGES":
 	    // Wait for src of images in the DOM
 	    waitForPresenceOfElement(p, objectName, objectType);
-	    //Create a List for broken images entries
+	    // Create a List for broken images entries
 	    List<String> brokenImages = new ArrayList<String>();
-	    //list for all image webelems on the page
+	    // list for all image webelems on the page
 	    List<WebElement> images = findWebElements(p, objectName, objectType);
-	    //init java script executor
+	    // init java script executor
 	    js = (JavascriptExecutor) driver;
-	    //Iterate over list of images on the page
+	    // Iterate over list of images on the page
 	    for (int image = 0; image < images.size(); image++) {
-		//Use JavaScript
-		//looking for src tags with no data(no links, broken links, etc.)
+		// Use JavaScript
+		// looking for src tags with no data(no links, broken links, etc.)
 		Object result = js.executeScript("return arguments[0].complete &&"
 			+ "typeof arguments[0].naturalWidth != \"undefined\" &&" + "arguments[0].naturalWidth > 0",
 			images.get(image));
-		//If "result" object returns FALSE get src link  of the image
-		//and add it to the List for broken images entries
+		// If "result" object returns FALSE get src link of the image
+		// and add it to the List for broken images entries
 		if (result == Boolean.FALSE) {
+		    // Enable/Disable visual debug options(Highlighting web elements, visual verbose
+		    // mode, etc.)
+		    visualDebug(images.get(image));
 		    brokenImages.add(images.get(image).getAttribute("src"));
-		    //return the broken image src link as String
+		    // return the broken image src link as String
 		    return brokenImages.get(0);
 		}
 	    }
 	    break;
 
-	    // Check if the Confirmation Alert is present and close it
+	// Check if the Confirmation Alert is present and close it
 	case "CLOSEALERT":
 	    // Wait for the webElement to appear
 	    wait.until(ExpectedConditions.alertIsPresent());
