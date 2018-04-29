@@ -7,8 +7,10 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Properties;
+import java.util.Random;
 import java.util.concurrent.TimeUnit;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -32,6 +34,7 @@ public class UIOperation extends LocatorReader {
     private JavascriptExecutor js;
     protected boolean booleanValue;
     protected int index;
+    private int random = new Random().nextInt(99) + 1;
     private long currentTime = System.currentTimeMillis();
     final ApplicationManager APP = new ApplicationManager(driver);
     private final List<String> regexList = new ArrayList<>();
@@ -95,51 +98,20 @@ public class UIOperation extends LocatorReader {
 	    } else
 		return "The value hasn`t been selected been selected";
 
-	case "VERIFYLOWESTPRICEFIRST":
-	    WebElement pageItem = waitForVisabilityOfElement(p, objectName, objectType);
-	    // Enable/Disable visual debug options(Highlighting web elements, visual verbose
-	    // mode, etc.)
-	    visualDebug(pageItem);
-
-	    // get the number of items that are required
-	    int itemSize = findWebElements(p, objectName, objectType).size();
-	    // DOM refreshes here
-	    // Work with each WebElement individually, rather than with a list (Handling
-	    // StaleElementException)
-	    for (int i = 0; i <= itemSize - 1; i++) {
-		WebElement element = findWebElements(p, objectName, objectType).get(i);
-		// Init string to parse with regex
-		String regexString = element.getAttribute("innerText");
-		// Generate regex to catch the string
-		String regex = "^(\\$)(\\d{1,}\\.\\d{1,2})(.+)?$";
-		Pattern pattern = Pattern.compile(regex, Pattern.MULTILINE);
-		Matcher matcher = pattern.matcher(regexString);
-		// add result to the List of strings
-		matcher.find();
-		this.regexList.add(matcher.group(2));
-	    }
-	    // Use BigDecimal for better precision
-	    BigDecimal firstValue = new BigDecimal(this.regexList.get(0));
-	    BigDecimal secondValue = new BigDecimal(this.regexList.get(1));
-	    BigDecimal lastValue = new BigDecimal(this.regexList.get(this.regexList.size() - 1));
-
-	    // Verify if the first item has the best price in the List
-	    if (firstValue.compareTo(secondValue) <= 0 && firstValue.compareTo(lastValue) <= 0) {
-		break;
-	    } else
-		return "Sorting failure. First item doesn`t have the best price on the page";
-
-	    // TEMPORARY NOT WORKING 4.7.2018
-	case "SORTBY":
-	    // wait for presense of the element in the DOM(passing option from the list)
-	    waitForPresenceOfElement(p, objectName, objectType);
-	    // Create instance of Javascript executor
-	    js = (JavascriptExecutor) driver;
-	    // Use
-	    js.executeAsyncScript(
-		    "var select = arguments[0]; for(var i = 0; i < select.options.length; i++) { if(select.options[i].text == arguments[1]) { select.options[i].selected = true; } }",
-		    findTheFirstWebElement(p, objectName, objectType), value);
-	    break;
+	
+	    
+	 // Choose price range (as a FILTER)
+	 	case "SETMAXPRICE":
+	 	    // Move Slider
+	 	    // Wait for the slider to appear
+	 	    WebElement slider = waitForVisabilityOfElement(p, objectName, objectType);
+	 	    // Using Action Class
+	 	    Actions move = new Actions(driver);
+	 	    move.dragAndDropBy(slider, -this.random, 0).build().perform();
+	 	    // Enable/Disable visual debug options(Highlighting web elements, visual verbose
+	 	    // mode, etc.)
+	 	    visualDebug(slider);
+	 	    break;
 
 	case "CLICKRADIOBUTTON":
 	    waitForPresenceOfElement(p, objectName, objectType);
@@ -261,6 +233,91 @@ public class UIOperation extends LocatorReader {
 		}
 	    }
 	    break;
+	    
+	case "VERIFYLOWESTPRICEFIRST":
+	    WebElement pageItem = waitForVisabilityOfElement(p, objectName, objectType);
+	    // Enable/Disable visual debug options(Highlighting web elements, visual verbose
+	    // mode, etc.)
+	    visualDebug(pageItem);
+
+	    // get the number of items that are required
+	    int itemSize = findWebElements(p, objectName, objectType).size();
+	    // DOM refreshes here
+	    // Work with each WebElement individually, rather than with a list (Handling
+	    // StaleElementException)
+	    for (int i = 0; i <= itemSize - 1; i++) {
+		WebElement element = findWebElements(p, objectName, objectType).get(i);
+		// Init string to parse with regex
+		String regexString = element.getAttribute("innerText");
+		// Generate regex to catch the string
+		String regex = "^(\\$)(\\d{1,}\\.\\d{1,2})(.+)?$";
+		Pattern pattern = Pattern.compile(regex, Pattern.MULTILINE);
+		Matcher matcher = pattern.matcher(regexString);
+		// add result to the List of strings
+		matcher.find();
+		this.regexList.add(matcher.group(2));
+	    }
+	    // Use BigDecimal for better precision
+	    BigDecimal firstValue = new BigDecimal(this.regexList.get(0));
+	    BigDecimal secondValue = new BigDecimal(this.regexList.get(1));
+	    BigDecimal lastValue = new BigDecimal(this.regexList.get(this.regexList.size() - 1));
+	    //Clear up the list (we dont need it anymore)
+	    this.regexList.clear();
+	    // Verify if the first item has the best price in the List
+	    if (firstValue.compareTo(secondValue) <= 0 && firstValue.compareTo(lastValue) <= 0) {
+		break;
+	    } else
+		return "Sorting failure. First item doesn`t have the best price on the page";
+
+	case "VERIFYMAXPRICE":
+	    WebElement items = waitForVisabilityOfElement(p, objectName, objectType);
+	    // Enable/Disable visual debug options(Highlighting web elements, visual verbose
+	    // mode, etc.)
+	    visualDebug(items);
+	    // get the number of items that are required
+	    int numberOfItems = findWebElements(p, objectName, objectType).size();
+	    List<BigDecimal> bigDecimalList = new LinkedList<BigDecimal>();
+	    // DOM refreshes here
+	    // Work with each WebElement individually, rather than with a list (Handling
+	    // StaleElementException)
+	    for (int i = 0; i <= numberOfItems - 1; i++) {
+		WebElement element = findWebElements(p, objectName, objectType).get(i);
+		// Init string to parse with regex
+		String regexString = element.getAttribute("innerText");
+		// Generate regex to catch the string
+		String regex = "^(\\$)(\\d{1,}\\.\\d{1,2})(.+)?$";
+		Pattern pattern = Pattern.compile(regex, Pattern.MULTILINE);
+		Matcher matcher = pattern.matcher(regexString);
+		// add result to the List of strings
+		matcher.find();
+		bigDecimalList.add(new BigDecimal(matcher.group(2)));
+//		this.regexList.add(matcher.group(2));
+	    }
+	    // Use BigDecimal List for comparing (converting String list of values to BigDecimal List)
+//	    List<BigDecimal> bigDecimalList = new LinkedList<BigDecimal>();
+//	    for (String i : this.regexList) {
+//		bigDecimalList.add(new BigDecimal(i));
+//	    }
+	    //Clear up the list of prices (we copied values to bigDecimalList)
+	    this.regexList.clear();
+	    // Init string to parse with regex
+	    String pageBody = driver.getPageSource();
+	    String regex = "^(?:.+\\-\\s)(\\$)(\\d{1,}\\.\\d{1,})$";
+	    Pattern pattern = Pattern.compile(regex, Pattern.MULTILINE);
+	    Matcher matcher = pattern.matcher(pageBody);
+	    // add result to the List of strings
+	    matcher.find();
+	    this.regexList.add(matcher.group(2));
+	    BigDecimal maxPrice = new BigDecimal(this.regexList.get(0));
+	  //Clear up the list of prices (we copied the value to BigDecimal maxPrice)
+	    this.regexList.clear();
+	    //
+	    for (BigDecimal j : bigDecimalList) {
+		if (j.compareTo(maxPrice) <= 0) {
+		    break;
+		} else
+		    return "Verification failure. Some items on the page has price more than maximum price set";
+	    }
 
 	// Find broken links on the page
 	case "VERIFYBROKENLINKS":
