@@ -34,10 +34,11 @@ public class UIOperation extends LocatorReader {
     private JavascriptExecutor js;
     protected boolean booleanValue;
     protected int index;
-    private int random = new Random().nextInt(99) + 1;
+    private int randomNumber = new Random().nextInt(99) + 1;
     private long currentTime = System.currentTimeMillis();
     final ApplicationManager APP = new ApplicationManager(driver);
-    private final List<String> regexList = new ArrayList<>();
+    private final List<String> stringList = new ArrayList<>();
+    private final List<BigDecimal> bigDecimalList = new LinkedList<BigDecimal>();
 
     UIOperation(WebDriver driver) {
 	this.driver = driver;
@@ -107,7 +108,7 @@ public class UIOperation extends LocatorReader {
 	 	    WebElement slider = waitForVisabilityOfElement(p, objectName, objectType);
 	 	    // Using Action Class
 	 	    Actions move = new Actions(driver);
-	 	    move.dragAndDropBy(slider, -this.random, 0).build().perform();
+	 	    move.dragAndDropBy(slider, -this.randomNumber, 0).build().perform();
 	 	    // Enable/Disable visual debug options(Highlighting web elements, visual verbose
 	 	    // mode, etc.)
 	 	    visualDebug(slider);
@@ -255,14 +256,14 @@ public class UIOperation extends LocatorReader {
 		Matcher matcher = pattern.matcher(regexString);
 		// add result to the List of strings
 		matcher.find();
-		this.regexList.add(matcher.group(2));
+		this.bigDecimalList.add(new BigDecimal(matcher.group(2)));
 	    }
 	    // Use BigDecimal for better precision
-	    BigDecimal firstValue = new BigDecimal(this.regexList.get(0));
-	    BigDecimal secondValue = new BigDecimal(this.regexList.get(1));
-	    BigDecimal lastValue = new BigDecimal(this.regexList.get(this.regexList.size() - 1));
+	    BigDecimal firstValue = this.bigDecimalList.get(0);
+	    BigDecimal secondValue = this.bigDecimalList.get(1);
+	    BigDecimal lastValue = this.bigDecimalList.get(this.bigDecimalList.size() - 1);
 	    //Clear up the list (we dont need it anymore)
-	    this.regexList.clear();
+	    this.bigDecimalList.clear();
 	    // Verify if the first item has the best price in the List
 	    if (firstValue.compareTo(secondValue) <= 0 && firstValue.compareTo(lastValue) <= 0) {
 		break;
@@ -276,7 +277,7 @@ public class UIOperation extends LocatorReader {
 	    visualDebug(items);
 	    // get the number of items that are required
 	    int numberOfItems = findWebElements(p, objectName, objectType).size();
-	    List<BigDecimal> bigDecimalList = new LinkedList<BigDecimal>();
+	    
 	    // DOM refreshes here
 	    // Work with each WebElement individually, rather than with a list (Handling
 	    // StaleElementException)
@@ -290,7 +291,7 @@ public class UIOperation extends LocatorReader {
 		Matcher matcher = pattern.matcher(regexString);
 		// add result to the List of strings
 		matcher.find();
-		bigDecimalList.add(new BigDecimal(matcher.group(2)));
+		this.bigDecimalList.add(new BigDecimal(matcher.group(2)));
 //		this.regexList.add(matcher.group(2));
 	    }
 	    // Use BigDecimal List for comparing (converting String list of values to BigDecimal List)
@@ -298,8 +299,10 @@ public class UIOperation extends LocatorReader {
 //	    for (String i : this.regexList) {
 //		bigDecimalList.add(new BigDecimal(i));
 //	    }
+	    
 	    //Clear up the list of prices (we copied values to bigDecimalList)
-	    this.regexList.clear();
+//	    this.regexList.clear();
+	    
 	    // Init string to parse with regex
 	    String pageBody = driver.getPageSource();
 	    String regex = "^(?:.+\\-\\s)(\\$)(\\d{1,}\\.\\d{1,})$";
@@ -307,17 +310,25 @@ public class UIOperation extends LocatorReader {
 	    Matcher matcher = pattern.matcher(pageBody);
 	    // add result to the List of strings
 	    matcher.find();
-	    this.regexList.add(matcher.group(2));
-	    BigDecimal maxPrice = new BigDecimal(this.regexList.get(0));
-	  //Clear up the list of prices (we copied the value to BigDecimal maxPrice)
-	    this.regexList.clear();
+	    this.stringList.add(matcher.group(2));
+
+	    //	    this.regexList.add(matcher.group(2));
+	    BigDecimal maxPrice = new BigDecimal(this.stringList.get(0));    
 	    //
-	    for (BigDecimal j : bigDecimalList) {
+	    for (BigDecimal j : this.bigDecimalList) {
 		if (j.compareTo(maxPrice) <= 0) {
-		    break;
+			  //Clear up the list of prices
+//		    this.bigDecimalList.clear();
+//		    break;
 		} else
+			  //Clear up the list of prices
+		    this.bigDecimalList.clear();
 		    return "Verification failure. Some items on the page has price more than maximum price set";
 	    }
+		  //Clear up the list of prices
+	    this.bigDecimalList.clear();
+	    this.stringList.clear();
+	    break;
 
 	// Find broken links on the page
 	case "VERIFYBROKENLINKS":
