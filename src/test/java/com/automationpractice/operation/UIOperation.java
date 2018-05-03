@@ -47,7 +47,7 @@ public class UIOperation extends LocatorReader {
 		wait = new WebDriverWait(driver, 10);
 		// Set timeout for Async Java Script
 		driver.manage().timeouts().setScriptTimeout(20, TimeUnit.SECONDS);
-		 driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
 	}
 
 	// UI interaction logic implemantation
@@ -92,9 +92,14 @@ public class UIOperation extends LocatorReader {
 			Select choose = new Select(findTheFirstWebElement(p, objectName, objectType));
 			// Selecting value
 			choose.selectByVisibleText(value);
-			// Necessary SLEEP to give time for async sorting script to finish
-			// if we don`t wait here, DOM refreshes
-			Thread.sleep(2000);
+			// Create instance of Javascript executor
+			js = (JavascriptExecutor) driver;
+			// Check if Ajax is still working
+			if ((Boolean) js.executeScript("return jQuery.active == 1")) {
+				// Wait here to give time for async filtering script to finish
+				// if we don`t wait here, DOM refreshes while the program continues working
+				wait.until(ExpectedConditions.jsReturnsValue("return jQuery.active == 0"));
+			}
 			String chosen = choose.getFirstSelectedOption().getText();
 			if (chosen.equals(value)) {
 				// Return the text that was inserted for verification
@@ -120,15 +125,16 @@ public class UIOperation extends LocatorReader {
 					.contentEquals("left: " + 100 + "%;");
 			if (rangeIsNotChanged == true) {
 				return "The max range value hasn`t been selected";
-			} else
-//				if (
-//				wait.until(ExpectedConditions.jsReturnsValue("return document.readyState")).equals("complete")) {
-//					break;
-//				}
-
-				// Necessary SLEEP to give time for async filtering script to finish
-				// if we don`t wait here, DOM refreshes
-				Thread.sleep(2000);
+			} else {
+				// Create instance of Javascript executor
+				js = (JavascriptExecutor) driver;
+				// Check if Ajax is still working
+				if ((Boolean) js.executeScript("return jQuery.active == 1")) {
+					// Wait here to give time for async filtering script to finish
+					// if we don`t wait here, DOM refreshes while the program continues working
+					wait.until(ExpectedConditions.jsReturnsValue("return jQuery.active == 0"));
+				}
+			}
 			break;
 
 		case "CLICKRADIOBUTTON":
@@ -510,4 +516,3 @@ public class UIOperation extends LocatorReader {
 	}
 
 }
-
