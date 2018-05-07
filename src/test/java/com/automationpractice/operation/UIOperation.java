@@ -42,10 +42,10 @@ public class UIOperation extends LocatorReader {
 
     UIOperation(WebDriver driver) {
 	this.driver = driver;
-	wait = new WebDriverWait(driver, 10);
+	wait = new WebDriverWait(driver, 15);
 	// Set timeout for Async Java Script
 	driver.manage().timeouts().setScriptTimeout(20, TimeUnit.SECONDS);
-	driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+	driver.manage().timeouts().pageLoadTimeout(15, TimeUnit.SECONDS);
     }
 
     // UI interaction logic implemantation
@@ -345,6 +345,23 @@ public class UIOperation extends LocatorReader {
 	    this.bigDecimalList.clear();
 	    this.stringList.clear();
 	    break;
+	    
+	    
+	    // Find search result
+	    case "VERIFYSEARCHRESULTS":
+	    	//Wait for visability of element
+	    	WebElement search = waitForVisabilityOfElement(p, objectName, objectType);
+	 	    //Get text from the message block
+	 	    String msgBlock = search.getText();
+	 	    // Enable/Disable visual debug options(Highlighting web elements, visual verbose
+	 	    // mode, etc.)
+	 	    visualDebug(search);
+	 	    if (value!="" && value!= null && msgBlock.contains(value) ) {
+	 	    return value;
+	 	    } else {
+	 	    	return "The message search result was " + msgBlock;
+	 	    }
+	 	    
 
 	// Find broken links on the page
 	case "VERIFYBROKENLINKS":
@@ -489,6 +506,10 @@ public class UIOperation extends LocatorReader {
     private WebElement waitForVisabilityOfElement(Properties p, String objectName, String objectType) {
 	return wait.until(ExpectedConditions.visibilityOfElementLocated(this.getObject(p, objectName, objectType)));
     }
+    
+    private Boolean waitForDisappearanceOfElement(Properties p, String objectName, String objectType) {
+    	return wait.until(ExpectedConditions.invisibilityOfElementLocated(this.getObject(p, objectName, objectType)));
+        }
 
     private void sendKeys(Properties p, String objectName, String objectType, String value) {
 	findTheFirstWebElement(p, objectName, objectType).sendKeys(value);
