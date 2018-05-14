@@ -106,7 +106,7 @@
 					</properties>
 					<systemPropertyVariables>
 						<!-- Headless Chrome by default --> 
-						<browser>headless</browser>
+						<browser>chrome</browser>
 						<!-- Visual debug is OFF by default -->         
 						<debug>off</debug>
 						<!-- Capture screenshot of the webpage when an Exceptions occurs 
