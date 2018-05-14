@@ -355,6 +355,21 @@ public class UIOperation extends UIOperationHelper {
 	    } else {
 		return "The message search result was " + msgBlock;
 	    }
+	    
+	 // Verify On-Submit Error
+	 	case "VERIFYERRORMESSAGE":
+	 	    // Wait for visability of element
+	 	    WebElement errMsg = waitForVisabilityOfElement(p, objectName, objectType);
+	 	    // Get text from the message block
+	 	    String errMsgBlock = errMsg.getText();
+	 	    // Enable/Disable visual debug options(Highlighting web elements, visual verbose
+	 	    // mode, etc.)
+	 	    visualDebug(errMsg);
+	 	    if (value != "" && value != null && errMsgBlock.contains(value)) {
+	 		return value;
+	 	    } else {
+	 		return "The message search result was " + errMsgBlock;
+	 	    }
 
 	    // Find broken links on the page
 	case "VERIFYBROKENLINKS":
