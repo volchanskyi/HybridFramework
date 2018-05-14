@@ -4,7 +4,7 @@ import java.util.Properties;
 
 import org.openqa.selenium.By;
 
-public class LocatorReader {
+class LocatorReader {
 
 	/**
 	 * Find element BY using object type and value

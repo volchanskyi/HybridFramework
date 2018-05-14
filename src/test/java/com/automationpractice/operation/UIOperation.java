@@ -26,16 +26,12 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.google.common.base.Objects;
 
-public class UIOperation extends LocatorReader {
+public class UIOperation extends UIOperationHelper {
 
-    private WebDriver driver;
-    private WebDriverWait wait;
     protected String title;
-    private JavascriptExecutor js;
     protected boolean booleanValue;
     protected int index;
     private int randomNumber = new Random().nextInt(99) + 1;
-    private long currentTime = System.currentTimeMillis();
     final ApplicationManager APP = new ApplicationManager(driver);
     private final List<String> stringList = new ArrayList<>();
     private final List<BigDecimal> bigDecimalList = new LinkedList<BigDecimal>();
@@ -104,7 +100,6 @@ public class UIOperation extends LocatorReader {
 		return chosen;
 	    } else
 		return "The value hasn`t been selected";
-	    
 
 	    // Choose price range (as a FILTER)
 	case "SETPRICERANGE(MAX)":
@@ -345,25 +340,23 @@ public class UIOperation extends LocatorReader {
 	    this.bigDecimalList.clear();
 	    this.stringList.clear();
 	    break;
-	    
-	    
-	    // Find search result
-	    case "VERIFYSEARCHRESULTS":
-	    	//Wait for visability of element
-	    	WebElement search = waitForVisabilityOfElement(p, objectName, objectType);
-	 	    //Get text from the message block
-	 	    String msgBlock = search.getText();
-	 	    // Enable/Disable visual debug options(Highlighting web elements, visual verbose
-	 	    // mode, etc.)
-	 	    visualDebug(search);
-	 	    if (value!="" && value!= null && msgBlock.contains(value) ) {
-	 	    return value;
-	 	    } else {
-	 	    	return "The message search result was " + msgBlock;
-	 	    }
-	 	    
 
-	// Find broken links on the page
+	// Find search result
+	case "VERIFYSEARCHRESULTS":
+	    // Wait for visability of element
+	    WebElement search = waitForVisabilityOfElement(p, objectName, objectType);
+	    // Get text from the message block
+	    String msgBlock = search.getText();
+	    // Enable/Disable visual debug options(Highlighting web elements, visual verbose
+	    // mode, etc.)
+	    visualDebug(search);
+	    if (value != "" && value != null && msgBlock.contains(value)) {
+		return value;
+	    } else {
+		return "The message search result was " + msgBlock;
+	    }
+
+	    // Find broken links on the page
 	case "VERIFYBROKENLINKS":
 	    // Wait for URI links in the DOM
 	    waitForPresenceOfElement(p, objectName, objectType);
@@ -484,55 +477,6 @@ public class UIOperation extends LocatorReader {
 	}
 
 	return value;
-    }
-
-    private List<WebElement> findWebElements(Properties p, String objectName, String objectType) {
-	return driver.findElements(this.getObject(p, objectName, objectType));
-    }
-
-    private WebElement findTheFirstWebElement(Properties p, String objectName, String objectType) {
-	return findWebElements(p, objectName, objectType).get(0);
-    }
-
-    private String sendUniqueKeys(Properties p, String objectName, String objectType, String value) {
-	findTheFirstWebElement(p, objectName, objectType).sendKeys(this.currentTime + value);
-	return this.currentTime + value;
-    }
-
-    private WebElement waitForPresenceOfElement(Properties p, String objectName, String objectType) {
-	return wait.until(ExpectedConditions.presenceOfElementLocated(this.getObject(p, objectName, objectType)));
-    }
-
-    private WebElement waitForVisabilityOfElement(Properties p, String objectName, String objectType) {
-	return wait.until(ExpectedConditions.visibilityOfElementLocated(this.getObject(p, objectName, objectType)));
-    }
-    
-    private Boolean waitForDisappearanceOfElement(Properties p, String objectName, String objectType) {
-    	return wait.until(ExpectedConditions.invisibilityOfElementLocated(this.getObject(p, objectName, objectType)));
-        }
-
-    private void sendKeys(Properties p, String objectName, String objectType, String value) {
-	findTheFirstWebElement(p, objectName, objectType).sendKeys(value);
-    }
-
-    private String getJavaScriptObjectValue(Properties p, String objectName, String objectType) {
-	return findTheFirstWebElement(p, objectName, objectType).getAttribute("value");
-    }
-
-    private void visualDebug(WebElement element) {
-	// Read system variable property from the POM
-	if (System.getProperty("debug").toUpperCase().contains("ON")) {
-	    // Create instance of Javascript executor
-	    this.js = (JavascriptExecutor) driver;
-	    // Style element with a red border
-	    this.js.executeScript("arguments[0].setAttribute(arguments[1], arguments[2])", element, "style",
-		    "border: 2px solid red; border-style: dashed;");
-	}
-    }
-
-    // Quit driver
-    private void quit() {
-	driver.quit();
     }
 
 }
