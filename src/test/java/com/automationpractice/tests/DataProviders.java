@@ -21,10 +21,15 @@ public class DataProviders {
 	// Sheet ivSheet = file.readExcel(System.getProperty("user.dir") + "\\",
 	// "test.xlsx", "UItests");
 	if (isTestCase("TESTCASE.XLSX")) {
-	    Sheet ivSheet = file.readExcel(System.getProperty("user.dir") + "\\", "TestCase.xlsx", "UItests");
-	    object = readExcel(ivSheet);
+	    if (isType("POSITIVE")) {
+		Sheet ivSheet = file.readExcel(System.getProperty("user.dir") + "\\", "TestCase.xlsx", "Positive");
+		object = readExcel(ivSheet);
+	    } else if (isType("ERRORHANDLING")) {
+		Sheet ivSheet = file.readExcel(System.getProperty("user.dir") + "\\", "TestCase.xlsx", "ErrorHandling");
+		object = readExcel(ivSheet);
+	    }
 	} else {
-	    Sheet ivSheet = file.readExcel(System.getProperty("user.dir") + "\\", "test.xlsx", "UItests");
+	    Sheet ivSheet = file.readExcel(System.getProperty("user.dir") + "\\", "test.xlsx", "ErrorHandling");
 	    object = readExcel(ivSheet);
 	}
 	return object;
@@ -49,6 +54,10 @@ public class DataProviders {
 
     private boolean isTestCase(String testCase) {
 	return System.getProperty("testcase").toUpperCase().contains(testCase);
+    }
+
+    private boolean isType(String tcType) {
+	return System.getProperty("tctype").toUpperCase().contains(tcType);
     }
 
 }

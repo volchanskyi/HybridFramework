@@ -206,7 +206,7 @@ public class UIOperation extends LocatorReader {
 	    driver.get(value);
 	    // Handle "Page not found" and writing errors in Expected results
 	    if (driver.getTitle().contains("404")
-		    || driver.getPageSource().contains("404") & driver.getTitle().contains("found")
+		    || driver.getPageSource().contains("404") && driver.getTitle().contains("found")
 		    || driver.getPageSource().contains("not found")) {
 		return "404 Not Found";
 	    }
