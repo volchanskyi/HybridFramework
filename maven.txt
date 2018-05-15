@@ -1,1 +1,1 @@
-mvn clean site -Dtest=ExecuteTest -Dtestcase="TestCase.xlsx" -Dtctype=errorHandling -Dbrowser=Chrome -Ddebug=on -Dscreenshot=enabled & "D:\project\Workspace\HybridFramework\target\site\index.html"
+mvn clean site -Dtest=ExecuteTest -Dtestcase="TestCase.xlsx" -Dtctype=errorHandling -Dbrowser=Chrome -Ddebug=on -Dscreenshot=enabled & ".\target\site\index.html"
