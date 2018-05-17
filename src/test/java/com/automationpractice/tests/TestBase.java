@@ -23,6 +23,7 @@ public class TestBase implements ITest {
     // Initialization of AppManager and passing TC name
     protected void init(String testcaseName) throws IOException {
 	APP.init(testcaseName);
+	APP.setTestName(testcaseName);
     }
 
     //// Initialization of AppManager and passing TC details
@@ -50,6 +51,11 @@ public class TestBase implements ITest {
     public String getTestName() {
 	return APP.getTestName();
     }
+    
+//    @Override
+//    public void setTestName(String param) {
+//	APP.setTestName(param);
+//    }
 
     // @BeforeSuite
 

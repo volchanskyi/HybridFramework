@@ -42,15 +42,16 @@ public class ApplicationManager {
     public void init(String testcaseName) throws IOException {
 	// Check for empty strings in TC
 	if (!(testName.regionMatches(true, 0, testcaseName, 0, 10))) {
-	    if (testcaseName != null && testcaseName.length() != 0) {
+	    if ((testcaseName != null && testcaseName.length() != 0) && !testcaseName.startsWith("Step")) {
 		// Pass browser property and TC name to the method
 		// NEW TC NAME WILL LAUNCH NEW BROWSER INSTANCE
 		launchBrowser();
 		// Rewrite TC name
-		setTestName(testcaseName);
+//		setTestName(testcaseName);
 	    }
 	} else
 	    return;
+//	    setTestName(testcaseName);
     }
 
     private void launchBrowser() {
