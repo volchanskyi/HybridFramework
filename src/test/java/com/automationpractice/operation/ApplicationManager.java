@@ -40,8 +40,9 @@ public class ApplicationManager {
 
     // Initialization of AppManager
     public void init(String testcaseName) throws IOException {
+//    	this.testName = testcaseName;
 	// Check for empty strings in TC
-	if (!(testName.regionMatches(true, 0, testcaseName, 0, 10))) {
+//	if (!(testName.regionMatches(true, 0, testcaseName, 0, 10))) {
 	    if ((testcaseName != null && testcaseName.length() != 0) && !testcaseName.startsWith("Step")) {
 		// Pass browser property and TC name to the method
 		// NEW TC NAME WILL LAUNCH NEW BROWSER INSTANCE
@@ -49,7 +50,8 @@ public class ApplicationManager {
 		// Rewrite TC name
 //		setTestName(testcaseName);
 	    }
-	} else
+//	} 
+    else
 	    return;
 //	    setTestName(testcaseName);
     }

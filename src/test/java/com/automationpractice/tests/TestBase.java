@@ -23,7 +23,7 @@ public class TestBase implements ITest {
     // Initialization of AppManager and passing TC name
     protected void init(String testcaseName) throws IOException {
 	APP.init(testcaseName);
-	APP.setTestName(testcaseName);
+//	APP.setTestName(testcaseName);
     }
 
     //// Initialization of AppManager and passing TC details
@@ -37,6 +37,7 @@ public class TestBase implements ITest {
     protected void setUp(Method method, Object[] parameters) {
 	// Enable steps debugging, prints parameters out
 	logger.debug("Start test " + method.getName() + " with params " + Arrays.asList(parameters));
+    APP.setTestName(Arrays.asList(parameters).subList(0, 3).toString());
     }
 
     @AfterMethod(alwaysRun = true)
