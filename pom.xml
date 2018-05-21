@@ -117,7 +117,7 @@
 						<testcase>test.xlsx</testcase>
 						<!-- Choosing what type of Test Casess we want to run: Positive or Error handling
 						Positive by default -->
-						<tctype>errorHandling</tctype>
+						<tctype>ErrorHandling</tctype>
 					</systemPropertyVariables>
 				</configuration>
 			</plugin>
@@ -128,6 +128,9 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-report-plugin</artifactId>
+				<configuration>
+        		<runOrder>balanced</runOrder>
+    			</configuration>
 				<version>2.20.1</version>
 			</plugin>
 			<plugin>

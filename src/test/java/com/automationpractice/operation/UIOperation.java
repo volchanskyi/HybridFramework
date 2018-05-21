@@ -32,7 +32,7 @@ public class UIOperation extends UIOperationHelper {
     protected boolean booleanValue;
     protected int index;
     private int randomNumber = new Random().nextInt(99) + 1;
-    final ApplicationManager APP = new ApplicationManager(driver);
+//    final ApplicationManager APP = new ApplicationManager(driver);
     private final List<String> stringList = new ArrayList<>();
     private final List<BigDecimal> bigDecimalList = new LinkedList<BigDecimal>();
 
@@ -204,7 +204,7 @@ public class UIOperation extends UIOperationHelper {
 		    || driver.getPageSource().contains("404") && driver.getTitle().contains("found")
 		    || driver.getPageSource().contains("not found")) {
 		return "404 Not Found";
-	    }
+	    } else
 	    // Return actual URI for TestNG to assert
 	    return driver.getCurrentUrl();
 
@@ -481,9 +481,6 @@ public class UIOperation extends UIOperationHelper {
 
 	// Quit Active Driver!
 	case "CLOSEBROWSER":
-	    // TODO Fix TC name assignment
-	    APP.setTestName("");
-	    // -------------------------
 	    quit();
 	    break;
 
