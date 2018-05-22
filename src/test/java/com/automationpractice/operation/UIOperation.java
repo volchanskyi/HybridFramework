@@ -32,12 +32,14 @@ public class UIOperation extends UIOperationHelper {
     protected boolean booleanValue;
     protected int index;
     private int randomNumber = new Random().nextInt(99) + 1;
-//    final ApplicationManager APP = new ApplicationManager(driver);
     private final List<String> stringList = new ArrayList<>();
     private final List<BigDecimal> bigDecimalList = new LinkedList<BigDecimal>();
 
+    // Engine of the app
+    // All UI abilities of the app are implemented in this class
     UIOperation(WebDriver driver) {
 	this.driver = driver;
+	// set EXPLICIT timeouts
 	wait = new WebDriverWait(driver, 15);
 	// Set timeout for Async Java Script
 	driver.manage().timeouts().setScriptTimeout(20, TimeUnit.SECONDS);
@@ -205,10 +207,10 @@ public class UIOperation extends UIOperationHelper {
 		    || driver.getPageSource().contains("not found")) {
 		return "404 Not Found";
 	    } else
-	    // Return actual URI for TestNG to assert
-	    return driver.getCurrentUrl();
+		// Return actual URI for TestNG to assert
+		return driver.getCurrentUrl();
 
-	// Match initial title to the current one
+	    // Match initial title to the current one
 	case "VERIFYPAGETITLE":
 	    waitForPresenceOfElement(p, objectName, objectType);
 	    // Return actual title for TestNG to assert
@@ -355,21 +357,21 @@ public class UIOperation extends UIOperationHelper {
 	    } else {
 		return "The message search result was " + msgBlock;
 	    }
-	    
-	 // Verify On-Submit Error
-	 	case "VERIFYERRORMESSAGE":
-	 	    // Wait for visability of element
-	 	    WebElement errMsg = waitForVisabilityOfElement(p, objectName, objectType);
-	 	    // Get text from the message block
-	 	    String errMsgBlock = errMsg.getText();
-	 	    // Enable/Disable visual debug options(Highlighting web elements, visual verbose
-	 	    // mode, etc.)
-	 	    visualDebug(errMsg);
-	 	    if (value != "" && value != null && errMsgBlock.contains(value)) {
-	 		return value;
-	 	    } else {
-	 		return "The message search result was " + errMsgBlock;
-	 	    }
+
+	    // Verify On-Submit Error
+	case "VERIFYERRORMESSAGE":
+	    // Wait for visability of element
+	    WebElement errMsg = waitForVisabilityOfElement(p, objectName, objectType);
+	    // Get text from the message block
+	    String errMsgBlock = errMsg.getText();
+	    // Enable/Disable visual debug options(Highlighting web elements, visual verbose
+	    // mode, etc.)
+	    visualDebug(errMsg);
+	    if (value != "" && value != null && errMsgBlock.contains(value)) {
+		return value;
+	    } else {
+		return "The message search result was " + errMsgBlock;
+	    }
 
 	    // Find broken links on the page
 	case "VERIFYBROKENLINKS":

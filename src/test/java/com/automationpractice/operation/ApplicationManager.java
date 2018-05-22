@@ -24,36 +24,32 @@ public class ApplicationManager {
     private String testName = "";
     private String driverPath = "";
 
+    // App Manager implements main logic of the app
     public ApplicationManager(WebDriver driver) {
 	this.driver = driver;
     }
 
+    // reads step in a TC
     public String getTestName() {
 	return this.testName;
     }
 
+    // rewrites step in a TC
     public void setTestName(String param) {
-	// TODO add conditions
 	this.testName = param;
 
     }
 
-    // Initialization of AppManager
+    // Takes first param as a TC name or Step in the TC
     public void init(String testcaseName) throws IOException {
-//    	this.testName = testcaseName;
-	// Check for empty strings in TC
-//	if (!(testName.regionMatches(true, 0, testcaseName, 0, 10))) {
-	    if ((testcaseName != null && testcaseName.length() != 0) && !testcaseName.startsWith("Step")) {
-		// Pass browser property and TC name to the method
-		// NEW TC NAME WILL LAUNCH NEW BROWSER INSTANCE
-		launchBrowser();
-		// Rewrite TC name
-//		setTestName(testcaseName);
-	    }
-//	} 
-    else
+	// Launch a browser when reads a new TC
+	if ((testcaseName != null && testcaseName.length() != 0) && !testcaseName.contains("Step")) {
+	    // NEW TC NAME WILL LAUNCH NEW BROWSER INSTANCE
+	    launchBrowser();
+	}
+	// If there`s word - Step, then skip launching browser
+	else
 	    return;
-//	    setTestName(testcaseName);
     }
 
     private void launchBrowser() {
@@ -107,14 +103,15 @@ public class ApplicationManager {
 	    this.driver = new FirefoxDriver(option);
 	    this.driver.manage().window().maximize();
 	} else {
-	    // -------------------
 	}
     }
 
+    // Distinguish OS
     private boolean isPlatform(String platform) {
 	return System.getProperty("os.name").toUpperCase().contains(platform);
     }
 
+    // Distinguish Browser
     private boolean isBrowser(String browser) {
 	return System.getProperty("browser").toUpperCase().contains(browser);
     }
@@ -135,6 +132,7 @@ public class ApplicationManager {
 
     }
 
+    // Take screenshots on exceptions
     public void onException(ITestResult result) throws IOException {
 	// check if the taking screenshot functionality was enabled
 	if (System.getProperty("screenshot").toUpperCase().contains("ENABLED")
