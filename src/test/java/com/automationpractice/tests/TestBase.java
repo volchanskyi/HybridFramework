@@ -35,7 +35,7 @@ public class TestBase implements ITest {
     @BeforeMethod(alwaysRun = true)
     protected void setUp(Method method, Object[] parameters) {
 	// Enable steps debugging, prints parameters out
-	logger.debug("Start test " + method.getName() + " with params " + Arrays.asList(parameters));
+	logger.error("Start test " + method.getName() + " with params " + Arrays.asList(parameters));
 	// Initialization of AppManager and passing String as a test step(For reporting)
 	APP.setTestName(
 		Arrays.asList(parameters).subList(0, 3).toString().replace(",", "").replace("[", "").replace("]", ""));
@@ -44,7 +44,7 @@ public class TestBase implements ITest {
     @AfterMethod(alwaysRun = true)
     protected void tearDown(Method method, Object[] parameters, ITestResult result) throws IOException {
 	// Marks when a step is finished
-	logger.debug("Stop test " + method.getName());
+	logger.error("Stop test " + method.getName());
 	// take a screenshot when an exception occurs
 	APP.onException(result);
     }

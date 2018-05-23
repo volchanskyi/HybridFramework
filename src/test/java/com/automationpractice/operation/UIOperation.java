@@ -30,14 +30,14 @@ public class UIOperation extends UIOperationHelper {
 
     protected String title;
     protected boolean booleanValue;
-    protected int index;
+    private int index;
     private int randomNumber = new Random().nextInt(99) + 1;
     private final List<String> stringList = new ArrayList<>();
     private final List<BigDecimal> bigDecimalList = new LinkedList<BigDecimal>();
 
     // Engine of the app
     // All UI abilities of the app are implemented in this class
-    UIOperation(WebDriver driver) {
+    protected UIOperation(WebDriver driver) {
 	this.driver = driver;
 	// set EXPLICIT timeouts
 	wait = new WebDriverWait(driver, 15);
@@ -47,7 +47,7 @@ public class UIOperation extends UIOperationHelper {
     }
 
     // UI interaction logic implemantation
-    String perform(Properties p, String keyword, String objectName, String objectType, String value)
+    protected String perform(Properties p, String keyword, String objectName, String objectType, String value)
 	    throws IllegalArgumentException, InterruptedException {
 	switch (keyword.toUpperCase()) {
 	// Perform click on element
@@ -247,7 +247,7 @@ public class UIOperation extends UIOperationHelper {
 		// update counter
 		this.index++;
 		// close loop when the last image is shown
-		if (index == listOfElems.size()) {
+		if (this.index == listOfElems.size()) {
 		    // stub
 		    return "";
 		}
@@ -384,7 +384,6 @@ public class UIOperation extends UIOperationHelper {
 	    List<WebElement> links = findWebElements(p, objectName, objectType);
 	    // initialize iterator
 	    Iterator<WebElement> it = links.iterator();
-
 	    // check if URL belongs to Third party domain or whether URL is empty/null.
 	    while (it.hasNext()) {
 		// init URI
@@ -394,13 +393,11 @@ public class UIOperation extends UIOperationHelper {
 		    // URL is either not configured for anchor tag or it is empty
 		    continue;
 		}
-
 		// Skip links to another domain
 		if (!url.startsWith(url)) {
 		    // URL belongs to another domain, skipping it.
 		    continue;
 		}
-
 		try {
 		    httpURLConnection = (HttpURLConnection) (new URL(url).openConnection());
 		    // request HTTP HEADER (only headers are returned and not document body)
@@ -416,7 +413,6 @@ public class UIOperation extends UIOperationHelper {
 		    } else {
 			return "";
 		    }
-
 		} catch (MalformedURLException e) {
 		    e.printStackTrace();
 		} catch (IOException e) {

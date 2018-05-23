@@ -8,20 +8,20 @@ import java.util.Properties;
 
 public class ReadObject {
 
-    Properties p = new Properties();
+    Properties properties = new Properties();
 
-    public Properties getUIObjectRepository() throws IOException {
-	// Read object repository file
+    protected Properties getUIObjectRepository() throws IOException {
+	// Read object repository file where we store locators
 	InputStream stream = new FileInputStream(new File(
 		System.getProperty("user.dir") + "\\src\\test\\java\\com\\automationpractice\\objects\\or.properties"));
 	// load all objects
-	p.load(stream);
-	return p;
+	properties.load(stream);
+	return properties;
     }
 
-    public String getUIObjectProperty(String value) {
-
-	return p.getProperty(value);
+    protected String getUIObjectProperty(String value) {
+	//return the value
+	return properties.getProperty(value);
     }
 
 }

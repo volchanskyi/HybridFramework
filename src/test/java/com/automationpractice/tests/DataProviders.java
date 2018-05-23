@@ -10,16 +10,13 @@ import com.automationpractice.interfaceBridge.TCreader;
 
 public class DataProviders {
 
-    // TODO print only NOT empty strings
-    // GUI tests Data Provider
+    // GUI tests Data Provider that reads params from an excel file
     @DataProvider(name = "UIData")
-    public Object[][] getDataFromUiDataProvider() throws IOException {
+    protected Object[][] getDataFromUiDataProvider() throws IOException {
 	Object[][] object = null;
 	TCreader file = new TCreader();
 
 	// Read keyword sheet
-	// Sheet ivSheet = file.readExcel(System.getProperty("user.dir") + "\\",
-	// "test.xlsx", "UItests");
 	if (isTestCase("TESTCASE.XLSX")) {
 	    if (isType("POSITIVE")) {
 		Sheet ivSheet = file.readExcel(System.getProperty("user.dir") + "\\", "TestCase.xlsx", "Positive");
@@ -29,6 +26,7 @@ public class DataProviders {
 		object = readExcel(ivSheet);
 	    }
 	} else {
+	    //source file for testing and developing new features purposes
 	    Sheet ivSheet = file.readExcel(System.getProperty("user.dir") + "\\", "test.xlsx", "ErrorHandling");
 	    object = readExcel(ivSheet);
 	}
@@ -51,11 +49,11 @@ public class DataProviders {
 	}
 	return object;
     }
-
+    //add source file for passing params
     private boolean isTestCase(String testCase) {
 	return System.getProperty("testcase").toUpperCase().contains(testCase);
     }
-
+    //choose a tab in the source excel file
     private boolean isType(String tcType) {
 	return System.getProperty("tctype").toUpperCase().contains(tcType);
     }
