@@ -5,6 +5,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 import java.io.File;
 import java.io.IOException;
+import java.lang.reflect.Method;
 import java.util.Arrays;
 import java.util.Properties;
 
@@ -16,10 +17,15 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.testng.ITestResult;
+
+import com.automationpractice.tests.TestBase;
 
 public class ApplicationManager {
 
+    private final Logger logger = LoggerFactory.getLogger(TestBase.class);
     private WebDriver driver;
     private String testName = "";
     private String driverPath = "";
@@ -130,6 +136,20 @@ public class ApplicationManager {
 	// Verify Expected result against Actual using Hamcrest assertion method
 	assertThat(operation.perform(allObjects, keyword, objectName, objectType, value), equalTo(value));
 
+    }
+
+    public void runLogger(Method method, Object[] parameters) {
+	// Enable steps debugging, prints parameters out
+	if (System.getProperty("logger").toUpperCase().contains("ENABLED")) {
+	    logger.debug("Start test " + method.getName() + " with params " + Arrays.asList(parameters));
+	}
+    }
+
+    public void runLogger(Method method) {
+	// Enable steps debugging, prints parameters out
+	if (System.getProperty("logger").toUpperCase().contains("ENABLED")) {
+	    logger.debug("Stop test " + method.getName());
+	}
     }
 
     // Take screenshots on exceptions

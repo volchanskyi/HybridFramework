@@ -118,6 +118,8 @@
 						<!-- Choosing what type of Test Casess we want to run: Positive or Error handling
 						Positive by default -->
 						<tctype>ErrorHandling</tctype>
+						<!-- Enable logger-->
+						<logger>Disabled</logger>
 					</systemPropertyVariables>
 				</configuration>
 			</plugin>

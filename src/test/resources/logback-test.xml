@@ -3,6 +3,7 @@
 
 	<!-- add appender -->
 	<appender name="htmlAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+
 		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
 			<!-- file name in the root dir -->
 			<fileNamePattern>log-%d{yyyy-MM-dd-hh-mm}.html</fileNamePattern>
@@ -23,7 +24,7 @@
 	</appender>
 
 	<!-- enable appender + assign log level(to see in the report)-->
-	<root level="ERROR">
+	<root level="DEBUG">
 		<appender-ref ref="htmlAppender" />
 	</root>
 </configuration>
