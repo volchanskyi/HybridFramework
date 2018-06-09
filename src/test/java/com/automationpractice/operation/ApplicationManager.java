@@ -99,16 +99,21 @@ public class ApplicationManager {
 	} else if (isBrowser("FIREFOX")) {
 	    FirefoxOptions option = new FirefoxOptions();
 	    option.setLegacy(true);
+	    option.addPreference("--log", "error");
 	    if (isPlatform("MAC")) {
 		this.driverPath = "./src/test/resources/webdrivers/mac/geckodriver.sh";
 	    } else if (isPlatform("WINDOWS")) {
-		this.driverPath = "./src/test/resources/webdrivers/pc/geckodriver.exe";
+		this.driverPath = "\\src\\test\\resources\\webdrivers\\pc\\geckodriver.exe";
+		System.setProperty("webdriver.gecko.driver", this.driverPath);
+		this.driver = new FirefoxDriver(option);
 	    } else
 		throw new IllegalArgumentException("Unknown OS");
 	    System.setProperty("webdriver.gecko.driver", this.driverPath);
 	    this.driver = new FirefoxDriver(option);
 	    this.driver.manage().window().maximize();
+
 	} else {
+	    throw new IllegalArgumentException("NO PLATFORM OR BROWSER ARGUMENT WAS GIVEN");
 	}
     }
 
