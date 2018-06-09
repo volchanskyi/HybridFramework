@@ -6,7 +6,7 @@
 	<test name="Chrome" thread-count="1" parallel="methods" >
 	<parameter name="browser" value"Chrome" />
 		<classes>
-			<class name="com.automationpractice.HybridExecuteTest" />
+			<class name="com.automationpractice.ExecuteTest" />
 		</classes>
 	</test>
 	
@@ -14,7 +14,7 @@
 	<test name="Firefox">
 	<parameter name="browser" value"Firefox" />
 		<classes>
-			<class name="com.automationpractice.HybridExecuteTest" />
+			<class name="com.automationpractice.ExecuteTest" />
 		</classes>
 	</test>
 </suite> -->
