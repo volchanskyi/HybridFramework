@@ -19,15 +19,15 @@ public class DataProviders {
 	// Read keyword sheet
 	if (isTestCase("TESTCASE.XLSX")) {
 	    if (isType("POSITIVE")) {
-		Sheet ivSheet = file.readExcel(System.getProperty("user.dir") + "\\", "TestCase.xlsx", "Positive");
+		Sheet ivSheet = file.readExcel(System.getProperty("user.dir") + "//", "TestCase.xlsx", "Positive");
 		object = readExcel(ivSheet);
 	    } else if (isType("ERRORHANDLING")) {
-		Sheet ivSheet = file.readExcel(System.getProperty("user.dir") + "\\", "TestCase.xlsx", "ErrorHandling");
+		Sheet ivSheet = file.readExcel(System.getProperty("user.dir") + "//", "TestCase.xlsx", "ErrorHandling");
 		object = readExcel(ivSheet);
 	    }
 	} else {
 	    //source file for testing and developing new features purposes
-	    Sheet ivSheet = file.readExcel(System.getProperty("user.dir") + "\\", "test.xlsx", "ErrorHandling");
+	    Sheet ivSheet = file.readExcel(System.getProperty("user.dir") + "//", "test.xlsx", "ErrorHandling");
 	    object = readExcel(ivSheet);
 	}
 	return object;

@@ -13,7 +13,7 @@ public class ReadObject {
     protected Properties getUIObjectRepository() throws IOException {
 	// Read object repository file where we store locators
 	InputStream stream = new FileInputStream(new File(
-		System.getProperty("user.dir") + "\\src\\test\\java\\com\\automationpractice\\objects\\or.properties"));
+		System.getProperty("user.dir") + "//src//test//java//com//automationpractice//objects//or.properties"));
 	// load all objects
 	properties.load(stream);
 	return properties;
